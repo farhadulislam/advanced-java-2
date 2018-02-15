@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9749968-2353-4108-99a4-d783a5c63411" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/Product.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductCatalogue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductCatalogueTest.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductFixtures.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/Supplier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advanced-java-2.iml" afterPath="$PROJECT_DIR$/advanced-java-2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/list/Product.java" afterPath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/list/Product.java" />
-    </list>
+    <list default="true" id="e9749968-2353-4108-99a4-d783a5c63411" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
