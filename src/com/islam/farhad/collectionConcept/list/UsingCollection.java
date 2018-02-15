@@ -3,6 +3,7 @@ package com.islam.farhad.collectionConcept.list;
 import java.util.*;
 
 public class UsingCollection {
+
     public static void main(String [] args) {
 
 

@@ -19,7 +19,7 @@ public class ListExample {
 
         for(String s : list1){
 
-            System.out.println(" ");
+            System.out.println(s);
         }
 
 
