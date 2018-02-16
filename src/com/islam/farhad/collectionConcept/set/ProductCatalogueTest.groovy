@@ -1,3 +1,4 @@
+/*
 package com.islam.farhad.collectionConcept.set
 
 class ProductCatalogueTest extends GroovyTestCase {
@@ -8,7 +9,7 @@ class ProductCatalogueTest extends GroovyTestCase {
 
         ProductCatalogue catalogue = new ProductCatalogue();
 
-        catalogue.isSuppliedBy(bobs);
+        catalogue.isSuppliedBy(bobs)
         catalogue.isSuppliedBy(kates);
 
         assertThat(catalogue, containsInAnyOrder( door, floorPanel));
@@ -17,7 +18,9 @@ class ProductCatalogueTest extends GroovyTestCase {
     }
 
     @Test
-    public void shouldOnlyFindLightVanProducts() throws Exception {
+    public void shouldOnlyFindLightVanProducts() throws Exception {*/
+/**//*
+
 
         ProductCatalogue catalogue = new ProductCatalogue();
 
@@ -30,3 +33,4 @@ class ProductCatalogueTest extends GroovyTestCase {
     }
 
 }
+*/

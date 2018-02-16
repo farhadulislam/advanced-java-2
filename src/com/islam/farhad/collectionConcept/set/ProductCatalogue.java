@@ -12,7 +12,7 @@ public class ProductCatalogue implements Iterable<Product> {
 
     public void isSuppliedBy(Supplier supplier){
 
-        products.addAll(supplier.products());
+       // products.addAll(supplier.products());
 
     }
 
