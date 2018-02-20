@@ -12,7 +12,7 @@ public class FizzBuzz {
 
         doWork();
 
-        showEnteredNumbers();
+        //showEnteredNumbers();
 
 
     }
@@ -55,7 +55,7 @@ public class FizzBuzz {
         System.out.println("Enter a whole number");
         Scanner scanner = new Scanner(System.in);
 
-        while (scanner.hasNext()) {
+        while (scanner.hasNextInt()) {
 
             int  number = scanner.nextInt();
             showFizzBuzz(number);
@@ -73,6 +73,16 @@ public class FizzBuzz {
             System.out.println(numbersEntered[i]);
         }
     }
+
+
+ /*   public static boolean isANumber(int yourNumber){
+
+        try{
+            yourNumber = Integer.parseInt(yourNumber);
+        }catch (NumberFormatException ex) {
+            //handle exception here
+        }
+    }*/
 
 
 }
