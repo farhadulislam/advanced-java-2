@@ -7,7 +7,7 @@ public class FizzBuzz {
 
 
     //private  static int runs = 0;
-    private static  int [] numbersEntered  = {};
+    private static  int [] numbersEntered  = {1};
     public static void main (String [] args){
 
         doWork();
