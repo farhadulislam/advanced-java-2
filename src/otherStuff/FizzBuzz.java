@@ -59,7 +59,7 @@ public class FizzBuzz {
 
             int  number = scanner.nextInt();
             showFizzBuzz(number);
-            numbersEntered[numbersEntered.length + 1]= number;
+            //numbersEntered[numbersEntered.length + 1]= number;
             System.out.println("Enter another number .. or hit enter to exit");
             break;
         }
