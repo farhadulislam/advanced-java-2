@@ -2,7 +2,7 @@ package otherStuff;
 
 public class ThreadApp implements Runnable {
 
-    static int number = 0;
+    private static int number = 0;
     public static void main (String args []){
 
         Thread thread1 = new Thread(new ThreadApp());
@@ -32,7 +32,7 @@ public class ThreadApp implements Runnable {
 
     }
 
-    public void doWork(){
+    private void doWork(){
 
         for (int i=0; i<=10000; i++){
             number ++;

@@ -14,12 +14,12 @@ public class Application {
 
     }
 
-    public void start() {
+    private void start() {
         Application.appRunning = true;
         System.out.println("App started ...");
     }
 
-    public void stop() {
+    private void stop() {
         if(appRunning){
             appRunning = false;
         }

@@ -7,7 +7,7 @@ public class FizzBuzz {
 
 
     //private  static int runs = 0;
-    private static  int [] numbersEntered  = {1};
+    private static final int [] numbersEntered  = {1};
     public static void main (String [] args){
 
         doWork();
@@ -17,7 +17,7 @@ public class FizzBuzz {
 
     }
 
-    public static void showFizzBuzz(int num){
+    private static void showFizzBuzz(int num){
 
         if (isDivisibleByThree(num) && isDivisibleByFive(num)){
 
