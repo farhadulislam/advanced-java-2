@@ -2,9 +2,6 @@ package otherStuff;
 
 public class PlainJavaClass {
 
-
-
-
     public static void main (String [] args){
 
         System.out.println("Plain java class");
