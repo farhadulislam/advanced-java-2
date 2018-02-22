@@ -30,5 +30,6 @@ public class GenericWorld {
         System.out.println(numberFromGenOj2);
         System.out.println(bookName);
 
+
     }
 }
