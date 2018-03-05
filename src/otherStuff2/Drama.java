@@ -6,6 +6,7 @@ public class Drama {
     private int dramaId;
     private String dramaName;
     private Double length;
+    private DramaRecords dramaRecords;
 
 
     public Drama(int dramaId, String dramName){
@@ -31,6 +32,13 @@ public class Drama {
     }
 
     public void getDramaRecords(String dramaName){
+
+
+    }
+
+    public DramaRecords getDramaRecords(){
+
+        return dramaRecords;
 
     }
 
