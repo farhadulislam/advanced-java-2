@@ -13,6 +13,7 @@ public class Drama {
 
         this.dramaId = dramaId;
         this.dramaName = dramName;
+        numberOfDramas++;
     }
 
     public int getDramaId() {

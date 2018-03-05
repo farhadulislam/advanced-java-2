@@ -3,7 +3,7 @@ package otherStuff2;
 import java.util.Date;
 
 public class DramaRecords {
-
+    private static int numOfDramaRecords;
     private Drama drama;
     private int likes;
     private int dislikes;
@@ -16,6 +16,7 @@ public class DramaRecords {
         this.likes = likes;
         this.dislikes = dislikes;
         this.views = views;
+        numOfDramaRecords ++;
     }
 
     public Drama getDrama(){
@@ -45,13 +46,17 @@ public class DramaRecords {
         this.views = views;
     }
 
+    public static int getNumOfDramaRecords() {
+        return numOfDramaRecords;
+    }
+
     @Override
     public String toString() {
 
         return "DramaRecords{" + "Drama name "+ drama.getDramaName() +
                 ", likes=" + likes +
                 ", dislikes=" + dislikes +
-                ", views=" + views + " Likability is :  " + likeability + "%" +
+                ", views=" + views + " Likability is :  " + likeability + this.calcLikability1() + "%" + "," + this.calcLikability3() + "%" +
                 '}';
     }
 

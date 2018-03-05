@@ -14,6 +14,10 @@ public class LikeabilityIndex {
         DramaRecords dramaRecords1 = new DramaRecords(drama1, 100, 20, 500);
         DramaRecords dramaRecords2 = new DramaRecords(drama2, 10, 300, 500);
 
+        System.out.println("Stats.....");
+        System.out.println("Number of dramas added so far " + Drama.getNumberOfDramas());
+        System.out.println("Number of drama records added so far " + DramaRecords.getNumOfDramaRecords());
+
 
         /**********Collections****/
 
@@ -22,6 +26,7 @@ public class LikeabilityIndex {
         Map<Drama, DramaRecords> dramaMap1 = new LinkedHashMap<>();
         dramaMap1.put(drama1,dramaRecords1);
 
+
         /***********************/
 
         String index1 = dramaRecords1.toString();
@@ -29,17 +34,9 @@ public class LikeabilityIndex {
         System.out.println(index1);
         System.out.println(index2);
 
-        System.out.println("Record no. 1 ");
-        System.out.println("Returning a value from calcLiability " + dramaRecords1.calcLikability1());
-        System.out.println("Returning a value from calcLiability2 " + dramaRecords1.calcLikability2());
-        System.out.println("Returning a value from calcLiability3 " + dramaRecords1.calcLikability3());
-        System.out.println(" Percentage of likes ratio for this record against views is :  " + dramaRecords1.getLikesRatio());
+        showMe(dramaRecords1);
+        showMe(dramaRecords2);
 
-        System.out.println("Record no. 2 ");
-        System.out.println("Returning a value from calcLiability " + dramaRecords2.calcLikability1());
-        System.out.println("Returning a value from calcLiability2 " + dramaRecords2.calcLikability2());
-        System.out.println("Returning a value from calcLiability3 " + dramaRecords2.calcLikability3());
-        System.out.println(" Percentage of likes ratio for this record against views is :  " + dramaRecords2.getLikesRatio());
 
 
 
@@ -48,6 +45,19 @@ public class LikeabilityIndex {
         System.out.println(dramaRecords1.getLikes());
         System.out.println(dramaRecords1.getDislikes());*/
 
+
+    }
+
+    public static void showMe(DramaRecords dramaRecords){
+
+        System.out.println("For the following drama :- ");
+        System.out.println(dramaRecords.getDrama().getDramaName());
+
+        System.out.println("................");
+        System.out.println("Returning a value from calcLiability " + dramaRecords.calcLikability1());
+        System.out.println("Returning a value from calcLiability2 " + dramaRecords.calcLikability2());
+        System.out.println("Returning a value from calcLiability3 " + dramaRecords.calcLikability3());
+        System.out.println(" Percentage of likes ratio for this record against views is :  " + dramaRecords.getLikesRatio());
 
     }
 }
