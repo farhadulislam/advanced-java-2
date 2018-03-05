@@ -1,6 +1,8 @@
-package test_otherStuff2;
+//package test_otherStuff2;
 
-import junit.framework.TestCase;
+//import junit.framework.TestCase;
+/*
+import otherStuff2.*;
 
 public class MathDemoTest extends TestCase {
 
@@ -17,4 +19,4 @@ public class MathDemoTest extends TestCase {
     }
 
 
-}
+}*/

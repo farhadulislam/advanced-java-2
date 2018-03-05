@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967ce4a9-ce09-4ccb-b23f-6fb8d08ea397" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/otherStuff2/Drama.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/otherStuff2/DramaRecords.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/otherStuff2/LikeabilityIndex.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.groovy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/advanced-java-2/otherStuff/GenericWorld.class" afterPath="$PROJECT_DIR$/out/production/advanced-java-2/otherStuff/GenericWorld.class" />
+      <change beforePath="$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.java" afterPath="$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +45,8 @@
       <file leaf-file-name="Add.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/otherStuff2/Add.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="150">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,8 +65,8 @@
       <file leaf-file-name="MathDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/otherStuff2/MathDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="20" lean-forward="true" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+            <state relative-caret-position="325">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="e#123#124#0" expanded="true" />
                 <element signature="e#147#148#0" expanded="true" />
@@ -74,14 +77,95 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MathDemoTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThreadApp2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/otherStuff/ThreadApp2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LikeabilityIndex.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/otherStuff2/LikeabilityIndex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#111#150#1" expanded="true" />
+                <element signature="e#159#227#1" expanded="true" />
+                <element signature="e#236#277#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Drama.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/otherStuff2/Drama.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DramaRecords.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/otherStuff2/DramaRecords.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1325">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#936#986#1" expanded="true" />
+                <element signature="e#957#985#0" expanded="true" />
+                <element signature="e#957#985#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1003#1198#0" expanded="true" />
+                <element signature="e#1251#1265#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MathDemoTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="e#216#232#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,8 +176,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -125,11 +209,14 @@
         <option value="$PROJECT_DIR$/src/otherStuff2/MathDemo.java" />
         <option value="$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.groovy" />
         <option value="$PROJECT_DIR$/src/test_otherStuff2/MathDemoTestTest.java" />
+        <option value="$PROJECT_DIR$/src/otherStuff2/Drama.java" />
+        <option value="$PROJECT_DIR$/src/otherStuff2/LikeabilityIndex.java" />
         <option value="$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.java" />
+        <option value="$PROJECT_DIR$/src/otherStuff2/DramaRecords.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="308" />
     <option name="y" value="-1116" />
     <option name="width" value="1400" />
@@ -150,7 +237,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,6 +261,12 @@
               <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="advanced-java-2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="otherStuff" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="advanced-java-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="otherStuff2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -184,9 +279,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GenericWorld">
+  <component name="RunManager" selected="Application.LikeabilityIndex">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -266,6 +359,25 @@
       <module name="advanced-java-2" />
       <envs />
     </configuration>
+    <configuration name="LikeabilityIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="otherStuff2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="otherStuff2.LikeabilityIndex" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="advanced-java-2" />
+      <envs />
+    </configuration>
     <configuration name="PlainJavaClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -293,25 +405,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="otherStuff.ThreadApp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="advanced-java-2" />
-      <envs />
-    </configuration>
-    <configuration name="ThreadApp2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="otherStuff.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="otherStuff.ThreadApp2" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -399,18 +492,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ThreadApp" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ThreadApp2" />
-      <item index="2" class="java.lang.String" itemvalue="Application.FizzBuzz" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PlainJavaClass" />
-      <item index="4" class="java.lang.String" itemvalue="Application.GenericWorld" />
+      <item index="1" class="java.lang.String" itemvalue="Application.FizzBuzz" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PlainJavaClass" />
+      <item index="3" class="java.lang.String" itemvalue="Application.GenericWorld" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LikeabilityIndex" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.GenericWorld" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PlainJavaClass" />
-        <item index="2" class="java.lang.String" itemvalue="Application.FizzBuzz" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ThreadApp" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ThreadApp2" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LikeabilityIndex" />
+        <item index="1" class="java.lang.String" itemvalue="Application.GenericWorld" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PlainJavaClass" />
+        <item index="3" class="java.lang.String" itemvalue="Application.FizzBuzz" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ThreadApp" />
       </list>
     </recent_temporary>
   </component>
@@ -436,23 +529,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-1134" width="2018" height="1093" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-1134" width="2018" height="1093" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32842106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842106" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842106" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32842106" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -478,28 +570,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/otherStuff/ThreadApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/otherStuff/ThreadApp2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/otherStuff/PlainJavaClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -725,13 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/otherStuff/ThreadApp2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -780,22 +843,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test_otherStuff2/MathDemoTestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.groovy" />
+    <entry file="file://$PROJECT_DIR$/src/test_otherStuff2/MathDemoTestTest.java" />
     <entry file="file://$PROJECT_DIR$/src/otherStuff/GenericWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
@@ -806,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/otherStuff2/Add.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="150">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -822,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/otherStuff2/MathDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="true" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        <state relative-caret-position="325">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="e#123#124#0" expanded="true" />
             <element signature="e#147#148#0" expanded="true" />
@@ -833,12 +882,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/otherStuff/ThreadApp2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="225">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/otherStuff2/Drama.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#216#232#1" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/otherStuff2/LikeabilityIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#111#150#1" expanded="true" />
+            <element signature="e#159#227#1" expanded="true" />
+            <element signature="e#236#277#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/otherStuff2/DramaRecords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#936#986#1" expanded="true" />
+            <element signature="e#957#985#0" expanded="true" />
+            <element signature="e#957#985#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1003#1198#0" expanded="true" />
+            <element signature="e#1251#1265#0" expanded="true" />
           </folding>
         </state>
       </provider>
