@@ -78,8 +78,7 @@ public class DramaRecords {
 
 
     public double calcLikability1(){
-        //double likeability = ((this.getDislikes()-this.getDislikes())/this.getViews())*100;
-       // return getLikesRatio()-getDislikesRatio();
+
         return  ((likes-dislikes)/(double)views)*100;
     }
 
