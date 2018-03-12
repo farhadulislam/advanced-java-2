@@ -13,21 +13,26 @@ public class LikeabilityIndex {
         Drama drama4 = new Drama(4, "Postman");
 
         System.out.println("Adding drama records");
-        DramaRecords dramaRecords1 = new DramaRecords(drama1, 150, 20, 500);
-        DramaRecords dramaRecords2 = new DramaRecords(drama2, 10, 300, 500);
-        DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 80, 500);
-        DramaRecords dramaRecords4 = new DramaRecords(drama4, 1, 300, 500);
-
-        System.out.println("Stats.....");
-        System.out.println("Dramas added : " + Drama.getNumberOfDramas());
-        System.out.println("Records added : " + DramaRecords.getNumOfDramaRecords());
+        DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);
+        DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);
+        DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
+        DramaRecords dramaRecords4 = new DramaRecords(drama4, 300, 300, 50000);
 
 
         /**********Collections****/
 
+        ArrayList<Drama> dramaList1 = new ArrayList<>();
+
+        dramaList1.add(drama1);
+        dramaList1.add(drama2);
+        dramaList1.add(drama3);
+        dramaList1.add(drama4);
+
         Set<Drama> dramaSet1 = new HashSet<>();
         dramaSet1.add(drama1);
-        dramaSet1.add(drama1);
+        dramaSet1.add(drama2);
+        dramaSet1.add(drama3);
+        dramaSet1.add(drama4);
 
         Map<Drama, DramaRecords> dramaMap1 = new LinkedHashMap<>();
         dramaMap1.put(drama1,dramaRecords1);
@@ -35,34 +40,27 @@ public class LikeabilityIndex {
         dramaMap1.put(drama3,dramaRecords3);
         dramaMap1.put(drama4,dramaRecords4);
 
-        ArrayList<Drama> dramaList1 = new ArrayList<>();
-        dramaList1.add(drama1);
-        dramaList1.add(drama2);
-        dramaList1.add(drama3);
-        dramaList1.add(drama4);
+        Map<String, Double> dramaMap2 = new TreeMap<>();
 
-        ArrayList<Double> rankValueList1= new ArrayList<>();
-        rankValueList1.add(dramaRecords1.rank1());
-        rankValueList1.add(dramaRecords2.rank1());
-        rankValueList1.add(dramaRecords3.rank1());
-        rankValueList1.add(dramaRecords4.rank1());
+        dramaMap2.put(drama1.getDramaName(), dramaRecords1.rank1());
+        dramaMap2.put(drama2.getDramaName(), dramaRecords2.rank1());
+        dramaMap2.put(drama3.getDramaName(), dramaRecords3.rank1());
+        dramaMap2.put(drama4.getDramaName(), dramaRecords4.rank1());
 
-        ArrayList<Double> rankValueList2= new ArrayList<>();
-        rankValueList2.add(dramaRecords1.rank2());
-        rankValueList2.add(dramaRecords2.rank2());
-        rankValueList2.add(dramaRecords3.rank2());
-        rankValueList2.add(dramaRecords4.rank2());
+        Map<String, Double> dramaMap3 = new TreeMap<>();
 
+        dramaMap3.put(drama1.getDramaName(), dramaRecords1.rank2());
+        dramaMap3.put(drama2.getDramaName(), dramaRecords2.rank2());
+        dramaMap3.put(drama3.getDramaName(), dramaRecords3.rank2());
+        dramaMap3.put(drama4.getDramaName(), dramaRecords4.rank2());
 
+        /**********Some String Representation*************/
 
-
-
-        /***********************/
-
-        String index1 = dramaRecords1.toString();
+        /*String index1 = dramaRecords1.toString();
         String index2= dramaRecords2.toString();
         String index3 = dramaRecords3.toString();
-        String index4= dramaRecords4.toString();
+        String index4 = dramaRecords4.toString();
+
         System.out.println(index1);
         System.out.println(index2);
         System.out.println(index3);
@@ -71,14 +69,20 @@ public class LikeabilityIndex {
         showLikability(dramaRecords1);
         showLikability(dramaRecords2);
         showLikability(dramaRecords3);
-        showLikability(dramaRecords4);
+        showLikability(dramaRecords4);*/
+
+        /***********************/
 
         System.out.println("Show records using map");
         showMap(dramaMap1);
 
 
-        System.out.println(rankValueList1);
-        System.out.println(rankValueList2);
+        System.out.println("Now showing elements from a TreeMap using rank1");
+        System.out.println(dramaMap2);
+
+        System.out.println("Now showing elements from a TreeMap using rank2");
+        System.out.println(dramaMap3);
+
 
 
     }
@@ -117,6 +121,14 @@ public class LikeabilityIndex {
         }
 
 
+    }
+
+
+    public static void showBasicStat(){
+
+        System.out.println("Stats.....");
+        System.out.println("Dramas added : " + Drama.getNumberOfDramas());
+        System.out.println("Records added : " + DramaRecords.getNumOfDramaRecords());
     }
 
 

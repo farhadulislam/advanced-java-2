@@ -1,12 +1,16 @@
 package otherStuff2;
 
+import java.util.List;
+
 public class Drama {
 
     private static int numberOfDramas = 0;
     private int dramaId;
     private String dramaName;
     private Double length;
-    private DramaRecords dramaRecords;
+
+
+    protected static List<Drama> dramaListA;
 
 
     public Drama(int dramaId, String dramName){
@@ -39,7 +43,7 @@ public class Drama {
 
     public DramaRecords getDramaRecords(){
 
-        return dramaRecords;
+        return this.getDramaRecords();
 
     }
 

@@ -22,6 +22,10 @@ public class DramaRecords {
     public Drama getDrama(){
         return this.drama;
     }
+
+    public String getDramaNameOfThisRecord(){
+        return this.drama.getDramaName();
+    }
     public int getLikes() {
         return likes;
     }
