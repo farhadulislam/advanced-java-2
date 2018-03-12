@@ -94,8 +94,14 @@ public class DramaRecords {
     }
 
     public double rank1 (){
-        return (views*calcLikability3());
-    }
+        //return (views*calcLikability3());
+        return (((getTotalLikesAndDislikes()/views)*100)*calcLikability3());
 
+    }
+    public double rank2 (){
+        //return (views*calcLikability3());
+        return (((getTotalLikesAndDislikes()/views)*100)+ calcLikability3())/2;
+
+    }
 
 }

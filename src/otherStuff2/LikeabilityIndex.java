@@ -28,6 +28,7 @@ public class LikeabilityIndex {
         Set<Drama> dramaSet1 = new HashSet<>();
         dramaSet1.add(drama1);
         dramaSet1.add(drama1);
+
         Map<Drama, DramaRecords> dramaMap1 = new LinkedHashMap<>();
         dramaMap1.put(drama1,dramaRecords1);
         dramaMap1.put(drama2,dramaRecords2);
@@ -45,6 +46,12 @@ public class LikeabilityIndex {
         rankValueList1.add(dramaRecords2.rank1());
         rankValueList1.add(dramaRecords3.rank1());
         rankValueList1.add(dramaRecords4.rank1());
+
+        ArrayList<Double> rankValueList2= new ArrayList<>();
+        rankValueList2.add(dramaRecords1.rank2());
+        rankValueList2.add(dramaRecords2.rank2());
+        rankValueList2.add(dramaRecords3.rank2());
+        rankValueList2.add(dramaRecords4.rank2());
 
 
 
@@ -71,7 +78,7 @@ public class LikeabilityIndex {
 
 
         System.out.println(rankValueList1);
-
+        System.out.println(rankValueList2);
 
 
     }
