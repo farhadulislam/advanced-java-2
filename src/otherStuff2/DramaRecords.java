@@ -93,5 +93,9 @@ public class DramaRecords {
         return  ((likes-dislikes)/getTotalLikesAndDislikes())*100;
     }
 
+    public double rank1 (){
+        return (views*calcLikability3());
+    }
+
 
 }
