@@ -10,7 +10,7 @@ public class DramaTest extends TestCase {
     public void testGetDramaId() {
 
         dramaTestObj1.setDramaId(1001);
-        assertEquals(1000, dramaTestObj1.getDramaId());
+        assertEquals(1001, dramaTestObj1.getDramaId());
     }
 
     public void testSetDramaId() {

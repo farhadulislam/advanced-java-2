@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967ce4a9-ce09-4ccb-b23f-6fb8d08ea397" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Test/otherStuff2/DramaTest.java" afterPath="$PROJECT_DIR$/Test/otherStuff2/DramaTest.java" />
-      <change beforePath="$PROJECT_DIR$/out/test/advanced-java-2/otherStuff2/DramaTest.class" afterPath="$PROJECT_DIR$/out/test/advanced-java-2/otherStuff2/DramaTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,8 +93,8 @@
       <file leaf-file-name="DramaTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/otherStuff2/DramaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+            <state relative-caret-position="325">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#265#295#0" expanded="true" />
                 <element signature="e#265#295#0" expanded="true" />
@@ -320,7 +318,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DramaTest">
+  <component name="RunManager" selected="JUnit.DramaTest.testGetDramaId">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -536,11 +534,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DramaTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DramaTest.testSetDramaName" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DramaTest.testGetNumberOfDramas" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DramaTest.testGetDramaRecords" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DramaTest.testGetDramaId" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DramaTest.testGetDramaId" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DramaTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DramaTest.testSetDramaName" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DramaTest.testGetNumberOfDramas" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DramaTest.testGetDramaRecords" />
       </list>
     </recent_temporary>
   </component>
@@ -566,9 +564,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DramaTest - 2018.03.13 at 14h 51m 03s.xml">
-      <configuration name="DramaTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DramaTest - 2018.03.13 at 15h 17m 18s.xml">
       <configuration name="DramaTest" configurationId="JUnit" />
     </history-entry>
@@ -576,6 +571,9 @@
       <configuration name="DramaTest.testGetDramaId" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DramaTest_testGetDramaId - 2018.03.13 at 15h 01m 31s.xml">
+      <configuration name="DramaTest.testGetDramaId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DramaTest_testGetDramaId - 2018.03.13 at 15h 20m 32s.xml">
       <configuration name="DramaTest.testGetDramaId" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DramaTest_testGetDramaRecords - 2018.03.13 at 15h 11m 53s.xml">
@@ -1035,8 +1033,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test/otherStuff2/DramaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        <state relative-caret-position="325">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#265#295#0" expanded="true" />
             <element signature="e#265#295#0" expanded="true" />
