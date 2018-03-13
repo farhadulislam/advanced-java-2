@@ -1,6 +1,8 @@
 package otherStuff2;
 
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 public class DramaRecords {
     private static int numOfDramaRecords;
@@ -10,6 +12,7 @@ public class DramaRecords {
     private int views;
     private double likeability;
     private Date datePublished;
+
 
     public DramaRecords(Drama drama, int likes, int dislikes, int views) {
         this.drama = drama;

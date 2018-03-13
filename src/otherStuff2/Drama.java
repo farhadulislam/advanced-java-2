@@ -8,6 +8,9 @@ public class Drama {
     private int dramaId;
     private String dramaName;
     private Double length;
+    private String eTag;
+    private String [] items;
+
 
 
     protected static List<Drama> dramaListA;
