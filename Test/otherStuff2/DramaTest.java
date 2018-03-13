@@ -21,7 +21,7 @@ public class DramaTest extends TestCase {
 
     public void testGetDramaName() {
         dramaTestObj1.setDramaName("Orange");
-        assertEquals("Drama name expected", "Apple", dramaTestObj1.getDramaName());
+        assertEquals("Drama name expected ", "Orange", dramaTestObj1.getDramaName());
     }
 
     public void testSetDramaName() {
