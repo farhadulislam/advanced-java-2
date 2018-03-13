@@ -25,7 +25,7 @@ public class DramaTest extends TestCase {
     }
 
     public void testSetDramaName() {
-        //dramaTestObj2.setDramaName("Milkshake");
+        dramaTestObj2.setDramaName("Milkshake");
         assertTrue(dramaTestObj2.getDramaName()=="Milkshake");
     }
 
