@@ -10,31 +10,37 @@ public class DramaTest extends TestCase {
     public void testGetDramaId() {
 
         dramaTestObj1.setDramaId(1001);
-        assertEquals(1000, dramaTestObj1.getDramaId());
+        assertEquals(1001, dramaTestObj1.getDramaId());
     }
 
     public void testSetDramaId() {
 
         dramaTestObj1.setDramaId(12);
-        assertEquals(1000, dramaTestObj1.getDramaId());
+        assertEquals(12, dramaTestObj1.getDramaId());
     }
 
     public void testGetDramaName() {
         dramaTestObj1.setDramaName("Orange");
-        assertEquals("Drama name expected", "Apple", dramaTestObj1.getDramaName());
+        assertEquals("Drama name expected ", "Orange", dramaTestObj1.getDramaName());
     }
 
     public void testSetDramaName() {
-        //dramaTestObj2.setDramaName("Milkshake");
+        dramaTestObj2.setDramaName("Milkshake");
         assertTrue(dramaTestObj2.getDramaName()=="Milkshake");
     }
 
     public void testGetDramaRecords() {
+
+        assertEquals(" ", dramaTestObj1);
     }
 
-    public void testGetDramaRecords1() {
-    }
 
     public void testGetNumberOfDramas() {
+
+        assertEquals("string", Drama.getNumberOfDramas());
+    }
+
+    public void setUp() throws Exception {
+        super.setUp();
     }
 }
