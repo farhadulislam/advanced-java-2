@@ -10,9 +10,7 @@ public class Drama {
     private Double length;
     private String eTag;
     private String [] items;
-
-
-
+    private String youTubeVideoId;
     protected static List<Drama> dramaListA;
 
 

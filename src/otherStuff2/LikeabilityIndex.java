@@ -6,6 +6,7 @@ public class LikeabilityIndex {
 
     public static void main (String [] args ){
 
+        LikeabilityIndex app1 = new LikeabilityIndex();
         System.out.println("Instantiating drama object");
         Drama drama1 = new Drama(1, "Patriot");
         Drama drama2 = new Drama(2, "Mirror");
@@ -53,6 +54,10 @@ public class LikeabilityIndex {
         dramaMap3.put(drama2.getDramaName(), dramaRecords2.rank2());
         dramaMap3.put(drama3.getDramaName(), dramaRecords3.rank2());
         dramaMap3.put(drama4.getDramaName(), dramaRecords4.rank2());
+
+        for (Map.Entry kv : dramaMap1.entrySet()){
+            System.out.println(kv.getKey());
+        }
 
         /**********Some String Representation*************/
 

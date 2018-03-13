@@ -1,0 +1,10 @@
+{
+  "kind": "youtube#videoGetRatingResponse",
+  "etag": etag,
+  "items": [
+    {
+      "videoId": string,
+      "rating": string
+    }
+  ]
+}
