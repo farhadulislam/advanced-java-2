@@ -3,22 +3,30 @@ package otherStuff2;
 import junit.framework.TestCase;
 
 public class DramaTest extends TestCase {
-    Drama dramaTestObj1 = new Drama(2000, "TestDrama");
+
+    private Drama dramaTestObj1 = new Drama(1000, "Apple");
+    private Drama dramaTestObj2 = new Drama(2000, "Banana");
+
     public void testGetDramaId() {
 
-        assertEquals(500, dramaTestObj1.getDramaId());
-
+        dramaTestObj1.setDramaId(1001);
+        assertEquals(1000, dramaTestObj1.getDramaId());
     }
 
     public void testSetDramaId() {
+
+        dramaTestObj1.setDramaId(12);
+        assertEquals(1000, dramaTestObj1.getDramaId());
     }
 
     public void testGetDramaName() {
-
-        assertEquals("Drama name expected", "TestDrama2", dramaTestObj1.getDramaName());
+        dramaTestObj1.setDramaName("Orange");
+        assertEquals("Drama name expected", "Apple", dramaTestObj1.getDramaName());
     }
 
     public void testSetDramaName() {
+        //dramaTestObj2.setDramaName("Milkshake");
+        assertTrue(dramaTestObj2.getDramaName()=="Milkshake");
     }
 
     public void testGetDramaRecords() {
