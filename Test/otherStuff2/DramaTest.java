@@ -16,7 +16,7 @@ public class DramaTest extends TestCase {
     public void testSetDramaId() {
 
         dramaTestObj1.setDramaId(12);
-        assertEquals(1000, dramaTestObj1.getDramaId());
+        assertEquals(12, dramaTestObj1.getDramaId());
     }
 
     public void testGetDramaName() {
