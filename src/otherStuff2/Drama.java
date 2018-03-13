@@ -11,7 +11,9 @@ public class Drama {
     private String eTag;
     private String [] items;
     private String youTubeVideoId;
+    private DramaRecords dramaRecords;
     protected static List<Drama> dramaListA;
+
 
 
     public Drama(int dramaId, String dramName){
@@ -37,14 +39,9 @@ public class Drama {
         this.dramaName = dramaName;
     }
 
-    public void getDramaRecords(String dramaName){
-
-
-    }
-
     public DramaRecords getDramaRecords(){
 
-        return this.getDramaRecords();
+        return dramaRecords;
 
     }
 

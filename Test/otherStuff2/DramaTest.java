@@ -31,13 +31,18 @@ public class DramaTest extends TestCase {
 
     public void testGetDramaRecords() {
 
-        assertEquals(" ", dramaTestObj1);
+        /*DramaRecords testDramaRecords1 = new DramaRecords(dramaTestObj1, 350, 20, 500);
+
+        assertSame(dramaTestObj1.getDramaRecords(), testDramaRecords1);*/
+
     }
+
+
 
 
     public void testGetNumberOfDramas() {
 
-        assertEquals("string", Drama.getNumberOfDramas());
+        assertEquals(12, Drama.getNumberOfDramas());
     }
 
     public void setUp() throws Exception {
