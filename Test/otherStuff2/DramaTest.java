@@ -31,13 +31,20 @@ public class DramaTest extends TestCase {
 
     public void testGetDramaRecords() {
 
-        assertEquals(" ", dramaTestObj1);
+        DramaRecords testDramaRecords1 = new DramaRecords(dramaTestObj1, 350, 20, 500);
+
+        // Here, check is done on class level
+        assertEquals(testDramaRecords1.getClass(), DramaRecords.class);
+
+        // Here, check is done on object belonging to a class in question
+        assertTrue(testDramaRecords1 instanceof DramaRecords ? true : false);
+
     }
 
-
+    
     public void testGetNumberOfDramas() {
 
-        assertEquals("string", Drama.getNumberOfDramas());
+        assertEquals(12, Drama.getNumberOfDramas());
     }
 
     public void setUp() throws Exception {
