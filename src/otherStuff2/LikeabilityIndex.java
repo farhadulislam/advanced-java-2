@@ -1,5 +1,6 @@
 package otherStuff2;
 
+import javax.swing.*;
 import java.util.*;
 
 public class LikeabilityIndex {
@@ -89,7 +90,7 @@ public class LikeabilityIndex {
         System.out.println("Now showing elements from a TreeMap using rank2");
         System.out.println(dramaMap3);
 
-
+        new LikeabilityIndex().showSwingComponent();
 
     }
 
@@ -137,5 +138,20 @@ public class LikeabilityIndex {
         System.out.println("Records added : " + DramaRecords.getNumOfDramaRecords());
     }
 
+    public void showSwingComponent(){
+        // Create the frame on the event dispatching thread.
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new Display();
+
+            }
+        });
+
+        SwingUtilities.invokeLater(new Runnable(){
+            public void run(){
+                new EventDemo();
+            }
+        });
+    }
 
 }
