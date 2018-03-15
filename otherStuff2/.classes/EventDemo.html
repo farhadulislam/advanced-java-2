@@ -1,0 +1,186 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: EventDemo</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">otherStuff2</a> ]
+</div>
+
+<h1>Coverage Summary for Class: EventDemo (otherStuff2)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">EventDemo</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (15/ 15)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">EventDemo$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/ 3)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">EventDemo$2</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (1/ 3)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    60%
+  </span>
+  <span class="absValue">
+    (3/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    81%
+  </span>
+  <span class="absValue">
+    (17/ 21)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package otherStuff2;
+<i>2</i>&nbsp;// Handle an event in a Swing program.
+<i>3</i>&nbsp;
+<i>4</i>&nbsp;import java.awt.*;
+<i>5</i>&nbsp;import java.awt.event.*;
+<i>6</i>&nbsp;import javax.swing.*;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;class EventDemo {
+<i>9</i>&nbsp;
+<i>10</i>&nbsp;    JLabel jlab;
+<i>11</i>&nbsp;
+<b class="fc"><i>12</i>&nbsp;    EventDemo() {</b>
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;        // Create a new JFrame container.
+<b class="fc"><i>15</i>&nbsp;        JFrame jfrm = new JFrame(&quot;An Event Example&quot;);</b>
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;        // Specify FlowLayout for the layout manager.
+<b class="fc"><i>18</i>&nbsp;        jfrm.setLayout(new FlowLayout());</b>
+<i>19</i>&nbsp;
+<i>20</i>&nbsp;        // Give the frame an initial size.
+<b class="fc"><i>21</i>&nbsp;        jfrm.setSize(220, 90);</b>
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;        // Terminate the program when the user closes the application.
+<b class="fc"><i>24</i>&nbsp;        jfrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</b>
+<i>25</i>&nbsp;
+<i>26</i>&nbsp;        // Make two buttons.
+<b class="fc"><i>27</i>&nbsp;        JButton jbtnAlpha = new JButton(&quot;Alpha&quot;);</b>
+<b class="fc"><i>28</i>&nbsp;        JButton jbtnBeta = new JButton(&quot;Beta&quot;);</b>
+<i>29</i>&nbsp;
+<i>30</i>&nbsp;        // Add action listener for Alpha.
+<b class="fc"><i>31</i>&nbsp;        jbtnAlpha.addActionListener(new ActionListener() {</b>
+<i>32</i>&nbsp;            public void actionPerformed(ActionEvent ae) {
+<b class="nc"><i>33</i>&nbsp;                jlab.setText(&quot;Alpha was pressed.&quot;);</b>
+<b class="nc"><i>34</i>&nbsp;            }</b>
+<i>35</i>&nbsp;        });
+<i>36</i>&nbsp;
+<i>37</i>&nbsp;
+<i>38</i>&nbsp;        // Add action listener for Beta.
+<b class="fc"><i>39</i>&nbsp;        jbtnBeta.addActionListener(new ActionListener() {</b>
+<i>40</i>&nbsp;            public void actionPerformed(ActionEvent ae) {
+<b class="nc"><i>41</i>&nbsp;                jlab.setText(&quot;Beta was pressed.&quot;);</b>
+<b class="nc"><i>42</i>&nbsp;            }</b>
+<i>43</i>&nbsp;        });
+<i>44</i>&nbsp;
+<i>45</i>&nbsp;        // Add the buttons to the content pane.
+<b class="fc"><i>46</i>&nbsp;        jfrm.add(jbtnAlpha);</b>
+<b class="fc"><i>47</i>&nbsp;        jfrm.add(jbtnBeta);</b>
+<i>48</i>&nbsp;
+<i>49</i>&nbsp;        // Create a text-based label.
+<b class="fc"><i>50</i>&nbsp;        jlab = new JLabel(&quot;Press a button.&quot;);</b>
+<i>51</i>&nbsp;
+<i>52</i>&nbsp;        // Add the label to the content pane.
+<b class="fc"><i>53</i>&nbsp;        jfrm.add(jlab);</b>
+<i>54</i>&nbsp;
+<i>55</i>&nbsp;        // Display the frame.
+<b class="fc"><i>56</i>&nbsp;        jfrm.setVisible(true);</b>
+<b class="fc"><i>57</i>&nbsp;    }</b>
+<i>58</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-03-15 11:48</div>
+</div>
+</body>
+</html>
