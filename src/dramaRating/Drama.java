@@ -1,4 +1,4 @@
-package otherStuff2;
+package dramaRating;
 
 import java.util.List;
 

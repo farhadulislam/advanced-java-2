@@ -1,4 +1,4 @@
-package otherStuff2;
+package dramaRating;
 // Handle an event in a Swing program.
 
 import java.awt.*;

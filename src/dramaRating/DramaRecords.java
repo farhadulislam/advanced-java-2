@@ -1,8 +1,6 @@
-package otherStuff2;
+package dramaRating;
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 public class DramaRecords {
     private static int numOfDramaRecords;
