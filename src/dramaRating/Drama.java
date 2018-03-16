@@ -1,6 +1,8 @@
 package dramaRating;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Drama {
 
@@ -14,6 +16,12 @@ public class Drama {
     private DramaRecords dramaRecords;
     protected static List<Drama> dramaListA;
 
+
+
+    private Set<Artist> cast;
+    {
+        cast = new HashSet<>();
+    }
 
 
     public Drama(int dramaId, String dramName){
@@ -47,6 +55,23 @@ public class Drama {
 
     public static int getNumberOfDramas() {
         return numberOfDramas;
+    }
+
+    public void addCast (Artist artist){
+
+        cast.add(artist);
+        System.out.println("cast" + this.getDramaName() + cast.toString());
+    }
+
+    public Set<Artist> getCast() {
+        return cast;
+    }
+
+    public void showCast(){
+
+        for (Artist artist : cast){
+            System.out.println(artist);
+        }
     }
 
 

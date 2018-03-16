@@ -24,13 +24,13 @@ public class Ranking {
         DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);
         DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
         DramaRecords dramaRecords4 = new DramaRecords(drama4, 300, 300, 50000);
-        DramaRecords dramaRecords5 = new DramaRecords(drama5, 350, 20, 500);
-        DramaRecords dramaRecords6 = new DramaRecords(drama6, 350, 300, 700);
-        DramaRecords dramaRecords7 = new DramaRecords(drama7, 400 , 380, 50000);
-        DramaRecords dramaRecords8 = new DramaRecords(drama8, 300, 300, 50000);
+        DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
+        DramaRecords dramaRecords6 = new DramaRecords(drama6, 35, 30000, 70000);
+        DramaRecords dramaRecords7 = new DramaRecords(drama7, 4000 , 3800, 150000);
+        DramaRecords dramaRecords8 = new DramaRecords(drama8, 30045, 300, 2250000);
 
         /**********Collections****/
-
+        /******ArrayList********/
         ArrayList<Drama> dramaList1 = new ArrayList<>();
 
         dramaList1.add(drama1);
@@ -38,68 +38,48 @@ public class Ranking {
         dramaList1.add(drama3);
         dramaList1.add(drama4);
 
+
+        /******HashSet********/
         Set<Drama> dramaSet1 = new HashSet<>();
         dramaSet1.add(drama1);
         dramaSet1.add(drama2);
         dramaSet1.add(drama3);
         dramaSet1.add(drama4);
+        dramaSet1.add(drama5);
+        dramaSet1.add(drama6);
+        dramaSet1.add(drama7);
+        dramaSet1.add(drama8);
 
-        Map<Drama, DramaRecords> dramaMap1 = new LinkedHashMap<>();
-        dramaMap1.put(drama1,dramaRecords1);
-        dramaMap1.put(drama2,dramaRecords2);
-        dramaMap1.put(drama3,dramaRecords3);
-        dramaMap1.put(drama4,dramaRecords4);
+        /******Map********/
+
+        Map<String, Double> dramaMap1 = new TreeMap<>();
+
+        dramaMap1.put(drama1.getDramaName(), dramaRecords1.rank1());
+        dramaMap1.put(drama2.getDramaName(), dramaRecords2.rank1());
+        dramaMap1.put(drama3.getDramaName(), dramaRecords3.rank1());
+        dramaMap1.put(drama4.getDramaName(), dramaRecords4.rank1());
+        dramaMap1.put(drama5.getDramaName(), dramaRecords5.rank1());
+        dramaMap1.put(drama6.getDramaName(), dramaRecords6.rank1());
+        dramaMap1.put(drama7.getDramaName(), dramaRecords7.rank1());
+        dramaMap1.put(drama8.getDramaName(), dramaRecords8.rank1());
 
         Map<String, Double> dramaMap2 = new TreeMap<>();
 
-        dramaMap2.put(drama1.getDramaName(), dramaRecords1.rank1());
-        dramaMap2.put(drama2.getDramaName(), dramaRecords2.rank1());
-        dramaMap2.put(drama3.getDramaName(), dramaRecords3.rank1());
-        dramaMap2.put(drama4.getDramaName(), dramaRecords4.rank1());
-
-        Map<String, Double> dramaMap3 = new TreeMap<>();
-
-        dramaMap3.put(drama1.getDramaName(), dramaRecords1.rank2());
-        dramaMap3.put(drama2.getDramaName(), dramaRecords2.rank2());
-        dramaMap3.put(drama3.getDramaName(), dramaRecords3.rank2());
-        dramaMap3.put(drama4.getDramaName(), dramaRecords4.rank2());
-
-        /*for (Map.Entry kv : dramaMap1.entrySet()){
-            System.out.println(kv.getKey());
-        }*/
-
-        /**********Some String Representation*************/
-
-        /*String index1 = dramaRecords1.toString();
-        String index2= dramaRecords2.toString();
-        String index3 = dramaRecords3.toString();
-        String index4 = dramaRecords4.toString();
-
-        System.out.println(index1);
-        System.out.println(index2);
-        System.out.println(index3);
-        System.out.println(index4);
-
-        showLikability(dramaRecords1);
-        showLikability(dramaRecords2);
-        showLikability(dramaRecords3);
-        showLikability(dramaRecords4);*/
-
-        /***********************/
-
-        System.out.println("Show records using map");
-        showMap(dramaMap1);
-
+        dramaMap2.put(drama1.getDramaName(), dramaRecords1.rank2());
+        dramaMap2.put(drama2.getDramaName(), dramaRecords2.rank2());
+        dramaMap2.put(drama3.getDramaName(), dramaRecords3.rank2());
+        dramaMap2.put(drama4.getDramaName(), dramaRecords4.rank2());
+        dramaMap2.put(drama5.getDramaName(), dramaRecords5.rank2());
+        dramaMap2.put(drama6.getDramaName(), dramaRecords6.rank2());
+        dramaMap2.put(drama7.getDramaName(), dramaRecords7.rank2());
+        dramaMap2.put(drama8.getDramaName(), dramaRecords8.rank2());
 
         System.out.println("Now showing elements from a TreeMap using rank1");
-        System.out.println(dramaMap2);
+        System.out.println(dramaMap1);
 
         System.out.println("Now showing elements from a TreeMap using rank2");
-        System.out.println(dramaMap3);
+        System.out.println(dramaMap2);
 
-        //new Ranking().showSwingComponent();
-
-       // new Platform().showPlatform();
 
     }
 
@@ -119,14 +99,14 @@ public class Ranking {
 
     }
 
-    public static void showMap(Map<Drama, DramaRecords> map){
+   /* public static void showMap(Map<String, Double> map){
 
         for (Map.Entry<Drama, DramaRecords> entry : map.entrySet())
         {
             System.out.println(entry.getKey().getDramaId() + " : " + entry.getValue());
 
         }
-    }
+    }*/
 
     public static void addRankValues(ArrayList<Double> rankValueList){
 
