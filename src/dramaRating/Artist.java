@@ -31,7 +31,7 @@ public class Artist extends Staff {
         this.lastName = unknownLastName;
         numOfArtist++;
     }
-    public void getArtisFullName(){
+    public void getArtistFullName(){
 
         if( this.getLastName()!=unknownLastName){
 
