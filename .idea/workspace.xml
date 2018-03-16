@@ -26,8 +26,8 @@
       <file leaf-file-name="LikeabilityIndex.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/LikeabilityIndex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+            <state relative-caret-position="900">
+              <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#154#201#1" expanded="true" />
@@ -41,6 +41,12 @@
                 <element signature="e#749#820#1" expanded="true" />
                 <element signature="e#868#916#1" expanded="true" />
                 <element signature="e#898#915#0" expanded="true" />
+                <element signature="e#3630#3702#0" expanded="true" />
+                <element signature="e#3630#3702#0" expanded="true" />
+                <element signature="e#3732#3805#0" expanded="true" />
+                <element signature="e#3732#3805#0" expanded="true" />
+                <element signature="e#3835#3908#0" expanded="true" />
+                <element signature="e#3835#3908#0" expanded="true" />
                 <element signature="e#5161#5162#0" expanded="true" />
                 <element signature="e#5208#5209#0" expanded="true" />
               </folding>
@@ -51,8 +57,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="400">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -151,16 +157,29 @@
       <file leaf-file-name="ArtistTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/dramaRating/ArtistTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="1450">
+              <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
               <folding>
-                <element signature="e#151#209#1" expanded="true" />
-                <element signature="e#218#263#1" expanded="true" />
-                <element signature="e#237#262#0" expanded="true" />
-                <element signature="e#272#315#1" expanded="true" />
-                <element signature="e#290#314#0" expanded="true" />
-                <element signature="e#412#437#0" expanded="true" />
-                <element signature="e#474#498#0" expanded="true" />
+                <element signature="e#201#226#0" expanded="true" />
+                <element signature="e#258#282#0" expanded="true" />
+                <element signature="e#422#447#0" expanded="true" />
+                <element signature="e#484#508#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#591#616#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#671#712#0" expanded="true" />
+                <element signature="e#671#712#0" expanded="true" />
+                <element signature="e#753#778#0" expanded="true" />
+                <element signature="e#859#883#0" expanded="true" />
+                <element signature="e#937#976#0" expanded="true" />
+                <element signature="e#937#976#0" expanded="true" />
+                <element signature="e#1016#1040#0" expanded="true" />
+                <element signature="e#1150#1174#0" expanded="true" />
+                <element signature="e#1228#1255#0" expanded="true" />
+                <element signature="e#1228#1255#0" expanded="true" />
+                <element signature="e#1282#1306#0" expanded="true" />
+                <element signature="e#1569#1603#0" expanded="true" />
+                <element signature="e#1569#1613#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -368,51 +387,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArtistTest.testGetArtistFullName">
+  <component name="RunManager" selected="JUnit.ArtistTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="LikeabilityIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dramaRating.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="dramaRating.LikeabilityIndex" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="advanced-java-2" />
-      <envs />
-    </configuration>
-    <configuration name="Platform" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dramaRating.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="dramaRating.Platform" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="advanced-java-2" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -428,7 +409,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="ArtistTest.testGetArtistFullName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArtistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dramaRating.*" />
@@ -440,31 +421,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dramaRating" />
       <option name="MAIN_CLASS_NAME" value="dramaRating.ArtistTest" />
-      <option name="METHOD_NAME" value="testGetArtistFullName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="DramaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dramaRating.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="advanced-java-2" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dramaRating" />
-      <option name="MAIN_CLASS_NAME" value="dramaRating.DramaTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -478,7 +434,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="DramaTest.testGetDramaRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArtistTest.testAddDramaToArtistsRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="dramaRating.*" />
@@ -489,8 +445,83 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="dramaRating" />
-      <option name="MAIN_CLASS_NAME" value="dramaRating.DramaTest" />
-      <option name="METHOD_NAME" value="testGetDramaRecords" />
+      <option name="MAIN_CLASS_NAME" value="dramaRating.ArtistTest" />
+      <option name="METHOD_NAME" value="testAddDramaToArtistsRecords" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ArtistTest.testGetArtistId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dramaRating.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="advanced-java-2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dramaRating" />
+      <option name="MAIN_CLASS_NAME" value="dramaRating.ArtistTest" />
+      <option name="METHOD_NAME" value="testGetArtistId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ArtistTest.testSetArtistId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dramaRating.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="advanced-java-2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dramaRating" />
+      <option name="MAIN_CLASS_NAME" value="dramaRating.ArtistTest" />
+      <option name="METHOD_NAME" value="testSetArtistId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ArtistTest.testShowDramasWorkedOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dramaRating.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="advanced-java-2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dramaRating" />
+      <option name="MAIN_CLASS_NAME" value="dramaRating.ArtistTest" />
+      <option name="METHOD_NAME" value="testShowDramasWorkedOn" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -564,19 +595,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DramaTest.testGetDramaRecords" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.DramaTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.LikeabilityIndex" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Platform" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ArtistTest.testGetArtistFullName" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ArtistTest.testGetArtistId" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ArtistTest.testSetArtistId" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ArtistTest.testAddDramaToArtistsRecords" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ArtistTest.testShowDramasWorkedOn" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ArtistTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ArtistTest.testGetArtistFullName" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Platform" />
-        <item index="2" class="java.lang.String" itemvalue="Application.LikeabilityIndex" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DramaTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.DramaTest.testGetDramaRecords" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ArtistTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ArtistTest.testShowDramasWorkedOn" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ArtistTest.testAddDramaToArtistsRecords" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ArtistTest.testSetArtistId" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ArtistTest.testGetArtistId" />
       </list>
     </recent_temporary>
   </component>
@@ -602,35 +633,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArtistTest_testGetArtistFullName - 2018.03.16 at 14h 48m 06s.xml">
-      <configuration name="ArtistTest.testGetArtistFullName" configurationId="JUnit" />
+    <history-entry file="ArtistTest - 2018.03.16 at 15h 18m 01s.xml">
+      <configuration name="ArtistTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistTest_testGetArtistFullName - 2018.03.16 at 14h 50m 10s.xml">
-      <configuration name="ArtistTest.testGetArtistFullName" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testAddDramaToArtistsRecords - 2018.03.16 at 15h 16m 50s.xml">
+      <configuration name="ArtistTest.testAddDramaToArtistsRecords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistTest_testGetArtistFullName - 2018.03.16 at 14h 50m 28s.xml">
-      <configuration name="ArtistTest.testGetArtistFullName" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testAddDramaToArtistsRecords - 2018.03.16 at 15h 17m 24s.xml">
+      <configuration name="ArtistTest.testAddDramaToArtistsRecords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DramaTest - 2018.03.16 at 10h 40m 21s.xml">
-      <configuration name="DramaTest" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testGetArtistId - 2018.03.16 at 15h 10m 52s.xml">
+      <configuration name="ArtistTest.testGetArtistId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DramaTest_testGetDramaRecords - 2018.03.14 at 11h 15m 55s.xml">
-      <configuration name="DramaTest.testGetDramaRecords" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testGetArtistId - 2018.03.16 at 15h 11m 01s.xml">
+      <configuration name="ArtistTest.testGetArtistId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DramaTest_testGetDramaRecords - 2018.03.14 at 11h 16m 06s.xml">
-      <configuration name="DramaTest.testGetDramaRecords" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testGetArtistId - 2018.03.16 at 15h 11m 41s.xml">
+      <configuration name="ArtistTest.testGetArtistId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DramaTest_testGetDramaRecords - 2018.03.14 at 11h 17m 16s.xml">
-      <configuration name="DramaTest.testGetDramaRecords" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testGetArtistId - 2018.03.16 at 15h 12m 04s.xml">
+      <configuration name="ArtistTest.testGetArtistId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DramaTest_testGetDramaRecords - 2018.03.14 at 11h 17m 54s.xml">
-      <configuration name="DramaTest.testGetDramaRecords" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testGetArtistId - 2018.03.16 at 15h 12m 24s.xml">
+      <configuration name="ArtistTest.testGetArtistId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DramaTest_testGetDramaRecords - 2018.03.14 at 11h 18m 08s.xml">
-      <configuration name="DramaTest.testGetDramaRecords" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testSetArtistId - 2018.03.16 at 15h 13m 18s.xml">
+      <configuration name="ArtistTest.testSetArtistId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DramaTest_testGetDramaRecords - 2018.03.14 at 11h 19m 48s.xml">
-      <configuration name="DramaTest.testGetDramaRecords" configurationId="JUnit" />
+    <history-entry file="ArtistTest_testShowDramasWorkedOn - 2018.03.16 at 15h 17m 54s.xml">
+      <configuration name="ArtistTest.testShowDramasWorkedOn" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -723,7 +754,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -932,26 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#616#617#0" expanded="false" />
-            <element signature="e#664#665#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#720#721#0" expanded="false" />
-            <element signature="e#759#760#0" expanded="false" />
-            <element signature="e#793#794#0" expanded="false" />
-            <element signature="e#825#826#0" expanded="false" />
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#901#902#0" expanded="false" />
-            <element signature="e#941#942#0" expanded="false" />
-            <element signature="e#970#971#0" expanded="false" />
-            <element signature="e#998#999#0" expanded="false" />
-            <element signature="e#1037#1038#0" expanded="false" />
-            <element signature="e#1071#1072#0" expanded="false" />
-            <element signature="e#1119#1120#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,67 +992,6 @@
           <folding>
             <element signature="e#663#684#0" expanded="true" />
             <element signature="e#663#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/Director.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/Staff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/dramaRating/DramaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2575">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#962#980#0" expanded="true" />
-            <element signature="e#1049#1068#0" expanded="true" />
-            <element signature="e#1075#1093#0" expanded="true" />
-            <element signature="e#1204#1223#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1662#1663#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1755#1756#0" expanded="true" />
-            <element signature="e#1796#1797#0" expanded="true" />
-            <element signature="e#2277#2300#0" expanded="true" />
-            <element signature="e#2441#2460#0" expanded="true" />
-            <element signature="e#2626#2637#0" expanded="true" />
-            <element signature="e#2692#2712#0" expanded="true" />
-            <element signature="e#2788#2801#0" expanded="true" />
-            <element signature="e#2847#2868#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1085,16 +1035,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dramaRating/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="400">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dramaRating/LikeabilityIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        <state relative-caret-position="900">
+          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#154#201#1" expanded="true" />
@@ -1108,24 +1058,104 @@
             <element signature="e#749#820#1" expanded="true" />
             <element signature="e#868#916#1" expanded="true" />
             <element signature="e#898#915#0" expanded="true" />
+            <element signature="e#3630#3702#0" expanded="true" />
+            <element signature="e#3630#3702#0" expanded="true" />
+            <element signature="e#3732#3805#0" expanded="true" />
+            <element signature="e#3732#3805#0" expanded="true" />
+            <element signature="e#3835#3908#0" expanded="true" />
+            <element signature="e#3835#3908#0" expanded="true" />
             <element signature="e#5161#5162#0" expanded="true" />
             <element signature="e#5208#5209#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2575">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#962#980#0" expanded="true" />
+            <element signature="e#1049#1068#0" expanded="true" />
+            <element signature="e#1075#1093#0" expanded="true" />
+            <element signature="e#1204#1223#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1662#1663#0" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#1796#1797#0" expanded="true" />
+            <element signature="e#2277#2300#0" expanded="true" />
+            <element signature="e#2441#2460#0" expanded="true" />
+            <element signature="e#2626#2637#0" expanded="true" />
+            <element signature="e#2692#2712#0" expanded="true" />
+            <element signature="e#2788#2801#0" expanded="true" />
+            <element signature="e#2847#2868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/Director.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/dramaRating/DramaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test/dramaRating/ArtistTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="1450">
+          <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
           <folding>
-            <element signature="e#151#209#1" expanded="true" />
-            <element signature="e#218#263#1" expanded="true" />
-            <element signature="e#237#262#0" expanded="true" />
-            <element signature="e#272#315#1" expanded="true" />
-            <element signature="e#290#314#0" expanded="true" />
-            <element signature="e#412#437#0" expanded="true" />
-            <element signature="e#474#498#0" expanded="true" />
+            <element signature="e#201#226#0" expanded="true" />
+            <element signature="e#258#282#0" expanded="true" />
+            <element signature="e#422#447#0" expanded="true" />
+            <element signature="e#484#508#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#591#616#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#671#712#0" expanded="true" />
+            <element signature="e#671#712#0" expanded="true" />
+            <element signature="e#753#778#0" expanded="true" />
+            <element signature="e#859#883#0" expanded="true" />
+            <element signature="e#937#976#0" expanded="true" />
+            <element signature="e#937#976#0" expanded="true" />
+            <element signature="e#1016#1040#0" expanded="true" />
+            <element signature="e#1150#1174#0" expanded="true" />
+            <element signature="e#1228#1255#0" expanded="true" />
+            <element signature="e#1228#1255#0" expanded="true" />
+            <element signature="e#1282#1306#0" expanded="true" />
+            <element signature="e#1569#1603#0" expanded="true" />
+            <element signature="e#1569#1613#0" expanded="true" />
           </folding>
         </state>
       </provider>
