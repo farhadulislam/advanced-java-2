@@ -37,7 +37,12 @@ public class Platform {
         setOfArtist.add(art3);
         setOfArtist.add(art4);
         setOfArtist.add(art5);
+
+        for (Artist artist : setOfArtist){
+
+        }
         System.out.println(setOfArtist);
 
+        Artist.showAllArtist();
     }
 }

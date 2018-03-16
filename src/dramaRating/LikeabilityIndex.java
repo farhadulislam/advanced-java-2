@@ -92,7 +92,7 @@ public class LikeabilityIndex {
 
         //new LikeabilityIndex().showSwingComponent();
 
-        new Platform().showPlatform();
+       // new Platform().showPlatform();
 
     }
 
