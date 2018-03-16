@@ -3,16 +3,20 @@ package dramaRating;
 import javax.swing.*;
 import java.util.*;
 
-public class LikeabilityIndex {
+public class Ranking {
 
     public static void main (String [] args ){
 
-        LikeabilityIndex app1 = new LikeabilityIndex();
+        Ranking app1 = new Ranking();
         System.out.println("Instantiating drama object");
         Drama drama1 = new Drama(1, "Patriot");
         Drama drama2 = new Drama(2, "Mirror");
         Drama drama3 = new Drama(3, "Village");
         Drama drama4 = new Drama(4, "Postman");
+        Drama drama5 = new Drama(1, "Acknowledgement");
+        Drama drama6 = new Drama(2, "Best friend");
+        Drama drama7 = new Drama(3, "Cant wait forever");
+        Drama drama8 = new Drama(4, "De facto");
 
 
         System.out.println("Adding drama records");
@@ -20,7 +24,10 @@ public class LikeabilityIndex {
         DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);
         DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
         DramaRecords dramaRecords4 = new DramaRecords(drama4, 300, 300, 50000);
-
+        DramaRecords dramaRecords5 = new DramaRecords(drama5, 350, 20, 500);
+        DramaRecords dramaRecords6 = new DramaRecords(drama6, 350, 300, 700);
+        DramaRecords dramaRecords7 = new DramaRecords(drama7, 400 , 380, 50000);
+        DramaRecords dramaRecords8 = new DramaRecords(drama8, 300, 300, 50000);
 
         /**********Collections****/
 
@@ -90,7 +97,7 @@ public class LikeabilityIndex {
         System.out.println("Now showing elements from a TreeMap using rank2");
         System.out.println(dramaMap3);
 
-        //new LikeabilityIndex().showSwingComponent();
+        //new Ranking().showSwingComponent();
 
        // new Platform().showPlatform();
 
