@@ -90,7 +90,7 @@ public class LikeabilityIndex {
         System.out.println("Now showing elements from a TreeMap using rank2");
         System.out.println(dramaMap3);
 
-        new LikeabilityIndex().showSwingComponent();
+        //new LikeabilityIndex().showSwingComponent();
 
     }
 

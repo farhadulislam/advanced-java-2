@@ -7,6 +7,13 @@ public class Platform {
 
     public static void main (String [] args){
 
+        Platform platform1 = new Platform();
+        platform1.showPlatform();
+
+    }
+
+    public void showPlatform(){
+
         System.out.println("Platform");
         Drama drama1 = new Drama(1, "Patriot");
         Drama drama2 = new Drama(2, "Mirror");
@@ -27,5 +34,6 @@ public class Platform {
         artistList.add(art4);
         artistList.add(art5);
         System.out.println(artistList);
+
     }
 }

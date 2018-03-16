@@ -1,15 +1,22 @@
 package dramaRating;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Artist extends Staff {
 
     private String firstName;
     private String lastName;
+    private final String unknownLastName;
+
+    {
+        unknownLastName = "Unknown";
+    }
+
     private int artistId;
     private static int numOfArtist;
     private static List<Integer> allArtistIds;
-    private List<Drama> listOfDramaActedIn;
+    private ArrayList<Drama> listOfDramaActedIn;
 
 
     public Artist(String firstName, String lastName) {
@@ -21,10 +28,17 @@ public class Artist extends Staff {
 
     public Artist(String firstName) {
         this.firstName = firstName;
-        this.lastName = "Unknown";
+        this.lastName = unknownLastName;
         numOfArtist++;
     }
-
+    public void getArtisFullName(){
+        if( this.getLastName()!=unknownLastName){
+            System.out.println("FULL NAME" + this.getFirstName()+ ", "+ this.getLastName());
+        } else{
+            System.out.println("FULL NAME NOT SUPPLIED!");
+            System.out.println(this.getFirstName());
+        }
+    }
     public String getFirstName() {
         return firstName;
     }
@@ -53,12 +67,17 @@ public class Artist extends Staff {
         return listOfDramaActedIn;
     }
 
-    public void setListOfDramaActedIn(List<Drama> listOfDramaActedIn) {
+    public void setListOfDramaActedIn(ArrayList<Drama> listOfDramaActedIn) {
         this.listOfDramaActedIn = listOfDramaActedIn;
     }
 
     public void addDramaToArtistsRecords(Drama drama) {
-        this.listOfDramaActedIn.add(drama);
+        try{
+            this.listOfDramaActedIn.add(drama);
+           } catch(Exception e){
+
+            System.out.println("Drama not added!");
+        }
     }
 
 
