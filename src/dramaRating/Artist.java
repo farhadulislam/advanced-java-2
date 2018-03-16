@@ -1,6 +1,5 @@
 package dramaRating;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
@@ -12,7 +11,15 @@ public class Artist extends Staff {
     private int artistId;
     private static int numOfArtist;
     private static List<Integer> allArtistIds;
-    private HashSet<Drama> listOfDramaActedIn;
+    private HashSet<Drama> setOfDramasActedIn;
+    private static HashSet<Artist> setOfArtist;
+    {
+        setOfArtist = new HashSet<>();
+
+    }
+    {
+        setOfDramasActedIn = new HashSet<Drama>();
+    }
 
     {
         unknownLastName = "Unknown";
@@ -22,6 +29,7 @@ public class Artist extends Staff {
     public Artist(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        setOfArtist.add(this);
         numOfArtist++;
 
     }
@@ -68,18 +76,14 @@ public class Artist extends Staff {
         this.artistId = artistId;
     }
 
-    public HashSet<Drama> getListOfDramaActedIn() {
-        return listOfDramaActedIn;
-    }
-
-    public void setListOfDramaActedIn(ArrayList<Drama> listOfDramaActedIn) {
-        //this.listOfDramaActedIn = listOfDramaActedIn;
+    public HashSet<Drama> getSetOfDramasActedIn() {
+        return setOfDramasActedIn;
     }
 
     public void addDramaToArtistsRecords(Drama drama) {
-        listOfDramaActedIn = new HashSet<>();
+
         try{
-            listOfDramaActedIn.add(drama);
+            setOfDramasActedIn.add(drama);
            } catch(Exception e){
 
             System.out.println("Drama not added!");
@@ -94,13 +98,30 @@ public class Artist extends Staff {
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", artistId=" + artistId +
-                ", listOfDramaActedIn=" + listOfDramaActedIn +
+                ", setOfDramasActedIn=" +  getSetOfDramasActedIn() +
                 '}';
     }
 
     @Override
     public void showDramasWorkedOn() {
+        System.out.println("Showing dramas acted  by " + this.getFirstName().toUpperCase());
+        /*Iterator it = this.setOfDramasActedIn.iterator();
+        while(it.hasNext()){
+            System.out.println();
+        }*/
 
-        System.out.println(listOfDramaActedIn.toString());
+        for (Drama drama : setOfDramasActedIn){
+            System.out.println(drama.getDramaName());
+        }
+
+    }
+
+
+    public static void  showAllArtist(){
+
+        for(Artist artist:setOfArtist){
+            System.out.println(artist.getFirstName());
+
+        }
     }
 }
