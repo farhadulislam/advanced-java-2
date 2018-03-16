@@ -80,7 +80,7 @@ public class Ranking {
         System.out.println("Now showing elements from a TreeMap using rank2");
         System.out.println(dramaMap2);
 
-
+         showMap(dramaMap1);
     }
 
     public static void showLikability(DramaRecords dramaRecords){
@@ -99,14 +99,19 @@ public class Ranking {
 
     }
 
-   /* public static void showMap(Map<String, Double> map){
-
-        for (Map.Entry<Drama, DramaRecords> entry : map.entrySet())
+    public static void showMap(Map<String, Double> map){
+        ArrayList<Double> value = new ArrayList<>();
+        for (Map.Entry<String, Double> entry : map.entrySet())
         {
-            System.out.println(entry.getKey().getDramaId() + " : " + entry.getValue());
+            value.add(entry.getValue());
+            //System.out.println(entry.getKey() + " : " + entry.getValue());
 
         }
-    }*/
+        Collections.sort(value);
+        for(Double dub : value ){
+            System.out.println(dub);
+        }
+    }
 
     public static void addRankValues(ArrayList<Double> rankValueList){
 
