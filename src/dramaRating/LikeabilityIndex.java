@@ -92,6 +92,8 @@ public class LikeabilityIndex {
 
         //new LikeabilityIndex().showSwingComponent();
 
+        new Platform().showPlatform();
+
     }
 
     public static void showLikability(DramaRecords dramaRecords){

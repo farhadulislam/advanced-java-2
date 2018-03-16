@@ -8,15 +8,14 @@ public class Artist extends Staff {
     private String firstName;
     private String lastName;
     private final String unknownLastName;
-
-    {
-        unknownLastName = "Unknown";
-    }
-
     private int artistId;
     private static int numOfArtist;
     private static List<Integer> allArtistIds;
     private ArrayList<Drama> listOfDramaActedIn;
+
+    {
+        unknownLastName = "Unknown";
+    }
 
 
     public Artist(String firstName, String lastName) {
@@ -73,7 +72,7 @@ public class Artist extends Staff {
 
     public void addDramaToArtistsRecords(Drama drama) {
         try{
-            this.listOfDramaActedIn.add(drama);
+            listOfDramaActedIn.add(drama);
            } catch(Exception e){
 
             System.out.println("Drama not added!");
