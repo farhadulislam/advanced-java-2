@@ -27,6 +27,7 @@ public class Platform {
         Artist art5 = new Artist( "Tisha");
 
         art1.addDramaToArtistsRecords(drama1);
+        art1.addDramaToArtistsRecords(drama4);
         art1.showDramasWorkedOn();
 
 

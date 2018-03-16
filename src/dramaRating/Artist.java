@@ -1,6 +1,7 @@
 package dramaRating;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Artist extends Staff {
@@ -11,7 +12,7 @@ public class Artist extends Staff {
     private int artistId;
     private static int numOfArtist;
     private static List<Integer> allArtistIds;
-    private ArrayList<Drama> listOfDramaActedIn;
+    private HashSet<Drama> listOfDramaActedIn;
 
     {
         unknownLastName = "Unknown";
@@ -31,11 +32,16 @@ public class Artist extends Staff {
         numOfArtist++;
     }
     public void getArtisFullName(){
+
         if( this.getLastName()!=unknownLastName){
-            System.out.println("FULL NAME" + this.getFirstName()+ ", "+ this.getLastName());
+
+            System.out.println("FULL NAME : " + this.getFirstName()+ " "+ this.getLastName());
+
         } else{
+
             System.out.println("FULL NAME NOT SUPPLIED!");
             System.out.println(this.getFirstName());
+
         }
     }
     public String getFirstName() {
@@ -62,15 +68,16 @@ public class Artist extends Staff {
         this.artistId = artistId;
     }
 
-    public List<Drama> getListOfDramaActedIn() {
+    public HashSet<Drama> getListOfDramaActedIn() {
         return listOfDramaActedIn;
     }
 
     public void setListOfDramaActedIn(ArrayList<Drama> listOfDramaActedIn) {
-        this.listOfDramaActedIn = listOfDramaActedIn;
+        //this.listOfDramaActedIn = listOfDramaActedIn;
     }
 
     public void addDramaToArtistsRecords(Drama drama) {
+        listOfDramaActedIn = new HashSet<>();
         try{
             listOfDramaActedIn.add(drama);
            } catch(Exception e){

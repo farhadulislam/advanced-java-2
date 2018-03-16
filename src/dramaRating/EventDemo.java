@@ -1,9 +1,10 @@
 package dramaRating;
-// Handle an event in a Swing program.
 
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+
+// Handle an event in a Swing program.
 
 class EventDemo {
 

@@ -57,9 +57,9 @@ public class LikeabilityIndex {
         dramaMap3.put(drama3.getDramaName(), dramaRecords3.rank2());
         dramaMap3.put(drama4.getDramaName(), dramaRecords4.rank2());
 
-        for (Map.Entry kv : dramaMap1.entrySet()){
+        /*for (Map.Entry kv : dramaMap1.entrySet()){
             System.out.println(kv.getKey());
-        }
+        }*/
 
         /**********Some String Representation*************/
 
