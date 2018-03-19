@@ -44,7 +44,7 @@ public class Artist extends Staff {
         new Artist("Not provided");
     }
 
-    public Artist createArtist(String firstName){
+    private static Artist createArtist(String firstName){
 
         return new Artist(firstName);
     }
