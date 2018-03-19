@@ -41,12 +41,18 @@ public class Artist extends Staff {
     }
 
     public Artist(){
-        new Artist("Not provided");
+        String temporaryName = "Incomplete-artist-"+ Artist.numOfArtist + 1;
+        new Artist(temporaryName);
     }
 
-    private static Artist createArtist(String firstName){
+    public static Artist createArtist(String firstName){
 
         return new Artist(firstName);
+    }
+
+    public static Artist createArtist(String firstName, String lastName){
+
+        return new Artist(firstName, lastName);
     }
     public void getArtistFullName(){
 

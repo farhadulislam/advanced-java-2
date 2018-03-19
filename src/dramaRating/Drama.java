@@ -15,6 +15,7 @@ public class Drama {
     private String youTubeVideoId;
     private DramaRecords dramaRecords;
     protected static List<Drama> dramaListA;
+    private Artist [] artistOnThisDrama;
 
 
 
