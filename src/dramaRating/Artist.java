@@ -7,41 +7,31 @@ public class Artist extends Staff {
 
     private String firstName;
     private String lastName;
-    private final String unknownLastName;
+    private  String unknownLastName = "Unknown";
     private int artistId;
+    private HashSet<Drama> setOfDramasActedIn = new HashSet<Drama>();
+
     private static int numOfArtist;
     private static List<Integer> allArtistIds;
-    private HashSet<Drama> setOfDramasActedIn;
-    private static HashSet<Artist> setOfArtist;
-    {
-        setOfArtist = new HashSet<>();
+    private static HashSet<Artist> setOfArtist =  new HashSet<>();
 
-    }
-    {
-        setOfDramasActedIn = new HashSet<Drama>();
-    }
-
-    {
-        unknownLastName = "Unknown";
-    }
 
 
     public Artist(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         setOfArtist.add(this);
+        System.out.println(setOfArtist);
         numOfArtist++;
 
     }
 
     public Artist(String firstName) {
-        this.firstName = firstName;
-        this.lastName = unknownLastName;
-        numOfArtist++;
+        new Artist(firstName, unknownLastName);
     }
 
     public Artist(){
-        String temporaryName = "Incomplete-artist-"+ Artist.numOfArtist + 1;
+        String temporaryName = "NO-NAME-SUPPLIED-"+ Artist.numOfArtist + 1;
         new Artist(temporaryName);
     }
 
@@ -54,6 +44,7 @@ public class Artist extends Staff {
 
         return new Artist(firstName, lastName);
     }
+
     public void getArtistFullName(){
 
         if( this.getLastName()!=unknownLastName){
@@ -91,10 +82,6 @@ public class Artist extends Staff {
         this.artistId = artistId;
     }
 
-    public HashSet<Drama> getSetOfDramasActedIn() {
-        return setOfDramasActedIn;
-    }
-
     public void addDramaToArtistsRecords(Drama drama) {
 
         try{
@@ -129,6 +116,10 @@ public class Artist extends Staff {
             System.out.println(drama.getDramaName());
         }
 
+    }
+
+    public HashSet<Drama> getSetOfDramasActedIn() {
+        return setOfDramasActedIn;
     }
 
 

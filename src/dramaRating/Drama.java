@@ -15,6 +15,7 @@ public class Drama {
     private String youTubeVideoId;
     private DramaRecords dramaRecords;
     protected static List<Drama> dramaListA;
+    private static HashSet<Drama> setOfDramas;
     private Artist [] artistOnThisDrama;
 
 
@@ -23,6 +24,9 @@ public class Drama {
     {
         cast = new HashSet<>();
     }
+    {
+        setOfDramas = new HashSet<>();
+    }
 
 
     public Drama(int dramaId, String dramName){
@@ -30,6 +34,8 @@ public class Drama {
         this.dramaId = dramaId;
         this.dramaName = dramName;
         numberOfDramas++;
+        boolean add = setOfDramas.add(this);
+        System.out.println(add ? (this.getDramaName() + " added into setOfDramas successfully") : "drama couldn't be added");
     }
 
     public int getDramaId() {
