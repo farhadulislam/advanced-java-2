@@ -14,19 +14,14 @@ public class Drama {
     private String [] items;
     private String youTubeVideoId;
     private DramaRecords dramaRecords;
+    private Set<Artist> cast = new HashSet<>();
+
+   // private Artist [] artistOnThisDrama;
+
+
     protected static List<Drama> dramaListA;
-    private static HashSet<Drama> setOfDramas;
-    private Artist [] artistOnThisDrama;
+    private static HashSet<Drama> setOfDramas = new HashSet<>();
 
-
-
-    private Set<Artist> cast;
-    {
-        cast = new HashSet<>();
-    }
-    {
-        setOfDramas = new HashSet<>();
-    }
 
 
     public Drama(int dramaId, String dramName){
@@ -67,17 +62,19 @@ public class Drama {
     public void addCast (Artist artist){
 
         cast.add(artist);
+        artist.addDramaToArtistsRecords(this);
         System.out.println("cast" + this.getDramaName() + cast.toString());
     }
 
     public Set<Artist> getCast() {
+
         return cast;
     }
 
     public void showCast(){
-
+        System.out.println("Cast of the drama : " + this.getDramaName());
         for (Artist artist : cast){
-            System.out.println(artist);
+            System.out.println(artist.getFirstName());
         }
     }
 

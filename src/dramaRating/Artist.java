@@ -21,7 +21,7 @@ public class Artist extends Staff {
         this.firstName = firstName;
         this.lastName = lastName;
         setOfArtist.add(this);
-        System.out.println(setOfArtist);
+        //System.out.println(setOfArtist);
         numOfArtist++;
 
     }

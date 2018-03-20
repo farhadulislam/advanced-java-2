@@ -37,14 +37,19 @@ public class Platform {
         Artist art10 = new Artist("Aparna", "Ghosh");
         Artist art11 = new Artist("Matt", "Damon");
 
-        art1.addDramaToArtistsRecords(drama1);
+
+        drama1.addCast(art1);
+        drama1.addCast(art2);
+        drama1.showCast();
+
+      /*  art1.addDramaToArtistsRecords(drama1);
         art1.addDramaToArtistsRecords(drama4);
         art1.showDramasWorkedOn();
+*/
 
+        //Set<Artist> setOfArtist = new LinkedHashSet<Artist>();
 
-        Set<Artist> setOfArtist = new LinkedHashSet<Artist>();
-
-        Artist[] tempSet = {art1, art2, art3, art4, art5, art6, art7, art8, art9, art10, art11};
+        /*Artist[] tempSet = {art1, art2, art3, art4, art5, art6, art7, art8, art9, art10, art11};
 
         System.out.println("Number of artist in records : " + tempSet.length);
         System.out.println("Last artist added on the record is " + tempSet[tempSet.length-1].toString());
@@ -53,9 +58,9 @@ public class Platform {
 
 
         for (Artist artist : setOfArtist){
-            System.out.println(artist.getArtistFullName());
+            System.out.println(artist);
 
-        }
+        }*/
 
         System.out.println("Now showing all artist from Artist classes");
         Artist.showAllArtist();
