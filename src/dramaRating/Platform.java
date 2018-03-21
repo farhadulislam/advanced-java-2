@@ -11,13 +11,14 @@ public class Platform {
 
         Platform platform1 = new Platform();
         platform1.addRecords();
+        platform1.showPlatform();
         platform1.doRanking();
     }
 
     public void addRecords(){
 
-        System.out.println("Platform");
-        System.out.println("Adding drama");
+        System.out.println("Platform initiated");
+        System.out.println("Adding drama ...........");
         Drama drama1 = new Drama(1, "Patriot");
         Drama drama2 = new Drama(2, "Mirror");
         Drama drama3 = new Drama(3, "Village");
@@ -25,7 +26,7 @@ public class Platform {
         Drama drama5 = new Drama( Drama.getNumberOfDramas()+1, "Dual mind");
 
 
-        System.out.println("Adding drama records");
+        System.out.println("Adding drama records...........");
         DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);
         DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);
         DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
@@ -33,7 +34,7 @@ public class Platform {
         DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
 
 
-        System.out.println("Adding Artist records");
+        System.out.println("Adding Artist records.............");
         Artist art1 = new Artist("Afran", "Nisho");
         Artist art3 = new Artist("Apurbo");
         Artist art5 = Artist.createArtist("Allen", "Shuvro");
@@ -59,6 +60,12 @@ public class Platform {
         drama5.addCast(art7);
         drama5.addCast(art11);
 
+
+
+
+    }
+    public void showPlatform(){
+
         System.out.println("------------------------------------------");
         System.out.println("Now showing all artist from Artist classes");
         Artist.showAllArtist();
@@ -67,12 +74,10 @@ public class Platform {
         System.out.println("Now showing all dramas from Drama classes");
         Drama.showAllDramas();
         System.out.println("**************************************");
-
-
     }
 
     public void doRanking(){
-
+        System.out.println("-------------Ranking in DESCECENDING order--------------------------------------");
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
             treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());

@@ -80,10 +80,14 @@ public class Drama {
         if(this.cast.isEmpty()){
             System.out.println("No cast added for this drama yet");
         } else {
-            System.out.println("Cast of the drama : " + this.getDramaName());
+            System.out.println("CAST : " + this.getDramaName());
             for (Artist artist : cast) {
-                System.out.println(artist.getFirstName());
+                System.out.print(artist.getFirstName());
+                System.out.print(", ");
+
             }
+            System.out.print(". ");
+            System.out.println(" END");
         }
     }
 
@@ -93,7 +97,7 @@ public class Drama {
 
             if(drama.getDramaRecords()!=null){
                 System.out.print("We can show details for this drama : ");
-                System.out.println(drama.getDramaName());
+                System.out.println(drama.getDramaName().toUpperCase());
                 System.out.println("RANK-1 : " + drama.getDramaRecords().rank1());
                 drama.showCast();
             } else {
