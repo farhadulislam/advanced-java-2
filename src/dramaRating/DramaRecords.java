@@ -1,6 +1,7 @@
 package dramaRating;
 
 import java.util.Date;
+import java.util.HashSet;
 
 public class DramaRecords {
     private static int numOfDramaRecords;
@@ -11,6 +12,7 @@ public class DramaRecords {
     private double likeability;
     private Date datePublished;
 
+    private static HashSet<DramaRecords> setOfDramaRecords = new HashSet<>();
 
     public DramaRecords(Drama drama, int likes, int dislikes, int views) {
         this.drama = drama;
@@ -18,6 +20,7 @@ public class DramaRecords {
         this.dislikes = dislikes;
         this.views = views;
         numOfDramaRecords ++;
+        setOfDramaRecords.add(this);
     }
 
     public Drama getDrama(){
@@ -107,6 +110,14 @@ public class DramaRecords {
         //return (views*calcLikability3());
         return (((getTotalLikesAndDislikes()/views)*100)+ calcLikability3())/2;
 
+    }
+
+    public static void showAllDramaRecords(){
+
+        for ( DramaRecords dramaRecord : setOfDramaRecords){
+
+            System.out.println(dramaRecord);
+        }
     }
 
 }

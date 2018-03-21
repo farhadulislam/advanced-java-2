@@ -16,12 +16,11 @@ public class Drama {
     private DramaRecords dramaRecords;
     private Set<Artist> cast = new HashSet<>();
 
-   // private Artist [] artistOnThisDrama;
+    public static HashSet<Drama> getSetOfDramas() {
+        return setOfDramas;
+    }
 
-
-    protected static List<Drama> dramaListA;
     private static HashSet<Drama> setOfDramas = new HashSet<>();
-
 
 
     public Drama(int dramaId, String dramName){
@@ -72,9 +71,28 @@ public class Drama {
     }
 
     public void showCast(){
-        System.out.println("Cast of the drama : " + this.getDramaName());
-        for (Artist artist : cast){
-            System.out.println(artist.getFirstName());
+
+        if(this.cast.isEmpty()){
+            System.out.println("No cast added for this drama yet");
+        } else {
+            System.out.println("Cast of the drama : " + this.getDramaName());
+            for (Artist artist : cast) {
+                System.out.println(artist.getFirstName());
+            }
+        }
+    }
+
+    public static void  showAllDramas(){
+
+        for(Drama drama:setOfDramas){
+
+            if(drama.getDramaRecords()!=null){
+                System.out.println(drama.getDramaName());
+                System.out.println(drama.getDramaRecords().rank1());
+                drama.showCast();
+            } else {
+                System.out.println(drama.getDramaName());
+            }
         }
     }
 

@@ -1,6 +1,7 @@
 package dramaRating;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -24,6 +25,13 @@ public class Platform {
         Drama drama4 = new Drama(4, "Postman");
         Drama drama5 = new Drama( Drama.getNumberOfDramas()+1, "Dual mind");
 
+        System.out.println("Adding drama records");
+        DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);
+        DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);
+        DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
+        DramaRecords dramaRecords4 = new DramaRecords(drama4, 300, 300, 50000);
+        DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
+
         Artist art1 = new Artist("Afran", "Nisho");
         Artist art3 = new Artist("Apurbo");
         Artist art5 = Artist.createArtist("Allen", "Shuvro");
@@ -40,27 +48,21 @@ public class Platform {
 
         drama1.addCast(art1);
         drama1.addCast(art2);
-        drama1.showCast();
+        drama2.addCast(art1);
+        drama2.addCast(art2);
+        drama3.addCast(art1);
+        drama3.addCast(art2);
+        drama4.addCast(art1);
+        drama4.addCast(art2);
+        drama5.addCast(art1);
+        drama5.addCast(art2);
 
-      /*  art1.addDramaToArtistsRecords(drama1);
-        art1.addDramaToArtistsRecords(drama4);
-        art1.showDramasWorkedOn();
-
-
-        //Set<Artist> setOfArtist = new LinkedHashSet<Artist>();
-
-        /*Artist[] tempSet = {art1, art2, art3, art4, art5, art6, art7, art8, art9, art10, art11};
-
-        System.out.println("Number of artist in records : " + tempSet.length);
-        System.out.println("Last artist added on the record is " + tempSet[tempSet.length-1].toString());
-
-        setOfArtist.addAll(Arrays.asList(tempSet));
-
-
-        */
 
         System.out.println("Now showing all artist from Artist classes");
         Artist.showAllArtist();
+
+        System.out.println("Now showing all dramas from Drama classes");
+        Drama.showAllDramas();
 
     }
 
