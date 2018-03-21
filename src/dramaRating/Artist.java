@@ -1,7 +1,6 @@
 package dramaRating;
 
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class Artist extends Staff {
 
@@ -125,9 +124,10 @@ public class Artist extends Staff {
 
     public static void  showAllArtist(){
 
-        for(Artist artist:setOfArtist){
+        Set<Artist> treeSet = new TreeSet<>();
+        treeSet.addAll(setOfArtist);
+        for(Artist artist: treeSet) {
             System.out.println(artist.getFirstName());
-
         }
     }
 }

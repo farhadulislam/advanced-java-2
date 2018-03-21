@@ -19,6 +19,7 @@ public class Ranking {
         Drama drama8 = new Drama(4, "De facto");
 
 
+
         System.out.println("Adding drama records");
         DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);
         DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);

@@ -19,11 +19,14 @@ public class Platform {
     public void showPlatform(){
 
         System.out.println("Platform");
+        System.out.println("Adding drama");
         Drama drama1 = new Drama(1, "Patriot");
         Drama drama2 = new Drama(2, "Mirror");
         Drama drama3 = new Drama(3, "Village");
         Drama drama4 = new Drama(4, "Postman");
         Drama drama5 = new Drama( Drama.getNumberOfDramas()+1, "Dual mind");
+        Drama drama100 = new Drama(100, "XYZ");
+        drama100.showCast();
 
         System.out.println("Adding drama records");
         DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);
@@ -32,6 +35,8 @@ public class Platform {
         DramaRecords dramaRecords4 = new DramaRecords(drama4, 300, 300, 50000);
         DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
 
+
+        System.out.println("Adding Artist records");
         Artist art1 = new Artist("Afran", "Nisho");
         Artist art3 = new Artist("Apurbo");
         Artist art5 = Artist.createArtist("Allen", "Shuvro");

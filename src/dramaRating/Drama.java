@@ -82,15 +82,17 @@ public class Drama {
         }
     }
 
-    public static void  showAllDramas(){
+    public static void showAllDramas(){
 
         for(Drama drama:setOfDramas){
 
             if(drama.getDramaRecords()!=null){
+                System.out.println("A");
                 System.out.println(drama.getDramaName());
                 System.out.println(drama.getDramaRecords().rank1());
                 drama.showCast();
             } else {
+                System.out.println("B");
                 System.out.println(drama.getDramaName());
             }
         }
