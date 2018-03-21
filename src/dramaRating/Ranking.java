@@ -101,7 +101,24 @@ public class Ranking {
     }
 
     public static void showMap(Map<String, Double> map){
+
         ArrayList<Double> value = new ArrayList<>();
+        //Collections.sort(map);
+        for (Map.Entry<String, Double> entry : map.entrySet())
+        {
+            value.add(entry.getValue());
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+
+        }
+        Collections.sort(value);
+        for(Double dub : value ){
+            System.out.println(dub);
+        }
+    }
+
+    public static void sortMapAndShow(Map<String, Double> map){
+        ArrayList<Double> value = new ArrayList<>();
+        //ArrayList<Double> value = new ArrayList<>();
         //Collections.sort(map);
         for (Map.Entry<String, Double> entry : map.entrySet())
         {
