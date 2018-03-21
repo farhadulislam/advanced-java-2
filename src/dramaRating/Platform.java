@@ -83,7 +83,9 @@ public class Platform {
 
         Map sortedMap = sortByValues(treeValue);
 
-        // Get a set of the entries on the sorted map
+        Ranking.showMap(sortedMap);
+
+        /*// Get a set of the entries on the sorted map
         Set set = sortedMap.entrySet();
 
         // Get an iterator
@@ -94,7 +96,7 @@ public class Platform {
             Map.Entry me = (Map.Entry)i.next();
             System.out.print(me.getKey() + ": ");
             System.out.println(me.getValue());
-        }
+        }*/
 
     }
 
