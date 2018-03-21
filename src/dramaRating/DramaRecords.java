@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.HashSet;
 
 public class DramaRecords {
-    private static int numOfDramaRecords;
+
     private Drama drama;
     private int likes;
     private int dislikes;
@@ -12,7 +12,10 @@ public class DramaRecords {
     private double likeability;
     private Date datePublished;
 
+    private static int numOfDramaRecords;
     private static HashSet<DramaRecords> setOfDramaRecords = new HashSet<>();
+
+
 
     public DramaRecords(Drama drama, int likes, int dislikes, int views) {
         this.drama = drama;
@@ -20,7 +23,7 @@ public class DramaRecords {
         this.dislikes = dislikes;
         this.views = views;
         drama.setDramaRecords(this);
-        numOfDramaRecords ++;
+        numOfDramaRecords ++;  // adding to the numOfDramaRecords static filed of DramaRecords class
         setOfDramaRecords.add(this);
     }
 
@@ -58,6 +61,8 @@ public class DramaRecords {
     public static int getNumOfDramaRecords() {
         return numOfDramaRecords;
     }
+    /****Testing new approach ****/
+    public static HashSet<DramaRecords> getAllDramaRecords(){ return setOfDramaRecords;}
 
     @Override
     public String toString() {
@@ -120,5 +125,7 @@ public class DramaRecords {
             System.out.println(dramaRecord);
         }
     }
+
+
 
 }

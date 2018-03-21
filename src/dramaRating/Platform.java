@@ -1,22 +1,20 @@
 package dramaRating;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Platform {
 
+    private static TreeMap<String, Double> treeValue = new TreeMap<>();
 
 
     public static void main (String [] args){
 
         Platform platform1 = new Platform();
-        platform1.showPlatform();
-
+        platform1.addRecords();
+        platform1.doRanking();
     }
 
-    public void showPlatform(){
+    public void addRecords(){
 
         System.out.println("Platform");
         System.out.println("Adding drama");
@@ -31,7 +29,7 @@ public class Platform {
         DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);
         DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);
         DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
-        DramaRecords dramaRecords4 = new DramaRecords(drama4, 300, 300, 50000);
+        DramaRecords dramaRecords4 = new DramaRecords(drama4, 3000, 300, 800000);
         DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
 
 
@@ -51,24 +49,39 @@ public class Platform {
 
 
         drama1.addCast(art1);
-        drama1.addCast(art2);
+        drama1.addCast(art10);
         drama2.addCast(art1);
         drama2.addCast(art2);
-        drama3.addCast(art1);
+        drama3.addCast(art4);
         drama3.addCast(art2);
-        drama4.addCast(art1);
-        drama4.addCast(art2);
-        drama5.addCast(art1);
-        drama5.addCast(art2);
+        drama4.addCast(art7);
+        drama4.addCast(art5);
+        drama5.addCast(art7);
+        drama5.addCast(art11);
 
-
+        System.out.println("------------------------------------------");
         System.out.println("Now showing all artist from Artist classes");
         Artist.showAllArtist();
+        System.out.println("**************************************");
 
         System.out.println("Now showing all dramas from Drama classes");
         Drama.showAllDramas();
+        System.out.println("**************************************");
+
 
     }
 
+    public void doRanking(){
+
+        for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
+
+            treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
+
+        }
+
+        Ranking.showMap(treeValue);
+
+    }
+    
 
 }

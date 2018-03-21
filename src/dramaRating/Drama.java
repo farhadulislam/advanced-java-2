@@ -67,7 +67,7 @@ public class Drama {
 
         cast.add(artist);
         artist.addDramaToArtistsRecords(this);
-        System.out.println("Cast " + this.getDramaName() + cast.toString());
+        //System.out.println("Cast " + this.getDramaName() + cast.toString());
     }
 
     public Set<Artist> getCast() {
@@ -92,12 +92,12 @@ public class Drama {
         for(Drama drama:setOfDramas){
 
             if(drama.getDramaRecords()!=null){
-                System.out.println("We can show details for this drama");
+                System.out.print("We can show details for this drama : ");
                 System.out.println(drama.getDramaName());
-                System.out.println(drama.getDramaRecords().rank1());
+                System.out.println("RANK-1 : " + drama.getDramaRecords().rank1());
                 drama.showCast();
             } else {
-                System.out.println("Only name can be shown");
+                System.out.print("Only name can be shown for : ");
                 System.out.println(drama.getDramaName());
             }
         }
