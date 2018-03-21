@@ -63,7 +63,7 @@ public class Drama {
 
         cast.add(artist);
         artist.addDramaToArtistsRecords(this);
-        System.out.println("cast" + this.getDramaName() + cast.toString());
+        System.out.println("Cast " + this.getDramaName() + cast.toString());
     }
 
     public Set<Artist> getCast() {

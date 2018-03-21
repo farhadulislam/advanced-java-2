@@ -45,7 +45,7 @@ public class Platform {
       /*  art1.addDramaToArtistsRecords(drama1);
         art1.addDramaToArtistsRecords(drama4);
         art1.showDramasWorkedOn();
-*/
+
 
         //Set<Artist> setOfArtist = new LinkedHashSet<Artist>();
 
@@ -57,10 +57,7 @@ public class Platform {
         setOfArtist.addAll(Arrays.asList(tempSet));
 
 
-        for (Artist artist : setOfArtist){
-            System.out.println(artist);
-
-        }*/
+        */
 
         System.out.println("Now showing all artist from Artist classes");
         Artist.showAllArtist();
