@@ -124,9 +124,7 @@ public class Artist extends Staff {
 
     public static void  showAllArtist(){
 
-        Set<Artist> treeSet = new TreeSet<>();
-        treeSet.addAll(setOfArtist);
-        for(Artist artist: treeSet) {
+        for(Artist artist: setOfArtist) {
             System.out.println(artist.getFirstName());
         }
     }

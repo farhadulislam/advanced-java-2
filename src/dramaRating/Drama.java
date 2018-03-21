@@ -54,6 +54,11 @@ public class Drama {
 
     }
 
+    public void setDramaRecords(DramaRecords dramaRecords){
+        this.dramaRecords = dramaRecords;
+
+    }
+
     public static int getNumberOfDramas() {
         return numberOfDramas;
     }
@@ -87,12 +92,12 @@ public class Drama {
         for(Drama drama:setOfDramas){
 
             if(drama.getDramaRecords()!=null){
-                System.out.println("A");
+                System.out.println("We can show details for this drama");
                 System.out.println(drama.getDramaName());
                 System.out.println(drama.getDramaRecords().rank1());
                 drama.showCast();
             } else {
-                System.out.println("B");
+                System.out.println("Only name can be shown");
                 System.out.println(drama.getDramaName());
             }
         }

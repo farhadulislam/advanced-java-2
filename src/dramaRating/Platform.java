@@ -25,8 +25,7 @@ public class Platform {
         Drama drama3 = new Drama(3, "Village");
         Drama drama4 = new Drama(4, "Postman");
         Drama drama5 = new Drama( Drama.getNumberOfDramas()+1, "Dual mind");
-        Drama drama100 = new Drama(100, "XYZ");
-        drama100.showCast();
+
 
         System.out.println("Adding drama records");
         DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);

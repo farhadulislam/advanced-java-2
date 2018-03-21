@@ -19,6 +19,7 @@ public class DramaRecords {
         this.likes = likes;
         this.dislikes = dislikes;
         this.views = views;
+        drama.setDramaRecords(this);
         numOfDramaRecords ++;
         setOfDramaRecords.add(this);
     }
