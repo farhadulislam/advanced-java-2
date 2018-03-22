@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967ce4a9-ce09-4ccb-b23f-6fb8d08ea397" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/dramaRating/Drama.java" afterPath="$PROJECT_DIR$/src/dramaRating/Drama.java" />
-      <change beforePath="$PROJECT_DIR$/src/dramaRating/Platform.java" afterPath="$PROJECT_DIR$/src/dramaRating/Platform.java" />
+      <change beforePath="$PROJECT_DIR$/src/dramaRating/Artist.java" afterPath="$PROJECT_DIR$/src/dramaRating/Artist.java" />
+      <change beforePath="$PROJECT_DIR$/src/dramaRating/DramaRecords.java" afterPath="$PROJECT_DIR$/src/dramaRating/DramaRecords.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +26,7 @@
       <file leaf-file-name="Ranking.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/Ranking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="-323">
               <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="Platform.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/Platform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
+            <state relative-caret-position="-1300">
               <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
               <folding>
                 <element signature="e#614#672#1" expanded="true" />
@@ -88,8 +88,8 @@
       <file leaf-file-name="Diplay2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/Diplay2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#404#457#1" expanded="true" />
@@ -118,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Artist.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Artist.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/Artist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="359">
+              <caret line="132" column="1" lean-forward="true" selection-start-line="132" selection-start-column="1" selection-end-line="132" selection-end-column="1" />
               <folding>
                 <element signature="e#704#705#0" expanded="true" />
                 <element signature="e#758#759#0" expanded="true" />
@@ -170,7 +170,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Drama.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Drama.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/Drama.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="975">
@@ -210,14 +210,14 @@
       <file leaf-file-name="DramaRecords.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/DramaRecords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="-791">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#587#614#0" expanded="true" />
-                <element signature="e#587#614#0" expanded="true" />
-                <element signature="e#2830#2902#1" expanded="true" />
-                <element signature="e#2911#2950#1" expanded="true" />
+                <element signature="e#616#643#0" expanded="true" />
+                <element signature="e#616#643#0" expanded="true" />
+                <element signature="e#2859#2931#1" expanded="true" />
+                <element signature="e#2940#2979#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -284,12 +284,12 @@
         <option value="$PROJECT_DIR$/Test/dramaRating/ArtistTest.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/LikeabilityIndex.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Ranking.java" />
-        <option value="$PROJECT_DIR$/src/dramaRating/DramaRecords.java" />
-        <option value="$PROJECT_DIR$/src/dramaRating/Artist.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Display.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Diplay2.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Drama.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Platform.java" />
+        <option value="$PROJECT_DIR$/src/dramaRating/DramaRecords.java" />
+        <option value="$PROJECT_DIR$/src/dramaRating/Artist.java" />
       </list>
     </option>
   </component>
@@ -954,22 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/Staff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dramaRating/Display.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -983,51 +967,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="e#1665#1666#0" expanded="true" />
-            <element signature="e#1713#1714#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
-            <element signature="e#1816#1817#0" expanded="true" />
-            <element signature="e#1861#1862#0" expanded="true" />
-            <element signature="e#1901#1902#0" expanded="true" />
-            <element signature="e#2927#2928#0" expanded="true" />
-            <element signature="e#2968#2969#0" expanded="true" />
-            <element signature="e#3085#3105#0" expanded="true" />
-            <element signature="e#3127#3153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/DramaRecords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#587#614#0" expanded="true" />
-            <element signature="e#587#614#0" expanded="true" />
-            <element signature="e#2830#2902#1" expanded="true" />
-            <element signature="e#2911#2950#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dramaRating/Diplay2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#404#457#1" expanded="true" />
@@ -1036,54 +979,6 @@
             <element signature="e#545#561#0" expanded="true" />
             <element signature="e#572#627#1" expanded="true" />
             <element signature="e#884#927#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/Ranking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/Platform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-          <folding>
-            <element signature="e#614#672#1" expanded="true" />
-            <element signature="e#639#659#0" expanded="true" />
-            <element signature="e#681#719#1" expanded="true" />
-            <element signature="e#728#767#1" expanded="true" />
-            <element signature="e#776#815#1" expanded="true" />
-            <element signature="e#824#865#1" expanded="true" />
-            <element signature="e#874#921#1" expanded="true" />
-            <element signature="e#930#968#1" expanded="true" />
-            <element signature="e#977#1036#1" expanded="true" />
-            <element signature="e#1003#1023#0" expanded="true" />
-            <element signature="e#1110#1178#1" expanded="true" />
-            <element signature="e#1187#1256#1" expanded="true" />
-            <element signature="e#1265#1337#1" expanded="true" />
-            <element signature="e#1346#1419#1" expanded="true" />
-            <element signature="e#1428#1498#1" expanded="true" />
-            <element signature="e#1507#1577#1" expanded="true" />
-            <element signature="e#1586#1655#1" expanded="true" />
-            <element signature="e#1664#1736#1" expanded="true" />
-            <element signature="e#3521#3544#0" expanded="true" />
-            <element signature="e#3521#3559#0" expanded="true" />
-            <element signature="e#3873#3904#1" expanded="true" />
-            <element signature="e#3941#3969#1" expanded="true" />
-            <element signature="e#4040#4075#1" expanded="true" />
-            <element signature="e#4055#4074#0" expanded="true" />
-            <element signature="e#4105#4123#0" expanded="true" />
-            <element signature="e#4105#4116#0" expanded="true" />
-            <element signature="e#4105#4123#0" expanded="true" />
-            <element signature="e#4157#4170#0" expanded="true" />
-            <element signature="e#4984#5020#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1119,6 +1014,111 @@
             <element signature="e#2641#2661#0" expanded="true" />
             <element signature="e#2733#2756#0" expanded="true" />
             <element signature="e#2965#2985#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/DramaRecords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-791">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#616#643#0" expanded="true" />
+            <element signature="e#616#643#0" expanded="true" />
+            <element signature="e#2859#2931#1" expanded="true" />
+            <element signature="e#2940#2979#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/Platform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1300">
+          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding>
+            <element signature="e#614#672#1" expanded="true" />
+            <element signature="e#639#659#0" expanded="true" />
+            <element signature="e#681#719#1" expanded="true" />
+            <element signature="e#728#767#1" expanded="true" />
+            <element signature="e#776#815#1" expanded="true" />
+            <element signature="e#824#865#1" expanded="true" />
+            <element signature="e#874#921#1" expanded="true" />
+            <element signature="e#930#968#1" expanded="true" />
+            <element signature="e#977#1036#1" expanded="true" />
+            <element signature="e#1003#1023#0" expanded="true" />
+            <element signature="e#1110#1178#1" expanded="true" />
+            <element signature="e#1187#1256#1" expanded="true" />
+            <element signature="e#1265#1337#1" expanded="true" />
+            <element signature="e#1346#1419#1" expanded="true" />
+            <element signature="e#1428#1498#1" expanded="true" />
+            <element signature="e#1507#1577#1" expanded="true" />
+            <element signature="e#1586#1655#1" expanded="true" />
+            <element signature="e#1664#1736#1" expanded="true" />
+            <element signature="e#3521#3544#0" expanded="true" />
+            <element signature="e#3521#3559#0" expanded="true" />
+            <element signature="e#3873#3904#1" expanded="true" />
+            <element signature="e#3941#3969#1" expanded="true" />
+            <element signature="e#4040#4075#1" expanded="true" />
+            <element signature="e#4055#4074#0" expanded="true" />
+            <element signature="e#4105#4123#0" expanded="true" />
+            <element signature="e#4105#4116#0" expanded="true" />
+            <element signature="e#4105#4123#0" expanded="true" />
+            <element signature="e#4157#4170#0" expanded="true" />
+            <element signature="e#4984#5020#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/Ranking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="132" column="1" lean-forward="true" selection-start-line="132" selection-start-column="1" selection-end-line="132" selection-end-column="1" />
+          <folding>
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1665#1666#0" expanded="true" />
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+            <element signature="e#2927#2928#0" expanded="true" />
+            <element signature="e#2968#2969#0" expanded="true" />
+            <element signature="e#3085#3105#0" expanded="true" />
+            <element signature="e#3127#3153#0" expanded="true" />
           </folding>
         </state>
       </provider>

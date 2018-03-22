@@ -129,4 +129,5 @@ public class Artist extends Staff {
             artist.getArtistFullName();
         }
     }
+
 }

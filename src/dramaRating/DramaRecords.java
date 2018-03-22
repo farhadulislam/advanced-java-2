@@ -11,10 +11,10 @@ public class DramaRecords {
     private int views;
     private double likeability;
     private Date datePublished;
+    private Date lastUpdated;
 
     private static int numOfDramaRecords;
     private static HashSet<DramaRecords> setOfDramaRecords = new HashSet<>();
-
 
 
     public DramaRecords(Drama drama, int likes, int dislikes, int views) {
