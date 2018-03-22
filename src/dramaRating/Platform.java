@@ -6,7 +6,6 @@ public class Platform {
 
     private static TreeMap<String, Double> treeValue = new TreeMap<>();
 
-
     public static void main (String [] args){
        // System.out.println(Drama.getNumberOfDramas());
 
@@ -14,6 +13,8 @@ public class Platform {
         platform1.addRecords();
         platform1.showPlatform();
         platform1.doRanking();
+
+        Display2 display2 = new Display2(platform1);
 
 
         //System.out.println(Drama.getNumberOfDramas());
