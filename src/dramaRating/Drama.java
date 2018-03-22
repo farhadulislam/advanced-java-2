@@ -1,8 +1,6 @@
 package dramaRating;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Drama {
 
@@ -17,6 +15,8 @@ public class Drama {
     private Director director;
     private Set<Artist> cast = new HashSet<>();
     private static HashSet<Drama> setOfDramas = new HashSet<>();
+    private static TreeSet<Integer> dramaIds = new TreeSet<Integer>(Collections.singleton(Integer.valueOf(0)));
+
 
 
     public static HashSet<Drama> getSetOfDramas() {
@@ -27,9 +27,15 @@ public class Drama {
 
         this.dramaId = dramaId;
         this.dramaName = dramName;
+        dramaIds.add(this.dramaId);
         numberOfDramas++;
         boolean add = setOfDramas.add(this);
         System.out.println(add ? (this.getDramaId() + " : "+ this.getDramaName() + " added into setOfDramas successfully") : "drama couldn't be added");
+    }
+
+    public static int issueDramaId (){
+
+        return dramaIds.last().intValue() + 1;
     }
 
     public int getDramaId() {

@@ -7,17 +7,16 @@ public class Platform {
     private static TreeMap<String, Double> treeValue = new TreeMap<>();
 
     public static void main (String [] args){
-       // System.out.println(Drama.getNumberOfDramas());
 
-        Platform platform1 = new Platform();
+        System.out.println("STARTING main method from Platform class");
+
+        quickStart();
+
+       /* Platform platform1 = new Platform();
         platform1.addRecords();
         platform1.showPlatform();
-        platform1.doRanking();
+        platform1.doRanking();*/
 
-        Display2 display2 = new Display2(platform1);
-
-
-        //System.out.println(Drama.getNumberOfDramas());
         System.out.println();
 
     }
@@ -26,12 +25,14 @@ public class Platform {
 
         System.out.println("Platform initiated");
         System.out.println("Adding drama ...........");
-        Drama drama1 = new Drama(1, "Patriot");
+        Drama drama1 = new Drama(Drama.issueDramaId(), "Patriot");
         Drama drama2 = new Drama(2, "Mirror");
         Drama drama3 = new Drama(3, "Village");
         Drama drama4 = new Drama(4, "Postman");
-        Drama drama5 = new Drama( Drama.getNumberOfDramas()+1, "Dual mind");
-        Drama drama6 = new Drama (Drama.getNumberOfDramas()+1, "Beautiful mind");
+        Drama drama5 = new Drama(5, "Dual mind");
+        Drama drama6 = new Drama (6, "Beautiful mind");
+        Drama drama7 = new Drama (7, "Press");
+        Drama drama8 = new Drama (Drama.issueDramaId(), "Rainbow");
 
 
         System.out.println("Adding drama records...........");
@@ -40,7 +41,9 @@ public class Platform {
         DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
         DramaRecords dramaRecords4 = new DramaRecords(drama4, 3000, 300, 800000);
         DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
-        DramaRecords dramaRecords6 = new DramaRecords(drama5, 3500, 2, 50345);
+        DramaRecords dramaRecords6 = new DramaRecords(drama6, 3500, 2, 50345);
+        DramaRecords dramaRecords7 = new DramaRecords(drama7, 100, 50 , 200);
+        DramaRecords dramaRecords8 = new DramaRecords(drama8, 20000, 22, 21000);
 
 
         System.out.println("Adding Artist records.............");
@@ -69,9 +72,8 @@ public class Platform {
         drama5.addCast(art7);
         drama5.addCast(art11);
         drama6.addCast(art4);
-
-
-
+        drama7.addCast(art1);
+        drama7.addCast(art6);
 
     }
     public void showPlatform(){
@@ -101,9 +103,9 @@ public class Platform {
 
         Map sortedMap = sortByValues(treeValue);
 
-        Ranking.showMap(sortedMap);
+       // Ranking.showMap(sortedMap);
 
-        /*// Get a set of the entries on the sorted map
+        // Get a set of the entries on the sorted map
         Set set = sortedMap.entrySet();
 
         // Get an iterator
@@ -114,7 +116,7 @@ public class Platform {
             Map.Entry me = (Map.Entry)i.next();
             System.out.print(me.getKey() + ": ");
             System.out.println(me.getValue());
-        }*/
+        }
 
     }
 
@@ -136,6 +138,15 @@ public class Platform {
                 new TreeMap<K, V>(valueComparator);
         sortedByValues.putAll(map);
         return sortedByValues;
+    }
+
+    private static void quickStart(){
+
+        System.out.println("QUICKSTART method.......");
+        Platform platform1 = new Platform();
+        platform1.addRecords();
+        platform1.showPlatform();
+        platform1.doRanking();
     }
 
 
