@@ -11,8 +11,9 @@ public class Ranking {
         Platform platform2 = new Platform();
         platform2.doRanking();
         platform2.addRecords();
+        platform2.doRanking();
 
-
+        
     }
 
     public static void showLikability(DramaRecords dramaRecords){

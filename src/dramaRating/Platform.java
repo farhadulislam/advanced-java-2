@@ -8,11 +8,17 @@ public class Platform {
 
 
     public static void main (String [] args){
+       // System.out.println(Drama.getNumberOfDramas());
 
         Platform platform1 = new Platform();
         platform1.addRecords();
         platform1.showPlatform();
         platform1.doRanking();
+
+
+        //System.out.println(Drama.getNumberOfDramas());
+        System.out.println();
+
     }
 
     public void addRecords(){

@@ -14,14 +14,14 @@ public class Drama {
     private String [] items;
     private String youTubeVideoId;
     private DramaRecords dramaRecords;
+    private Director director;
     private Set<Artist> cast = new HashSet<>();
+    private static HashSet<Drama> setOfDramas = new HashSet<>();
+
 
     public static HashSet<Drama> getSetOfDramas() {
         return setOfDramas;
     }
-
-    private static HashSet<Drama> setOfDramas = new HashSet<>();
-
 
     public Drama(int dramaId, String dramName){
 
