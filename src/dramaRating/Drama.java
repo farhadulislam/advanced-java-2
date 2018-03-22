@@ -29,7 +29,7 @@ public class Drama {
         this.dramaName = dramName;
         numberOfDramas++;
         boolean add = setOfDramas.add(this);
-        System.out.println(add ? (this.getDramaName() + " added into setOfDramas successfully") : "drama couldn't be added");
+        System.out.println(add ? (this.getDramaId() + " : "+ this.getDramaName() + " added into setOfDramas successfully") : "drama couldn't be added");
     }
 
     public int getDramaId() {
@@ -80,14 +80,14 @@ public class Drama {
         if(this.cast.isEmpty()){
             System.out.println("No cast added for this drama yet");
         } else {
-            System.out.println("CAST : " + this.getDramaName());
+            System.out.print("CAST : ");
             for (Artist artist : cast) {
                 System.out.print(artist.getFirstName());
-                System.out.print(", ");
+                System.out.print(" | ");
 
             }
-            System.out.print(". ");
-            System.out.println(" END");
+            System.out.println(".");
+            System.out.println("END");
         }
     }
 
@@ -96,13 +96,15 @@ public class Drama {
         for(Drama drama:setOfDramas){
 
             if(drama.getDramaRecords()!=null){
-                System.out.print("We can show details for this drama : ");
+                System.out.print("Details available for  : ");
                 System.out.println(drama.getDramaName().toUpperCase());
-                System.out.println("RANK-1 : " + drama.getDramaRecords().rank1());
+                System.out.println("RANK-1 value : " + drama.getDramaRecords().rank1());
                 drama.showCast();
+                System.out.println(" ");
             } else {
                 System.out.print("Only name can be shown for : ");
                 System.out.println(drama.getDramaName());
+                System.out.println(" ");
             }
         }
     }

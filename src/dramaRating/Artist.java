@@ -10,7 +10,7 @@ public class Artist extends Staff {
     private int artistId;
     private HashSet<Drama> setOfDramasActedIn = new HashSet<Drama>();
 
-    private static int numOfArtist;
+    private static int numOfArtist = 0;
     private static List<Integer> allArtistIds;
     private static HashSet<Artist> setOfArtist =  new HashSet<>();
 
@@ -19,6 +19,7 @@ public class Artist extends Staff {
     public Artist(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.artistId = numOfArtist+1;
         setOfArtist.add(this);
         numOfArtist++;
 
@@ -51,8 +52,7 @@ public class Artist extends Staff {
 
         } else{
 
-            System.out.println("FULL NAME NOT SUPPLIED!");
-            System.out.println(this.getFirstName());
+            System.out.println("ONLY FIRST NAME AVAILABLE for : " + this.getFirstName());
 
         }
     }
@@ -111,8 +111,9 @@ public class Artist extends Staff {
         }*/
 
         for (Drama drama : setOfDramasActedIn){
-            System.out.println(drama.getDramaName());
+            System.out.print(drama.getDramaName() + " ");
         }
+        System.out.println("   ");
 
     }
 
@@ -124,7 +125,8 @@ public class Artist extends Staff {
     public static void  showAllArtist(){
 
         for(Artist artist: setOfArtist) {
-            System.out.println(artist.getFirstName());
+            System.out.print(artist.getArtistId()+ " : ");
+            artist.getArtistFullName();
         }
     }
 }

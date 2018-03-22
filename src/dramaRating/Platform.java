@@ -39,7 +39,7 @@ public class Platform {
         DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
         DramaRecords dramaRecords4 = new DramaRecords(drama4, 3000, 300, 800000);
         DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
-        DramaRecords dramaRecords6 = new DramaRecords(drama5, 3500, 20000, 50345);
+        DramaRecords dramaRecords6 = new DramaRecords(drama5, 3500, 2, 50345);
 
 
         System.out.println("Adding Artist records.............");
@@ -51,7 +51,7 @@ public class Platform {
 
         Artist art2 = new Artist("Mehzabien", "Chowdhury");
         Artist art4 = new Artist("Sabnam", "Faria");
-        Artist art6 = new Artist( "Tisha");
+        Artist art6 = new Artist( "Tisha", "Nusrat Imrose");
         Artist art8 = Artist.createArtist("Sabila", "Noor");
         Artist art10 = new Artist("Aparna", "Ghosh");
         Artist art11 = new Artist("Sajal");
@@ -88,6 +88,7 @@ public class Platform {
     public void doRanking(){
 
         System.out.println("-------------Ranking in DESCECENDING order--------------------------------------");
+
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
             treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1A());
