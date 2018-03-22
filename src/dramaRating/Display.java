@@ -26,4 +26,21 @@ public class Display {
         // Display the frame.
         jfrm.setVisible(true);
     }
+
+
+    public void showSwingComponent(){
+        // Create the frame on the event dispatching thread.
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new Display();
+
+            }
+        });
+
+        SwingUtilities.invokeLater(new Runnable(){
+            public void run(){
+                new EventDemo();
+            }
+        });
+    }
 }

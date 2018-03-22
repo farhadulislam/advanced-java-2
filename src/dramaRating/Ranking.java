@@ -13,7 +13,8 @@ public class Ranking {
         platform2.addRecords();
         platform2.doRanking();
 
-        
+        new Display().showSwingComponent();
+
     }
 
     public static void showLikability(DramaRecords dramaRecords){
@@ -49,20 +50,6 @@ public class Ranking {
     }
 
 
-    public void showSwingComponent(){
-        // Create the frame on the event dispatching thread.
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new Display();
 
-            }
-        });
-
-        SwingUtilities.invokeLater(new Runnable(){
-            public void run(){
-                new EventDemo();
-            }
-        });
-    }
 
 }
