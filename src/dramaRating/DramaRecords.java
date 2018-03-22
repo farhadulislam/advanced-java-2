@@ -108,8 +108,17 @@ public class DramaRecords {
     }
 
     public double rank1 (){
-        //return (views*calcLikability3());
+
         return (((getTotalLikesAndDislikes()/views)*100)*calcLikability3());
+
+    }
+
+    public double rank1A (){
+        //return (views*calcLikability3());
+        double d = (((getTotalLikesAndDislikes()/views)*100)*calcLikability3());
+        String str = String.format("%1.3f", d);
+        d = Double.valueOf(str);
+        return d;
 
     }
     public double rank2 (){

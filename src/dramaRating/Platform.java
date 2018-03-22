@@ -30,6 +30,7 @@ public class Platform {
         Drama drama3 = new Drama(3, "Village");
         Drama drama4 = new Drama(4, "Postman");
         Drama drama5 = new Drama( Drama.getNumberOfDramas()+1, "Dual mind");
+        Drama drama6 = new Drama (Drama.getNumberOfDramas()+1, "Beautiful mind");
 
 
         System.out.println("Adding drama records...........");
@@ -38,6 +39,7 @@ public class Platform {
         DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
         DramaRecords dramaRecords4 = new DramaRecords(drama4, 3000, 300, 800000);
         DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
+        DramaRecords dramaRecords6 = new DramaRecords(drama5, 3500, 20000, 50345);
 
 
         System.out.println("Adding Artist records.............");
@@ -52,7 +54,7 @@ public class Platform {
         Artist art6 = new Artist( "Tisha");
         Artist art8 = Artist.createArtist("Sabila", "Noor");
         Artist art10 = new Artist("Aparna", "Ghosh");
-        Artist art11 = new Artist("Matt", "Damon");
+        Artist art11 = new Artist("Sajal");
 
 
         drama1.addCast(art1);
@@ -65,6 +67,7 @@ public class Platform {
         drama4.addCast(art5);
         drama5.addCast(art7);
         drama5.addCast(art11);
+        drama6.addCast(art4);
 
 
 
@@ -83,14 +86,16 @@ public class Platform {
     }
 
     public void doRanking(){
+
         System.out.println("-------------Ranking in DESCECENDING order--------------------------------------");
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
-            treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
+            treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1A());
+            //treeValue.clear();
+            //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
 
         }
 
-        //Ranking.showMap(treeValue);
 
         Map sortedMap = sortByValues(treeValue);
 

@@ -25,6 +25,8 @@ public class Display {
 
         // Display the frame.
         jfrm.setVisible(true);
+
+
     }
 
 

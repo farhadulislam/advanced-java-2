@@ -13,7 +13,7 @@ public class Ranking {
         platform2.addRecords();
         platform2.doRanking();
 
-        new Display().showSwingComponent();
+        //new Display().showSwingComponent();
 
     }
 
