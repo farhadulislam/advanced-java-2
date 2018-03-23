@@ -12,6 +12,11 @@ public class Artist extends Staff {
 
     private static int numOfArtist = 0;
     private static List<Integer> allArtistIds;
+
+    public static HashSet<Artist> getSetOfArtist() {
+        return setOfArtist;
+    }
+
     private static HashSet<Artist> setOfArtist =  new HashSet<>();
 
 
@@ -53,6 +58,7 @@ public class Artist extends Staff {
         String firstName = scan1.next();
         System.out.print("ENTER THE SECOND NAME : ");
         String lastName = scan2.next();
+
         System.out.println("I got " + firstName + " " + lastName);
 
 

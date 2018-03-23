@@ -9,16 +9,22 @@ public class Platform {
     public static void main (String [] args){
 
         System.out.println("STARTING main method from Platform class");
-        System.out.println("STARTING main method from Platform class");
 
-        quickStart();
+        for (int i = 0; i<10; i++){
+            Artist.getSetOfArtist().add(Artist.autoCreateArtist());
+        }
+        for(Artist art1 : Artist.getSetOfArtist()){
+
+            System.out.println(art1);
+        }
+        //quickStart();
 
        /* Platform platform1 = new Platform();
         platform1.addRecords();
         platform1.showPlatform();
         platform1.doRanking();*/
 
-        System.out.println();
+        System.out.println("EXECUTION ENDED");
 
     }
 
@@ -154,8 +160,16 @@ public class Platform {
         System.out.println("QUICKSTART method.......");
         Platform platform1 = new Platform();
         platform1.addRecords();
+        gap();
         platform1.showPlatform();
+        gap();
         platform1.doRanking();
+    }
+
+    public static void gap (){
+        for (int i= 0; i<=5; i++){
+        System.out.println(" ");
+        }
     }
 
 
