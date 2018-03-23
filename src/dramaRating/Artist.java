@@ -44,11 +44,29 @@ public class Artist extends Staff {
         return new Artist(firstName, lastName);
     }
 
-    public void getArtistFullName(){
+    public static Artist autoCreateArtist(){
+
+        Scanner scan1 = new Scanner(System.in);
+        Scanner scan2 = new Scanner(System.in);
+        System.out.print("ENTER THE FIRST NAME");
+
+        String firstName = scan1.next();
+        System.out.print("ENTER THE SECOND NAME : ");
+        String lastName = scan2.next();
+        System.out.println("I got " + firstName + " " + lastName);
+
+
+        Artist artist = new Artist(firstName, lastName);
+
+        System.out.println("CREATED! " + "Artist ID :" + artist.getArtistId()+", "+ artist.getFirstName()+ " " + artist.getLastName());
+        return  artist;
+    }
+
+    public void showArtistFullName(){
 
         if( this.getLastName()!=unknownLastName){
 
-            System.out.println("FULL NAME : " + this.getFirstName()+ " "+ this.getLastName());
+            System.out.println("FULL NAME: " + this.getFirstName()+ " "+ this.getLastName());
 
         } else{
 
@@ -70,6 +88,10 @@ public class Artist extends Staff {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+    public String getArtistFullName(){
+
+        return this.getFirstName()+ this.getLastName();
     }
 
     public int getArtistId() {
@@ -126,7 +148,7 @@ public class Artist extends Staff {
 
         for(Artist artist: setOfArtist) {
             System.out.print(artist.getArtistId()+ " : ");
-            artist.getArtistFullName();
+            artist.showArtistFullName();
         }
     }
 

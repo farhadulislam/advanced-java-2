@@ -9,6 +9,7 @@ public class Platform {
     public static void main (String [] args){
 
         System.out.println("STARTING main method from Platform class");
+        System.out.println("STARTING main method from Platform class");
 
         quickStart();
 
@@ -47,23 +48,31 @@ public class Platform {
 
 
         System.out.println("Adding Artist records.............");
-        Artist art1 = new Artist("Afran", "Nisho");
+        Artist afranNisho = new Artist("Afran", "Nisho");
         Artist art3 = new Artist("Apurbo");
         Artist art5 = Artist.createArtist("Allen", "Shuvro");
         Artist art7 = new Artist("Farhan Ahmed", "Zovan" );
         Artist art9 = Artist.createArtist("Nayeem");
+        Artist art11 = new Artist("Sajal");
+
 
         Artist art2 = new Artist("Mehzabien", "Chowdhury");
         Artist art4 = new Artist("Sabnam", "Faria");
         Artist art6 = new Artist( "Tisha", "Nusrat Imrose");
         Artist art8 = Artist.createArtist("Sabila", "Noor");
         Artist art10 = new Artist("Aparna", "Ghosh");
-        Artist art11 = new Artist("Sajal");
+        Artist art12 = new Artist("Tasnuva", "Tisha");
+        Artist art14 = new Artist ("Safa", "Kabir");
+        Artist art16 = new Artist ("Mousumi", "Hamid");
+        Artist art18 = new Artist("Shokh");
+        Artist art200 = Artist.autoCreateArtist();
 
 
-        drama1.addCast(art1);
+
+
+        drama1.addCast(afranNisho);
         drama1.addCast(art10);
-        drama2.addCast(art1);
+        drama2.addCast(afranNisho);
         drama2.addCast(art2);
         drama3.addCast(art4);
         drama3.addCast(art2);
@@ -72,7 +81,7 @@ public class Platform {
         drama5.addCast(art7);
         drama5.addCast(art11);
         drama6.addCast(art4);
-        drama7.addCast(art1);
+        drama7.addCast(afranNisho);
         drama7.addCast(art6);
 
     }

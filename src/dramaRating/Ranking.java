@@ -7,6 +7,7 @@ public class Ranking {
 
     public static void main (String [] args ){
 
+        Artist.showAllArtist();
         Ranking app1 = new Ranking();
         Platform platform2 = new Platform();
         platform2.doRanking();
@@ -25,7 +26,7 @@ public class Ranking {
         System.out.println("................");
         System.out.println("Returning a value from calcLiability " + dramaRecords.calcLikability1());
         System.out.println("Returning a value from calcLiability2 " + dramaRecords.calcLikability2());
-        System.out.println("Returning a value from calcLiability3 " + dramaRecords.calcLikability3());
+        System.out.println("Returning a value from calcLiability3 " + dramaRecords.measureLikesStrength());
 
         System.out.println("using rank ****************************");
         System.out.println(dramaRecords.rank1());

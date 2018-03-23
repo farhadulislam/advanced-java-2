@@ -70,7 +70,7 @@ public class DramaRecords {
         return "DramaRecords{" + "Drama name "+ drama.getDramaName() +
                 ", likes=" + likes +
                 ", dislikes=" + dislikes +
-                ", views=" + views + " Likability is :  " + likeability + this.calcLikability1() + "%" + "," + this.calcLikability3() + "%" +
+                ", views=" + views + " Likability is :  " + likeability + this.calcLikability1() + "%" + "," + this.measureLikesStrength() + "%" +
                 '}';
     }
 
@@ -101,21 +101,20 @@ public class DramaRecords {
         return getLikesRatio()-getDislikesRatio();
     }
 
-    public double calcLikability3(){
-        //double likeability = ((this.getDislikes()-this.getDislikes())/this.getViews())*100;
-        // return getLikesRatio()-getDislikesRatio();
+    public double measureLikesStrength(){
+
         return  ((likes-dislikes)/getTotalLikesAndDislikes())*100;
     }
 
     public double rank1 (){
 
-        return (((getTotalLikesAndDislikes()/views)*100)*calcLikability3());
+        return (((getTotalLikesAndDislikes()/views)*100)*measureLikesStrength());
 
     }
 
     public double rank1A (){
         //return (views*calcLikability3());
-        double d = (((getTotalLikesAndDislikes()/views)*100)*calcLikability3());
+        double d = (((getTotalLikesAndDislikes()/views)*100)*measureLikesStrength());
         String str = String.format("%1.3f", d);
         d = Double.valueOf(str);
         return d;
@@ -123,7 +122,7 @@ public class DramaRecords {
     }
     public double rank2 (){
         //return (views*calcLikability3());
-        return (((getTotalLikesAndDislikes()/views)*100)+ calcLikability3())/2;
+        return (((getTotalLikesAndDislikes()/views)*100)+ measureLikesStrength())/2;
 
     }
 
