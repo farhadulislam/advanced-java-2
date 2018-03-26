@@ -13,9 +13,12 @@ public class Platform {
 
         System.out.println("STARTING main method from Platform class");
 
-        automateAddingArtistData(Artist.getSetOfArtist());
+        //automateAddingArtistData(Artist.getSetOfArtist());
+        //automateAddingDrama(Drama.getSetOfDramas());
+        automateAddingDramaRecords(DramaRecords.getSetOfDramaRecords());
+        new Platform().doRanking();
 
-        quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
+        //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
        /* Platform platform1 = new Platform();
         platform1.addRecords();
@@ -207,12 +210,12 @@ public class Platform {
                 }
             }
         } catch (Exception e){
-            print("Error, enter a number");
+            print("Drama : Error, enter a number");
         }
     }
 
     public static void  automateAddingDramaRecords(HashSet<DramaRecords> setOfDramarecords){
-        print("Enter the number of dramas you'd like to add");
+        print("Enter the number of drama records you'd like to add");
         Scanner scan = new Scanner(System.in);
 
         try{
@@ -222,13 +225,14 @@ public class Platform {
 
                     setOfDramarecords.add(DramaRecords.autoCreateDramaRecords());
                 }
-                for (Drama drama : Drama.getSetOfDramas()) {
+                for (DramaRecords dramaRecords : DramaRecords.getSetOfDramaRecords()) {
 
-                    System.out.println(drama);
+                    System.out.println(dramaRecords.getDrama().getDramaName()+" : "+ dramaRecords.measureLikesStrength());
+                    System.out.println(dramaRecords.getDramaNameOfThisRecord()+" : "+ dramaRecords.rank1());
                 }
             }
         } catch (Exception e){
-            print("Error, enter a number");
+            print("DR : Error, enter a number");
         }
     }
 

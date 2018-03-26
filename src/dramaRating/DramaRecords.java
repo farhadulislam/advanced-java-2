@@ -15,6 +15,11 @@ public class DramaRecords {
     private Date lastUpdated;
 
     private static int numOfDramaRecords;
+
+    public static HashSet<DramaRecords> getSetOfDramaRecords() {
+        return setOfDramaRecords;
+    }
+
     private static HashSet<DramaRecords> setOfDramaRecords = new HashSet<>();
 
 
