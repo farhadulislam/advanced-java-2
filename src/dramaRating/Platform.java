@@ -13,8 +13,8 @@ public class Platform {
 
         System.out.println("STARTING main method from Platform class");
 
-        //automateAddingArtistData(Artist.getSetOfArtist());
-        //automateAddingDrama(Drama.getSetOfDramas());
+        automateAddingArtistData(Artist.getSetOfArtist());
+        automateAddingDrama(Drama.getSetOfDramas());
         automateAddingDramaRecords(DramaRecords.getSetOfDramaRecords());
         new Platform().doRanking();
 
@@ -221,7 +221,7 @@ public class Platform {
         try{
             int num = scan.nextInt();
             if (num>=1) {
-                for (int i = 0; i < num; i++) {
+                for (int i = 0; i <= num; i++) {
 
                     setOfDramarecords.add(DramaRecords.autoCreateDramaRecords());
                 }
@@ -234,6 +234,7 @@ public class Platform {
         } catch (Exception e){
             print("DR : Error, enter a number");
         }
+
     }
 
 

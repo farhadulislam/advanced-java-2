@@ -130,6 +130,21 @@ public class Drama {
         Drama drama = new Drama(dramaID, dramaName);
 
         System.out.println("CREATED! " + "Drama ID :" + drama.getDramaId() + "Drama name : "+ drama.getDramaName());
+        Scanner userOption = new Scanner(System.in);
+        System.out.println("Wanna add cast for this drama ?");
+
+        String userAnswer = userOption.next();
+        if (userAnswer=="Y"|| userAnswer=="YES"){
+            System.out.println("How many?");
+            Scanner howMany = new Scanner (System.in);
+            int howManyArtist = howMany.nextInt();
+            for(int i = 0; i<howManyArtist; i++) {
+                Scanner artistName = new Scanner(System.in);
+                String artistNameStr = artistName.next();
+                Artist newArtist = new Artist(artistNameStr);
+                drama.addCast(newArtist);
+            }
+        }
         return  drama;
     }
 

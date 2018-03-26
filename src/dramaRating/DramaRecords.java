@@ -142,6 +142,13 @@ public class DramaRecords {
 
     public static DramaRecords autoCreateDramaRecords(){
 
+
+        System.out.println("Do you wish to supply a already created drama or would like to create a new one ?");
+        Scanner options = new Scanner(System.in);
+        String userInput = options.next().toUpperCase();
+        Scanner scanObject;
+
+
         Scanner scan1 = new Scanner(System.in);
         Scanner scan2 = new Scanner(System.in);
         Scanner scan3 = new Scanner(System.in);
@@ -150,6 +157,7 @@ public class DramaRecords {
 
         System.out.print("ENTER Drama Id");
         int dramaId = scan1.nextInt();
+
 
         System.out.print("ENTER THE DRAMA NAME : ");
         String dramaName = scan2.next();
@@ -164,21 +172,16 @@ public class DramaRecords {
         System.out.print("ENTER THE NUMBER OF VIEWS : ");
         int dramaViews = scan5.nextInt();
 
-
         System.out.println("I got " + dramaName + " " + dramaLikes + " "+ dramaDislikes + dramaViews );
 
-
-        Scanner options = new Scanner(System.in);
-        System.out.println("Do you wish to supply a already created drama or would like to create a new one ?");
         DramaRecords dramaRecords;
-        String userInput = options.next().toUpperCase();
-       // if(userInput=="Y" || userInput=="YES"){
-        Drama dramaObj = new Drama(dramaId, dramaName);
-        dramaRecords = new DramaRecords(dramaObj, dramaLikes, dramaDislikes, dramaViews); //}
+        dramaRecords = new DramaRecords(new Drama(dramaId, dramaName), dramaLikes, dramaDislikes, dramaViews);
 
-        System.out.println("Created");
+        System.out.println("Creating a drama record");
         return  dramaRecords;
     }
+
+
 
 
 
