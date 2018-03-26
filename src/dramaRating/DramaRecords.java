@@ -142,13 +142,6 @@ public class DramaRecords {
 
     public static DramaRecords autoCreateDramaRecords(){
 
-
-        System.out.println("Do you wish to supply a already created drama or would like to create a new one ?");
-        Scanner options = new Scanner(System.in);
-        String userInput = options.next().toUpperCase();
-        Scanner scanObject;
-
-
         Scanner scan1 = new Scanner(System.in);
         Scanner scan2 = new Scanner(System.in);
         Scanner scan3 = new Scanner(System.in);

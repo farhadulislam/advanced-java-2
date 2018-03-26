@@ -33,6 +33,16 @@ public class Drama {
         System.out.println(add ? (this.getDramaId() + " : "+ this.getDramaName() + " added into setOfDramas successfully") : "drama couldn't be added");
     }
 
+    public Drama(String dramName){
+
+        this.dramaId = Drama.issueDramaId();
+        this.dramaName = dramName;
+        dramaIds.add(this.dramaId);
+        numberOfDramas++;
+        boolean add = setOfDramas.add(this);
+        System.out.println(add ? (this.getDramaId() + " : "+ this.getDramaName() + " added into setOfDramas successfully") : "drama couldn't be added");
+    }
+
     public static int issueDramaId (){
 
         return dramaIds.last().intValue() + 1;
@@ -116,33 +126,35 @@ public class Drama {
     }
     public static Drama autoCreateDrama(){
 
-        Scanner scan1 = new Scanner(System.in);
+        //Scanner scan1 = new Scanner(System.in);
         Scanner scan2 = new Scanner(System.in);
-        System.out.print("ENTER Drama Id");
+        //System.out.print("ENTER Drama Id");
 
-        int dramaID = scan1.nextInt();
+        //int dramaID = scan1.nextInt();
         System.out.print("ENTER THE DRAMA NAME : ");
         String dramaName = scan2.next();
 
-        System.out.println("I got " + dramaID + " " + dramaName);
+        System.out.println( "I got : " + dramaName);
 
 
-        Drama drama = new Drama(dramaID, dramaName);
+        Drama drama = new Drama( dramaName);
 
         System.out.println("CREATED! " + "Drama ID :" + drama.getDramaId() + "Drama name : "+ drama.getDramaName());
         Scanner userOption = new Scanner(System.in);
         System.out.println("Wanna add cast for this drama ?");
 
-        String userAnswer = userOption.next();
-        if (userAnswer=="Y"|| userAnswer=="YES"){
+        String userAnswer = userOption.next().toUpperCase();
+        if(userAnswer=="Y"|| userAnswer=="YES"){
             System.out.println("How many?");
             Scanner howMany = new Scanner (System.in);
             int howManyArtist = howMany.nextInt();
             for(int i = 0; i<howManyArtist; i++) {
+                System.out.println("Provide a name");
                 Scanner artistName = new Scanner(System.in);
                 String artistNameStr = artistName.next();
                 Artist newArtist = new Artist(artistNameStr);
                 drama.addCast(newArtist);
+                System.out.println("This "+ artistNameStr + " was added to "+ drama.getDramaName());
             }
         }
         return  drama;

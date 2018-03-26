@@ -13,9 +13,9 @@ public class Platform {
 
         System.out.println("STARTING main method from Platform class");
 
-        automateAddingArtistData(Artist.getSetOfArtist());
+        //automateAddingArtistData(Artist.getSetOfArtist());
         automateAddingDrama(Drama.getSetOfDramas());
-        automateAddingDramaRecords(DramaRecords.getSetOfDramaRecords());
+        //automateAddingDramaRecords(DramaRecords.getSetOfDramaRecords());
         new Platform().doRanking();
 
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
@@ -206,7 +206,7 @@ public class Platform {
                 }
                 for (Drama drama : Drama.getSetOfDramas()) {
 
-                    System.out.println(drama);
+                    System.out.println(drama.getDramaId() + ": " + drama.getDramaName());
                 }
             }
         } catch (Exception e){
