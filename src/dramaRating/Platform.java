@@ -14,11 +14,11 @@ public class Platform {
         System.out.println("STARTING main method from Platform class");
 
         //automateAddingArtistData(Artist.getSetOfArtist());
-        automateAddingDrama(Drama.getSetOfDramas());
+        //automateAddingDrama(Drama.getSetOfDramas());
         //automateAddingDramaRecords(DramaRecords.getSetOfDramaRecords());
-        new Platform().doRanking();
+        //new Platform().doRanking();
 
-        //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
+        quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
        /* Platform platform1 = new Platform();
         platform1.addRecords();
@@ -72,9 +72,6 @@ public class Platform {
         Artist art14 = new Artist ("Safa", "Kabir");
         Artist art16 = new Artist ("Mousumi", "Hamid");
         Artist art18 = new Artist("Shokh");
-        Artist art200 = Artist.autoCreateArtist();
-
-
 
 
         drama1.addCast(afranNisho);
