@@ -2,6 +2,7 @@ package dramaRating;
 
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Scanner;
 
 public class DramaRecords {
 
@@ -133,6 +134,47 @@ public class DramaRecords {
             System.out.println(dramaRecord);
         }
     }
+
+    public static DramaRecords autoCreateDramaRecords(){
+
+        Scanner scan1 = new Scanner(System.in);
+        Scanner scan2 = new Scanner(System.in);
+        Scanner scan3 = new Scanner(System.in);
+        Scanner scan4 = new Scanner(System.in);
+        Scanner scan5 = new Scanner(System.in);
+
+        System.out.print("ENTER Drama Id");
+        int dramaId = scan1.nextInt();
+
+        System.out.print("ENTER THE DRAMA NAME : ");
+        String dramaName = scan2.next();
+
+
+        System.out.print("ENTER THE DRAMA LIKES : ");
+        int dramaLikes = scan3.nextInt();
+
+        System.out.print("ENTER THE DRAMA DISLIKES : ");
+        int dramaDislikes = scan4.nextInt();
+
+        System.out.print("ENTER THE NUMBER OF VIEWS : ");
+        int dramaViews = scan5.nextInt();
+
+
+        System.out.println("I got " + dramaName + " " + dramaLikes + " "+ dramaDislikes + dramaViews );
+
+
+        Scanner options = new Scanner(System.in);
+        System.out.println("Do you wish to supply a already created drama or would like to create a new one ?");
+        DramaRecords dramaRecords;
+        String userInput = options.next().toUpperCase();
+       // if(userInput=="Y" || userInput=="YES"){
+        Drama dramaObj = new Drama(dramaId, dramaName);
+        dramaRecords = new DramaRecords(dramaObj, dramaLikes, dramaDislikes, dramaViews); //}
+
+        System.out.println("Created");
+        return  dramaRecords;
+    }
+
 
 
 

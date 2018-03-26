@@ -114,6 +114,24 @@ public class Drama {
             }
         }
     }
+    public static Drama autoCreateDrama(){
+
+        Scanner scan1 = new Scanner(System.in);
+        Scanner scan2 = new Scanner(System.in);
+        System.out.print("ENTER Drama Id");
+
+        int dramaID = scan1.nextInt();
+        System.out.print("ENTER THE DRAMA NAME : ");
+        String dramaName = scan2.next();
+
+        System.out.println("I got " + dramaID + " " + dramaName);
+
+
+        Drama drama = new Drama(dramaID, dramaName);
+
+        System.out.println("CREATED! " + "Drama ID :" + drama.getDramaId() + "Drama name : "+ drama.getDramaName());
+        return  drama;
+    }
 
 
 }
