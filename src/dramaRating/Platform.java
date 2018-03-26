@@ -2,22 +2,20 @@ package dramaRating;
 
 import java.util.*;
 
+import static otherStuff.GuessingGame.print;
+
 public class Platform {
 
     private static TreeMap<String, Double> treeValue = new TreeMap<>();
+
 
     public static void main (String [] args){
 
         System.out.println("STARTING main method from Platform class");
 
-        for (int i = 0; i<10; i++){
-            Artist.getSetOfArtist().add(Artist.autoCreateArtist());
-        }
-        for(Artist art1 : Artist.getSetOfArtist()){
+        automateAddingArtistData();
 
-            System.out.println(art1);
-        }
-        //quickStart();
+        quickStart();
 
        /* Platform platform1 = new Platform();
         platform1.addRecords();
@@ -169,6 +167,26 @@ public class Platform {
     public static void gap (){
         for (int i= 0; i<=5; i++){
         System.out.println(" ");
+        }
+    }
+
+    public static void  automateAddingArtistData(){
+        print("Enter the number of artists details you'd like to add");
+        Scanner scan = new Scanner(System.in);
+
+        try{
+            int num = scan.nextInt();
+            if (num>=1) {
+                for (int i = 0; i < num; i++) {
+                    Artist.getSetOfArtist().add(Artist.autoCreateArtist());
+                }
+                for (Artist art1 : Artist.getSetOfArtist()) {
+
+                    System.out.println(art1);
+                }
+            }
+        } catch (Exception e){
+            print("Error, enter a number");
         }
     }
 
