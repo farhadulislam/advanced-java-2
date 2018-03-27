@@ -22,6 +22,7 @@ public class Platform {
 
         Platform platform1 = new Platform();
         //platform1.addRecords();
+
         platform1.addRandomDummyRecords(120);
         platform1.showPlatform();
         platform1.doRanking();
@@ -91,6 +92,35 @@ public class Platform {
         drama6.addCast(art4);
         drama7.addCast(afranNisho);
         drama7.addCast(art6);
+
+    }
+
+    public void addRecordsArtistOnly(){
+        System.out.println("Adding Artist records.............");
+        Artist afranNisho = new Artist("Afran", "Nisho");
+        Artist art3 = new Artist("Apurbo");
+        Artist art5 = Artist.createArtist("Allen", "Shuvro");
+        Artist art7 = new Artist("Farhan Ahmed", "Zovan" );
+        Artist art9 = Artist.createArtist("Nayeem");
+        Artist art11 = new Artist("Sajal");
+        Artist art13= new Artist("Tausif", "Mahbub");
+        Artist art15 = new Artist ("Zahid", "Hassan");
+        Artist art17 = new Artist ("AKM", "Hassan");
+        Artist art19 = new Artist("Mir", "Sabbir");
+        Artist art21 = new Artist("Abul", "Hayat");
+
+
+        Artist art2 = new Artist("Mehzabien", "Chowdhury");
+        Artist art4 = new Artist("Sabnam", "Faria");
+        Artist art6 = new Artist( "Tisha", "Nusrat Imrose");
+        Artist art8 = Artist.createArtist("Sabila", "Noor");
+        Artist art10 = new Artist("Aparna", "Ghosh");
+        Artist art12 = new Artist("Tasnuva", "Tisha");
+        Artist art14 = new Artist ("Safa", "Kabir");
+        Artist art16 = new Artist ("Mousumi", "Hamid");
+        Artist art18 = new Artist("Shokh");
+        Artist art20 = new Artist("Nowshin");
+        Artist art22 = new Artist("Zakia", "Bari Momo");
 
     }
     public void showPlatform(){
@@ -239,10 +269,10 @@ public class Platform {
     }
 
     public void addRandomDummyRecords(int howMany){
-        for (int j = 1; j<=20; j++){
+        /*for (int j = 1; j<=20; j++){
             Artist artist = new Artist("Dummy Artist " + j);
-        }
-
+        }*/
+        addRecordsArtistOnly();
         for (int i =1; i <=howMany; i++){
             Drama drama1 = new Drama("Drama " + i);
 
@@ -252,11 +282,14 @@ public class Platform {
                 HashSet<Artist> tempSetOfArtist = Artist.getSetOfArtist();
                 List<Artist> sortedList = new ArrayList<>(tempSetOfArtist);
 
-                int randomNumber1 = (int) (Math.random() * 19)+1;
+                int numberOfArtist = Artist.getNumOfArtist();
+                int randomNumber1 = (int) (Math.random() * numberOfArtist );
                 drama1.addCast(sortedList.get(randomNumber1));
-                int randomNumber2 = (int) (Math.random() * 19)+1;
+
+                int randomNumber2 = (int) (Math.random() * numberOfArtist);
                 while(randomNumber2 == randomNumber1){
-                    randomNumber2 = (int) (Math.random() * 19)+1;
+                    randomNumber2 = (int) (Math.random() * numberOfArtist);
+
                 }
                 drama1.addCast(sortedList.get(randomNumber2));
             }
