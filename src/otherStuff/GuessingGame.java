@@ -12,7 +12,7 @@ public class GuessingGame {
 
         int actualNumber = (int) (Math.random() * 20 +1);
         System.out.println("Actual number " + actualNumber);
-        print("Enter a number between 0 and 20");
+        print("Enter a number between 1 and 20");
         Scanner scanner = new Scanner(System.in);
 
         while(!scanner.hasNextInt()){System.out.println("Wrong input, enter a number only");

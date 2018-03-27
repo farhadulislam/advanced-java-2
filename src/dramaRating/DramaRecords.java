@@ -174,6 +174,25 @@ public class DramaRecords {
         return  dramaRecords;
     }
 
+    public int getMeRandomViewS(){
+
+        int actualNumber = (int) (Math.random() * 50000 +1);
+        //System.out.println("Actual number " + actualNumber);
+        return actualNumber;
+    }
+    public int getMeRandomLikes(){
+
+        int actualNumber = (int) (Math.random() * 10000 +1);
+        //System.out.println("Actual number " + actualNumber);
+        return actualNumber;
+    }
+    public int getMeRandomDislikes(){
+
+        int actualNumber = (int) (Math.random() * 10000 +1);
+        //System.out.println("Actual number " + actualNumber);
+        return actualNumber;
+    }
+
 
 
 
