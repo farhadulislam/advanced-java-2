@@ -239,7 +239,7 @@ public class Platform {
     }
 
     public void addRandomDummyRecords(int howMany){
-        for (int j = 0; j<20; j++){
+        for (int j = 1; j<=20; j++){
             Artist artist = new Artist("Dummy Artist " + j);
         }
 
@@ -255,14 +255,12 @@ public class Platform {
                 int randomNumber1 = (int) (Math.random() * 19)+1;
                 drama1.addCast(sortedList.get(randomNumber1));
                 int randomNumber2 = (int) (Math.random() * 19)+1;
+                while(randomNumber2 == randomNumber1){
+                    randomNumber2 = (int) (Math.random() * 19)+1;
+                }
                 drama1.addCast(sortedList.get(randomNumber2));
             }
-
-
             new DramaRecords(drama1);
-
-
-
         }
 
     }
