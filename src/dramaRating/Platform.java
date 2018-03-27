@@ -42,6 +42,7 @@ public class Platform {
         Drama drama7 = new Drama (7, "Press");
         Drama drama8 = new Drama (Drama.issueDramaId(), "Rainbow");
         Drama drama9 = new Drama(Drama.issueDramaId(), "City life");
+        Drama drama10 = new Drama(Drama.issueDramaId(), "Blue sky");
 
 
         System.out.println("Adding drama records...........");
@@ -53,10 +54,8 @@ public class Platform {
         DramaRecords dramaRecords6 = new DramaRecords(drama6, 3500, 2, 50345);
         DramaRecords dramaRecords7 = new DramaRecords(drama7, 100, 50 , 200);
         DramaRecords dramaRecords8 = new DramaRecords(drama8, 20000, 22, 21000);
-        DramaRecords dramaRecords = new DramaRecords(drama9,
-                DramaRecords.getMeRandomLikes(),
-                DramaRecords.getMeRandomViewS(),
-                DramaRecords.getMeRandomDislikes());
+        DramaRecords dramaRecords9 = new DramaRecords(drama9);
+        DramaRecords dramaRecords10 = new DramaRecords(drama10);
 
 
 

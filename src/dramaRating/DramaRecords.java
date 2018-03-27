@@ -24,10 +24,25 @@ public class DramaRecords {
 
 
     public DramaRecords(Drama drama, int likes, int dislikes, int views) {
+        boolean validInput = (views>= (likes+dislikes));
+        /*if(!validInput){
+            views = 1;
+            likes= 1;
+            dislikes =1;
+        }*/
         this.drama = drama;
         this.likes = likes;
         this.dislikes = dislikes;
         this.views = views;
+        drama.setDramaRecords(this);
+        numOfDramaRecords ++;  // adding to the numOfDramaRecords static filed of DramaRecords class
+        setOfDramaRecords.add(this);
+    }
+    public DramaRecords(Drama drama) {
+        this.drama = drama;
+        this.likes = this.getMeRandomLikes();
+        this.dislikes = this.getMeRandomLikes();
+        this.views = this.getMeRandomViewS();
         drama.setDramaRecords(this);
         numOfDramaRecords ++;  // adding to the numOfDramaRecords static filed of DramaRecords class
         setOfDramaRecords.add(this);
