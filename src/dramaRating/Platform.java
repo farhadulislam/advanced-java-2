@@ -13,17 +13,18 @@ public class Platform {
 
         System.out.println("STARTING main method from Platform class");
 
-        automateAddingArtistData(Artist.getSetOfArtist());
+        //automateAddingArtistData(Artist.getSetOfArtist());
         //automateAddingDrama(Drama.getSetOfDramas());
         //automateAddingDramaRecords(DramaRecords.getSetOfDramaRecords());
         //new Platform().doRanking();
 
        // quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
-       /* Platform platform1 = new Platform();
-        platform1.addRecords();
+        Platform platform1 = new Platform();
+        //platform1.addRecords();
+        platform1.addRandomDummyRecords(120);
         platform1.showPlatform();
-        platform1.doRanking();*/
+        platform1.doRanking();
 
         System.out.println("EXECUTION ENDED");
 
@@ -56,8 +57,6 @@ public class Platform {
         DramaRecords dramaRecords8 = new DramaRecords(drama8, 20000, 22, 21000);
         DramaRecords dramaRecords9 = new DramaRecords(drama9);
         DramaRecords dramaRecords10 = new DramaRecords(drama10);
-
-
 
         System.out.println("Adding Artist records.............");
         Artist afranNisho = new Artist("Afran", "Nisho");
@@ -235,6 +234,24 @@ public class Platform {
             }
         } catch (Exception e){
             print("DR : Error, enter a number");
+        }
+
+    }
+
+    public void addRandomDummyRecords(int howMany){
+        for (int j = 0; j<20; j++){
+            Artist artist = new Artist("Dummy Artist " + j);
+        }
+        for (int i =1; i <=howMany; i++){
+            Drama drama1 = new Drama("Drama " + i);
+            if(!Artist.getSetOfArtist().isEmpty()){
+            drama1.addCast(Artist.getSetOfArtist().iterator().next());
+                HashSet<Artist> tempSetOfArtist = Artist.getSetOfArtist();
+                List<Artist> sortedList = new ArrayList<>(tempSetOfArtist);}
+
+
+            new DramaRecords(drama1);
+
         }
 
     }
