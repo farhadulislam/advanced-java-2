@@ -42,7 +42,7 @@ public class DramaRecords {
         this.drama = drama;
         this.likes = this.getMeRandomLikes();
         this.dislikes = this.getMeRandomLikes();
-        this.views = this.getMeRandomViewS();
+        this.views = this.getMeRandomViews();
         drama.setDramaRecords(this);
         numOfDramaRecords ++;  // adding to the numOfDramaRecords static filed of DramaRecords class
         setOfDramaRecords.add(this);
@@ -189,7 +189,7 @@ public class DramaRecords {
         return  dramaRecords;
     }
 
-    public int getMeRandomViewS(){
+    public int getMeRandomViews(){
 
         int actualNumber = (int) (Math.random() * 50000 +1);
         //System.out.println("Actual number " + actualNumber);
