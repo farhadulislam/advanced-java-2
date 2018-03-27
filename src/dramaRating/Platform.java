@@ -242,15 +242,26 @@ public class Platform {
         for (int j = 0; j<20; j++){
             Artist artist = new Artist("Dummy Artist " + j);
         }
+
         for (int i =1; i <=howMany; i++){
             Drama drama1 = new Drama("Drama " + i);
+
             if(!Artist.getSetOfArtist().isEmpty()){
-            drama1.addCast(Artist.getSetOfArtist().iterator().next());
+
+                //drama1.addCast(Artist.getSetOfArtist().iterator().next());
                 HashSet<Artist> tempSetOfArtist = Artist.getSetOfArtist();
-                List<Artist> sortedList = new ArrayList<>(tempSetOfArtist);}
+                List<Artist> sortedList = new ArrayList<>(tempSetOfArtist);
+
+                int randomNumber1 = (int) (Math.random() * 19)+1;
+                drama1.addCast(sortedList.get(randomNumber1));
+                int randomNumber2 = (int) (Math.random() * 19)+1;
+                drama1.addCast(sortedList.get(randomNumber2));
+            }
 
 
             new DramaRecords(drama1);
+
+
 
         }
 
