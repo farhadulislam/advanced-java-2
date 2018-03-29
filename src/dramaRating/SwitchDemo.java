@@ -3,6 +3,8 @@ package dramaRating;
 public class SwitchDemo {
     public static void main(String[] args) {
 
+
+
         int month = 8;
         String monthString;
         switch (month) {
