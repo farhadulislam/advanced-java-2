@@ -1,34 +1,38 @@
 package dramaRating;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashSet;
 
 public class Register {
 
-    private String[] staffStringArray = new String[1000];
+    private String[] generalRegistry = new String[1000];
 
     public static void main (String [] args){
 
 
-    }
+        Register reg1 = new Register();
+        reg1.register("Arfan");
 
-    public void register(){
 
-        // add elements to the array
-
-        staffStringArray[0] = "Books";
-        staffStringArray[1] = "Pens";
-        staffStringArray[2] = "Pencils";
-        staffStringArray[3] = "Notebooks";
 
     }
-    
 
-    public void displayRegister(String [] staffStringArray){
+    public void register(String name){
 
-        for(String staff : staffStringArray){
+            generalRegistry[generalRegistry.length - 1] = name;
+
+            System.out.println("Name" + name + " added ");
+
+    }
+
+
+    public void displayRegister(String [] generalRegistry){
+
+        for(String staff : generalRegistry){
             System.out.println("Staff " + staff);
         }
+    }
+
+    public void populateRegistry(){
+
+
     }
 }

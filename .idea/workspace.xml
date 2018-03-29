@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967ce4a9-ce09-4ccb-b23f-6fb8d08ea397" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/dramaRating/Register.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/dramaRating/SwitchDemo.java" afterPath="$PROJECT_DIR$/src/dramaRating/SwitchDemo.java" />
+      <change beforePath="$PROJECT_DIR$/src/dramaRating/Register.java" afterPath="$PROJECT_DIR$/src/dramaRating/Register.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -288,13 +287,15 @@
       <file leaf-file-name="Register.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="50">
+              <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#563#575#0" expanded="true" />
-                <element signature="e#628#644#0" expanded="true" />
-                <element signature="e#628#644#0" expanded="true" />
+                <element signature="e#162#193#1" expanded="true" />
+                <element signature="e#372#397#0" expanded="true" />
+                <element signature="e#372#397#0" expanded="true" />
+                <element signature="e#482#494#0" expanded="true" />
+                <element signature="e#546#562#0" expanded="true" />
+                <element signature="e#546#562#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1250,13 +1251,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dramaRating/Register.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="50">
+          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#563#575#0" expanded="true" />
-            <element signature="e#628#644#0" expanded="true" />
-            <element signature="e#628#644#0" expanded="true" />
+            <element signature="e#162#193#1" expanded="true" />
+            <element signature="e#372#397#0" expanded="true" />
+            <element signature="e#372#397#0" expanded="true" />
+            <element signature="e#482#494#0" expanded="true" />
+            <element signature="e#546#562#0" expanded="true" />
+            <element signature="e#546#562#0" expanded="true" />
           </folding>
         </state>
       </provider>
