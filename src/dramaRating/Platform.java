@@ -23,7 +23,7 @@ public class Platform {
         Platform platform1 = new Platform();
         //platform1.addRecords();
 
-        platform1.addRandomDummyRecords(120);
+        platform1.addRandomDummyRecords(10);
         platform1.showPlatform();
         platform1.doRanking();
 
@@ -107,7 +107,12 @@ public class Platform {
         Artist art15 = new Artist ("Zahid", "Hassan");
         Artist art17 = new Artist ("AKM", "Hassan");
         Artist art19 = new Artist("Mir", "Sabbir");
-        Artist art21 = new Artist("Abul", "Hayat");
+        Artist art21 = new Artist("Mahfuz", "Ahmed");
+        Artist art23 = new Artist("Partho", "Barua");
+        Artist art25 = new Artist("Intekhab", "Dinar");
+        Artist art27 = new Artist("Mosharraf", "Karim");
+        Artist art29 = new Artist("Hassan", "Masud");
+        Artist art31 = new Artist("Salman", "Muktadir");
 
 
         Artist art2 = new Artist("Mehzabien", "Chowdhury");
@@ -121,6 +126,11 @@ public class Platform {
         Artist art18 = new Artist("Shokh");
         Artist art20 = new Artist("Nowshin");
         Artist art22 = new Artist("Zakia", "Bari Momo");
+        Artist art24 = new Artist("Urmila", "Kaur");
+        Artist art26 = new Artist("Farhana", "Mili");
+        Artist art28 = new Artist("Bindu", "Afsan ara");
+        Artist art30 = new Artist("Toya", "Mumtahina");
+        Artist art32 = new Artist("Nabila");
 
     }
     public void showPlatform(){

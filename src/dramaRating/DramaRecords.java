@@ -207,10 +207,6 @@ public class DramaRecords {
         //System.out.println("Actual number " + actualNumber);
         return actualNumber;
     }
-
-
-
-
-
+    
 
 }
