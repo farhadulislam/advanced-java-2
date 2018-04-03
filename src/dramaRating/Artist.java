@@ -160,8 +160,9 @@ public class Artist extends Staff {
 
 
     public static void  showAllArtist(){
+        ArrayList<Artist> arrayListOfArtist = new ArrayList<>(Artist.getSetOfArtist());
 
-        for(Artist artist: setOfArtist) {
+        for(Artist artist: arrayListOfArtist) {
             System.out.print(artist.getArtistId()+ " : ");
             artist.showArtistFullName();
         }

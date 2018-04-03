@@ -131,6 +131,17 @@ public class Platform {
         Artist art28 = new Artist("Bindu", "Afsan ara");
         Artist art30 = new Artist("Toya", "Mumtahina");
         Artist art32 = new Artist("Nabila");
+        Artist art34 = new Artist("Badhon");
+        Artist art36 = new Artist( "Neelanjona", "Neela");
+        Artist art38 = new Artist ("Nadia");
+        Artist art40 = new Artist ("Shahtaj");
+        Artist art42 = new Artist ("Purnima", "Dilara Hashem");
+        Artist art44 = new Artist ("Pia", "Bipasha");
+        Artist art46 = new Artist ("Farhana", "Mili");
+        Artist art48 = new Artist ("Vabna");
+        Artist art50 = new Artist ("Snigdha", "Momin");
+        Artist art52 = new Artist ("Ajmeri", "Asha");
+        Artist art54 = new Artist ("Shanarei", "Shanu");
 
     }
     public void showPlatform(){
