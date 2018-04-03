@@ -123,7 +123,7 @@ public class Platform {
 
         System.out.println("Adding Artist records.............");
         Artist afranNisho = new Artist("Afran", "Nisho");
-        Artist apurbo = new Artist("Apurbo");
+        Artist apurbo = new Artist("Apurbo", "Ziaul Faruq");
         Artist allen = Artist.createArtist("Allen", "Shuvro");
         Artist zovan = new Artist("Farhan Ahmed", "Zovan" );
         Artist Nayeem = Artist.createArtist("Nayeem");
@@ -171,9 +171,9 @@ public class Platform {
         Artist art50 = new Artist ("Snigdha", "Momin");
         Artist art52 = new Artist ("Ajmeri", "Asha");
         Artist art54 = new Artist ("Shanarei", "Shanu");
-        Artist ishana = new Artist("Ishana");
-        Artist shoshi = new Artist ("Shoshi");
-        Artist mithila = new Artist ("mithila");
+        Artist ishana = new Artist("Ishana", "mounita khan");
+        Artist shoshi = new Artist ("Shoshi", " ...");
+        Artist mithila = new Artist ("mithila", "Rashid");
         Artist dipannita = new Artist("Dipannita", "Martin");
 
 

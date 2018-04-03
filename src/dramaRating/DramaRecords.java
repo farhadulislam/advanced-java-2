@@ -142,6 +142,14 @@ public class DramaRecords {
         return d;
 
     }
+    public double rank1B (){
+        //return (views*calcLikability3());
+        double d = ((((getLikes()-getDislikes())/views)*100)*measureLikesStrength());
+        String str = String.format("%1.3f", d);
+        d = Double.valueOf(str);
+        return d;
+
+    }
     public double rank2 (){
         //return (views*calcLikability3());
         return (((getTotalLikesAndDislikes()/views)*100)+ measureLikesStrength())/2;
