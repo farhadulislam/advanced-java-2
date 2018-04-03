@@ -13,6 +13,7 @@ public class DramaRecords {
     private double likeability;
     private Date datePublished;
     private Date lastUpdated;
+    private int screenTimeInMins;
 
     private static int numOfDramaRecords;
 
