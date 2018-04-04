@@ -98,8 +98,12 @@ public class Drama {
         } else {
             System.out.print("CAST : ");
             for (Artist artist : cast) {
-                System.out.print(artist.getFirstName());
+                if(artist.getFirstName()!= null){
+                System.out.print(artist.getArtistFullName());
                 System.out.print(" | ");
+                } else {
+                    System.out.print("ERR artist" + " | " );
+                }
 
             }
             System.out.println(".");
@@ -114,7 +118,7 @@ public class Drama {
             if(drama.getDramaRecords()!=null){
                 System.out.print("Details available for  : ");
                 System.out.println(drama.getDramaName().toUpperCase());
-                System.out.println("RANK-1 value : " + drama.getDramaRecords().rank1());
+                System.out.println("RANK-1 VALUE : " + drama.getDramaRecords().rank1());
                 drama.showCast();
                 System.out.println(" ");
             } else {

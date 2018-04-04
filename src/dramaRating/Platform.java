@@ -21,9 +21,9 @@ public class Platform {
        // quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
         Platform platform1 = new Platform();
-        //platform1.addRecords();
+        platform1.addRecords2();
 
-        platform1.addRandomDummyRecords(10);
+        //platform1.addRandomDummyRecords(5);
         platform1.showPlatform();
         platform1.doRanking();
 
@@ -92,6 +92,107 @@ public class Platform {
         drama6.addCast(art4);
         drama7.addCast(afranNisho);
         drama7.addCast(art6);
+
+    }
+
+    public void addRecords2(){
+
+        System.out.println("Platform initiated");
+        System.out.println("Adding Natok ...........");
+        Drama drama1 = new Drama(Drama.issueDramaId(), "Tiar Khacha");
+        Drama drama2 = new Drama (Drama.issueDramaId(), "Moharani");
+        Drama drama3 = new Drama(Drama.issueDramaId(), "Boro Chele");
+        Drama drama4 = new Drama(Drama.issueDramaId(), "Batch 27");
+        Drama drama5 = new Drama(Drama.issueDramaId(), "Golden A+");
+        Drama drama6 = new Drama(Drama.issueDramaId(), "Moyna o Mojnur Golpo");
+        Drama drama7 = new Drama(Drama.issueDramaId(), "Se ache duare dariye");
+
+
+        System.out.println("Adding drama records...........");
+        DramaRecords dramaRecords1 = new DramaRecords(drama1, 4000, 668, 1005173);
+        DramaRecords dramaRecords2 = new DramaRecords(drama2, 5900, 837, 1493252 );
+        DramaRecords dramaRecords3 = new DramaRecords(drama3, 230000 , 11000, 14583236);
+        DramaRecords dramaRecords4 = new DramaRecords(drama4, 56000, 31000, 5630125);
+        DramaRecords dramaRecords5 = new DramaRecords(drama5, 20000, 674, 1155765);
+        DramaRecords dr6 = new DramaRecords(drama6,8500, 627, 1276529);
+        DramaRecords dr7 = new DramaRecords(drama7,6800, 531, 1014465);
+       // DramaRecords dr8 = new DramaRecords(drama6,0, 0, 1276529);
+       // DramaRecords dr9 = new DramaRecords(drama6,0, 0, 1276529);
+       // DramaRecords dr10 = new DramaRecords(drama6,0, 0, 1276529);
+
+
+        System.out.println("Adding Artist records.............");
+        Artist afranNisho = new Artist("Afran", "Nisho");
+        Artist apurbo = new Artist("Apurbo", "Ziaul Faruq");
+        Artist allen = Artist.createArtist("Allen", "Shuvro");
+        Artist zovan = new Artist("Farhan Ahmed", "Zovan" );
+        Artist Nayeem = Artist.createArtist("Nayeem");
+        Artist Sajal = new Artist("Sajal");
+        Artist tausif= new Artist("Tausif", "Mahbub");
+        Artist Zahid = new Artist ("Zahid", "Hassan");
+        Artist AKM = new Artist ("AKM", "Hassan");
+        Artist mirSabbir = new Artist("Mir", "Sabbir");
+        Artist mahfuz = new Artist("Mahfuz", "Ahmed");
+        Artist Partho = new Artist("Partho", "Barua");
+        Artist Intekhab = new Artist("Intekhab", "Dinar");
+        Artist Mosharraf = new Artist("Mosharraf", "Karim");
+        Artist Hassan = new Artist("Hassan", "Masud");
+        Artist Salman = new Artist("Salman", "Muktadir");
+        Artist lavlu = new Artist("Salahuddin", "Lavlu");
+        Artist imran = new Artist("Imran");
+        Artist dipakSumon = new Artist("Dipak", "Sumon");
+
+
+
+        Artist mehzabien = new Artist("Mehzabien", "Chowdhury");
+        Artist Sabnam = new Artist("Sabnam", "Faria");
+        Artist Tisha = new Artist( "Tisha", "Nusrat Imrose");
+        Artist Sabila = Artist.createArtist("Sabila", "Noor");
+        Artist Aparna = new Artist("Aparna", "Ghosh");
+        Artist Tasnuva = new Artist("Tasnuva", "Tisha");
+        Artist Safa = new Artist ("Safa", "Kabir");
+        Artist Mousumi = new Artist ("Mousumi", "Hamid");
+        Artist Shokh = new Artist("Shokh");
+        Artist Nowshin = new Artist("Nowshin");
+        Artist art22 = new Artist("Zakia", "Bari Momo");
+        Artist art24 = new Artist("Urmila", "Kaur");
+        Artist art26 = new Artist("Farhana", "Mili");
+        Artist art28 = new Artist("Bindu", "Afsan ara");
+        Artist art30 = new Artist("Toya", "Mumtahina");
+        Artist art32 = new Artist("Nabila");
+        Artist art34 = new Artist("Badhon");
+        Artist art36 = new Artist( "Neelanjona", "Neela");
+        Artist art38 = new Artist ("Nadia");
+        Artist art40 = new Artist ("Shahtaj");
+        Artist art42 = new Artist ("Purnima", "Dilara Hashem");
+        Artist art44 = new Artist ("Pia", "Bipasha");
+        Artist art46 = new Artist ("Farhana", "Mili");
+        Artist art48 = new Artist ("Vabna");
+        Artist art50 = new Artist ("Snigdha", "Momin");
+        Artist art52 = new Artist ("Ajmeri", "Asha");
+        Artist art54 = new Artist ("Shanarei", "Shanu");
+        Artist ishana = new Artist("Ishana", "mounita khan");
+        Artist shoshi = new Artist ("Shoshi", " ...");
+        Artist mithila = new Artist ("mithila", "Rashid");
+        Artist dipannita = new Artist("Dipannita", "Martin");
+
+
+        drama1.addCast(ishana);
+        drama1.addCast(mirSabbir);
+        drama2.addCast(shoshi);
+        drama2.addCast(lavlu);
+        drama2.addCast(imran);
+        drama3.addCast(mehzabien);
+        drama3.addCast(apurbo);
+        drama4.addCast(apurbo);
+        drama4.addCast(mithila);
+        drama5.addCast(dipakSumon);
+        drama5.addCast(dipannita);
+        drama6.addCast(mehzabien);
+        drama6.addCast(tausif);
+        drama7.addCast(mehzabien);
+        drama7.addCast(zovan);
+
 
     }
 
