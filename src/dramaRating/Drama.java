@@ -118,7 +118,7 @@ public class Drama {
             if(drama.getDramaRecords()!=null){
                 System.out.print("Details available for  : ");
                 System.out.println(drama.getDramaName().toUpperCase());
-                System.out.println("RANK-1 value : " + drama.getDramaRecords().rank1());
+                System.out.println("RANK-1 VALUE : " + drama.getDramaRecords().rank1());
                 drama.showCast();
                 System.out.println(" ");
             } else {
