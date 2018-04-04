@@ -23,7 +23,7 @@ public class Platform {
         Platform platform1 = new Platform();
         platform1.addRecords2();
 
-        //platform1.addRandomDummyRecords(10);
+        //platform1.addRandomDummyRecords(5);
         platform1.showPlatform();
         platform1.doRanking();
 

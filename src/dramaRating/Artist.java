@@ -40,7 +40,9 @@ public class Artist extends Staff {
     }
 
     public Artist(String firstName) {
-        new Artist(firstName, unknownLastName);
+        this.firstName = firstName;
+        this.lastName = unknownLastName;
+        new Artist(this.firstName, this.lastName);
     }
 
     public Artist(){
@@ -106,7 +108,7 @@ public class Artist extends Staff {
     }
     public String getArtistFullName(){
 
-        return this.getFirstName()+ this.getLastName();
+        return this.getFirstName() + " " + this.getLastName();
     }
 
     public int getArtistId() {

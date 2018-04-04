@@ -98,8 +98,12 @@ public class Drama {
         } else {
             System.out.print("CAST : ");
             for (Artist artist : cast) {
-                System.out.print(artist.getFirstName());
+                if(artist.getFirstName()!= null){
+                System.out.print(artist.getArtistFullName());
                 System.out.print(" | ");
+                } else {
+                    System.out.print("ERR artist" + " | " );
+                }
 
             }
             System.out.println(".");
