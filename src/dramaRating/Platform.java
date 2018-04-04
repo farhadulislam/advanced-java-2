@@ -7,25 +7,20 @@ import static otherStuff.GuessingGame.print;
 public class Platform {
 
     private static TreeMap<String, Double> treeValue = new TreeMap<>();
+    private static TreeMap<String, Double> treeValue2 = new TreeMap<>();
 
 
     public static void main (String [] args){
 
         System.out.println("STARTING main method from Platform class");
 
-        //automateAddingArtistData(Artist.getSetOfArtist());
-        //automateAddingDrama(Drama.getSetOfDramas());
-        //automateAddingDramaRecords(DramaRecords.getSetOfDramaRecords());
-        //new Platform().doRanking();
-
        // quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
         Platform platform1 = new Platform();
         platform1.addRecords2();
-
-        //platform1.addRandomDummyRecords(5);
         platform1.showPlatform();
         platform1.doRanking();
+        platform1.doRanking2();
 
         System.out.println("EXECUTION ENDED");
 
@@ -264,7 +259,7 @@ public class Platform {
 
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
-            treeValue.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+            treeValue.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1A());
             //treeValue.clear();
             //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
 
@@ -274,6 +269,38 @@ public class Platform {
         Map sortedMap = sortByValues(treeValue);
 
        // Ranking.showMap(sortedMap);
+
+        // Get a set of the entries on the sorted map
+        Set set = sortedMap.entrySet();
+
+        // Get an iterator
+        Iterator i = set.iterator();
+
+        // Display elements
+        while(i.hasNext()) {
+            Map.Entry me = (Map.Entry)i.next();
+            System.out.print(me.getKey() + ": ");
+            System.out.println(me.getValue());
+        }
+
+    }
+
+    public void doRanking2(){
+
+        System.out.println("-------------Ranking in DESCECENDING order--------------------------------------");
+
+        for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
+
+            treeValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+            //treeValue.clear();
+            //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
+
+        }
+
+
+        Map sortedMap = sortByValues(treeValue2);
+
+        // Ranking.showMap(sortedMap);
 
         // Get a set of the entries on the sorted map
         Set set = sortedMap.entrySet();
@@ -314,11 +341,12 @@ public class Platform {
 
         System.out.println("QUICKSTART method.......");
         Platform platform1 = new Platform();
-        platform1.addRecords();
+        platform1.addRecords2();
         gap();
         platform1.showPlatform();
         gap();
         platform1.doRanking();
+        platform1.doRanking2();
     }
 
     public static void gap (){
