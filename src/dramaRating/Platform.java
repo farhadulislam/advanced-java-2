@@ -126,21 +126,22 @@ public class Platform {
         Artist apurbo = new Artist("Apurbo", "Ziaul Faruq");
         Artist allen = Artist.createArtist("Allen", "Shuvro");
         Artist zovan = new Artist("Farhan Ahmed", "Zovan" );
-        Artist Nayeem = Artist.createArtist("Nayeem");
-        Artist Sajal = new Artist("Sajal");
+        Artist nayeem = Artist.createArtist("Nayeem");
+        Artist sajal = new Artist("Sajal", "Abdullah");
         Artist tausif= new Artist("Tausif", "Mahbub");
-        Artist Zahid = new Artist ("Zahid", "Hassan");
+        Artist zahidHassan = new Artist ("Zahid", "Hassan");
         Artist AKM = new Artist ("AKM", "Hassan");
         Artist mirSabbir = new Artist("Mir", "Sabbir");
         Artist mahfuz = new Artist("Mahfuz", "Ahmed");
-        Artist Partho = new Artist("Partho", "Barua");
-        Artist Intekhab = new Artist("Intekhab", "Dinar");
-        Artist Mosharraf = new Artist("Mosharraf", "Karim");
-        Artist Hassan = new Artist("Hassan", "Masud");
-        Artist Salman = new Artist("Salman", "Muktadir");
+        Artist partho = new Artist("Partho", "Barua");
+        Artist intekhab = new Artist("Intekhab", "Dinar");
+        Artist mosharraf = new Artist("Mosharraf", "Karim");
+        Artist hassanMasud = new Artist("Hassan", "Masud");
+        Artist salman = new Artist("Salman", "Muktadir");
         Artist lavlu = new Artist("Salahuddin", "Lavlu");
         Artist imran = new Artist("Imran");
         Artist dipakSumon = new Artist("Dipak", "Sumon");
+        Artist siyam = new Artist("Siyam", "Ahmed");
 
 
 
@@ -153,7 +154,7 @@ public class Platform {
         Artist Safa = new Artist ("Safa", "Kabir");
         Artist Mousumi = new Artist ("Mousumi", "Hamid");
         Artist Shokh = new Artist("Shokh");
-        Artist Nowshin = new Artist("Nowshin");
+        Artist Nowshin = new Artist("Nowshin", "Nahrin");
         Artist art22 = new Artist("Zakia", "Bari Momo");
         Artist art24 = new Artist("Urmila", "Kaur");
         Artist art26 = new Artist("Farhana", "Mili");
@@ -162,8 +163,8 @@ public class Platform {
         Artist art32 = new Artist("Nabila");
         Artist art34 = new Artist("Badhon");
         Artist art36 = new Artist( "Neelanjona", "Neela");
-        Artist art38 = new Artist ("Nadia");
-        Artist art40 = new Artist ("Shahtaj");
+        Artist art38 = new Artist ("Nadia", "Nayeem");
+        Artist art40 = new Artist ("Shahtaj", "munira");
         Artist art42 = new Artist ("Purnima", "Dilara Hashem");
         Artist art44 = new Artist ("Pia", "Bipasha");
         Artist art46 = new Artist ("Farhana", "Mili");
@@ -263,7 +264,7 @@ public class Platform {
 
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
-            treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1A());
+            treeValue.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
             //treeValue.clear();
             //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
 
