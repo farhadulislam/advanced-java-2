@@ -132,11 +132,12 @@ public class DramaRecords {
         return  ((likes-dislikes)/getTotalLikesAndDislikes())*100;
     }
 
-    public double rank1 (){
+    public double simpleRank(){
 
-        return (((getTotalLikesAndDislikes()/views)*100)*measureLikesStrength());
+        return (((getTotalLikesAndDislikes()/views)*100)+ measureLikesStrength())/2;
 
     }
+
 
     public double rank1A (){
 
@@ -147,17 +148,13 @@ public class DramaRecords {
 
     }
     public double rank1B (){
-        //return (views*calcLikability3());
+
         double temp = (this.getLikesMinusDislikes()/views)*100.00;
-        double value = (temp * measureLikesStrength()) + this.getViews();
+       // double value = (temp * measureLikesStrength()) + this.getViews(); // if only number of views were taken into consideration
+        double value = temp * measureLikesStrength();
         String str = String.format("%1.3f", value);
         value = Double.valueOf(str);
         return value;
-
-    }
-    public double rank2 (){
-
-        return (((getTotalLikesAndDislikes()/views)*100)+ measureLikesStrength())/2;
 
     }
 

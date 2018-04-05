@@ -311,7 +311,12 @@ public class Platform {
 
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
+            //Ranking based on views
+            //Double viewsAsDouble = Double.valueOf(dramaRecords.getViews());
+            //treeValue2.put(dramaRecords.getDrama().getDramaName() , viewsAsDouble);
+
             treeValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+
             //treeValue.clear();
             //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
 
