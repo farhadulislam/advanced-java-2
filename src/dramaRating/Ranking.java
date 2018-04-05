@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Ranking {
 
-    public static void main (String [] args ){
+    public static void main (String [] args ) throws InterruptedException {
 
         Ranking app1 = new Ranking();
         Platform platform2 = new Platform();
@@ -13,8 +13,23 @@ public class Ranking {
         //platform2.addRecords();
         //platform2.doRanking();
 
-        platform2.addRecords2();
-        platform2.doRanking2();
+       // platform2.addRecords2();
+        //platform2.doRanking2();
+
+        Thread.sleep(100);
+        try {
+            long start = System.currentTimeMillis( );
+            System.out.println(new Date( ) + "\n");
+
+            Thread.sleep(5*60*10);
+            System.out.println(new Date( ) + "\n");
+
+            long end = System.currentTimeMillis( );
+            long diff = end - start;
+            System.out.println("Difference is : " + diff);
+        } catch (Exception e) {
+            System.out.println("Got an exception!");
+        }
 
 
     }
