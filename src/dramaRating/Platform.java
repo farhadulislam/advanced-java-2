@@ -119,21 +119,22 @@ public class Platform {
         Artist siyam = new Artist("Siyam", "Ahmed");
         Artist allenShuvro = new Artist("Allen", "Shuvro");
         Artist fazlulBabu = new Artist("Fazlul Hoque", "Babu");
+        Artist shatabdiWadud = new Artist ("Shatabdi", "Wadud");
 
 
 
         Artist mehzabien = new Artist("Mehzabien", "Chowdhury");
-        Artist sabnam = new Artist("Sabnam", "Faria");
-        Artist tisha = new Artist( "Tisha", "Nusrat Imrose");
-        Artist sabila = Artist.createArtist("Sabila", "Noor");
         Artist aparna = new Artist("Aparna", "Ghosh");
+        Artist sabnam = new Artist("Sabnam", "Faria");
         Artist tasnuva = new Artist("Tasnuva", "Tisha");
+        Artist tisha = new Artist( "Tisha", "Nusrat Imrose");
         Artist safa = new Artist ("Safa", "Kabir");
+        Artist urmila = new Artist("Urmila", "Kaur");
+        Artist sabila = Artist.createArtist("Sabila", "Noor");
         Artist mousumiHamid = new Artist ("Mousumi", "Hamid");
         Artist shokh = new Artist("Shokh");
         Artist nowshin = new Artist("Nowshin", "Nahrin");
         Artist momo = new Artist("Zakia", "Bari Momo");
-        Artist urmila = new Artist("Urmila", "Kaur");
         Artist farhanaMili = new Artist("Farhana", "Mili");
         Artist bindu = new Artist("Bindu", "Afsan ara");
         Artist toya = new Artist("Toya", "Mumtahina");
@@ -156,6 +157,11 @@ public class Platform {
         Artist sarika = new Artist("Sarika");
         Artist agnila = new Artist("Agnila");
         Artist bijori = new Artist("Bijori", "Barkatullah");
+        Artist sanjidaPretty = new Artist ("Sanjida", "Pretty");
+        Artist orsha = new Artist("Orsha");
+        Artist bonne = new Artist ( "Bonne", "Hassan");
+        Artist taniaBrishti = new Artist ("Tania", "brishti");
+
 
 
 
@@ -170,6 +176,10 @@ public class Platform {
         Drama drama7 = new Drama(Drama.issueDramaId(), "Se ache duare dariye");
         Drama drama8 = new Drama(Drama.issueDramaId(), "Forever");
         Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
+        Drama drama10 = new Drama(Drama.issueDramaId(), "Golpota Tomari");
+        //Drama drama11 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
+       // Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
+       // Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
 
 
         System.out.println("Adding drama records...........");
@@ -182,8 +192,8 @@ public class Platform {
         DramaRecords dr7 = new DramaRecords(drama7,6800, 531, 1014465);
         DramaRecords dr8 = new DramaRecords(drama8,3200, 99, 207539);
         DramaRecords dr9 = new DramaRecords(drama9,9700, 783, 1_210_686);
-       // DramaRecords dr10 = new DramaRecords(drama6,0, 0, 1276529);
-
+        DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
+        //DramaRecords.autoCreateDramaRecords();
 
 
 
@@ -207,6 +217,8 @@ public class Platform {
         drama8.addCast(apurbo);
         drama9.addCast(sharlin);
         drama9.addCast(apurbo);
+        drama10.addCast(mehzabien);
+        drama10.addCast(apurbo);
 
 
     }
