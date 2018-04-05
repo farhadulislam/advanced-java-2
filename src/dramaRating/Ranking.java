@@ -24,12 +24,10 @@ public class Ranking {
         System.out.println("**********" + dramaRecords.getDrama().getDramaName() + "**************");
 
         System.out.println("................");
-        System.out.println("Returning a value from calcLiability " + dramaRecords.calcLikability1());
-        System.out.println("Returning a value from calcLiability2 " + dramaRecords.calcLikability2());
         System.out.println("Returning a value from calcLiability3 " + dramaRecords.measureLikesStrength());
 
         System.out.println("using rank ****************************");
-        System.out.println(dramaRecords.rank1());
+        System.out.println(dramaRecords.rank1B());
         System.out.println(" Percentage of likes ratio for this record against views is :  " + dramaRecords.getLikesRatio());
 
     }
