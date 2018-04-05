@@ -7,28 +7,29 @@ public class Ranking {
 
     public static void main (String [] args ){
 
-        Artist.showAllArtist();
         Ranking app1 = new Ranking();
         Platform platform2 = new Platform();
-        platform2.doRanking();
-        platform2.addRecords();
-        platform2.doRanking();
 
-        //new Display().showSwingComponent();
+        //platform2.addRecords();
+        //platform2.doRanking();
+
+        platform2.addRecords2();
+        platform2.doRanking2();
+
 
     }
 
     public static void showLikability(DramaRecords dramaRecords){
+
         System.out.println("................");
         System.out.println("For the following drama :- ");
         System.out.println("**********" + dramaRecords.getDrama().getDramaName() + "**************");
 
         System.out.println("................");
-        System.out.println("Returning a value from calcLiability3 " + dramaRecords.measureLikesStrength());
+        System.out.println("Likes strength:  " + dramaRecords.measureLikesStrength());
 
         System.out.println("using rank ****************************");
         System.out.println(dramaRecords.rank1B());
-        System.out.println(" Percentage of likes ratio for this record against views is :  " + dramaRecords.getLikesRatio());
 
     }
 
