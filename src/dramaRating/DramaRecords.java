@@ -149,10 +149,10 @@ public class DramaRecords {
     public double rank1B (){
         //return (views*calcLikability3());
         double temp = (this.getLikesMinusDislikes()/views)*100.00;
-        double d = temp * measureLikesStrength();
-        String str = String.format("%1.3f", d);
-        d = Double.valueOf(str);
-        return d;
+        double value = (temp * measureLikesStrength()) + this.getViews();
+        String str = String.format("%1.3f", value);
+        value = Double.valueOf(str);
+        return value;
 
     }
     public double rank2 (){
