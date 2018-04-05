@@ -7,25 +7,24 @@ import static otherStuff.GuessingGame.print;
 public class Platform {
 
     private static TreeMap<String, Double> treeValue = new TreeMap<>();
+    private static TreeMap<String, Double> treeValue2 = new TreeMap<>();
 
 
     public static void main (String [] args){
 
         System.out.println("STARTING main method from Platform class");
 
-        //automateAddingArtistData(Artist.getSetOfArtist());
-        //automateAddingDrama(Drama.getSetOfDramas());
-        //automateAddingDramaRecords(DramaRecords.getSetOfDramaRecords());
-        //new Platform().doRanking();
+        //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
-       // quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
-
-        Platform platform1 = new Platform();
+       Platform platform1 = new Platform();
+      // platform1.addRandomDummyRecords(10);
+        //platform1.addRecords();
         platform1.addRecords2();
-
-        //platform1.addRandomDummyRecords(5);
         platform1.showPlatform();
-        platform1.doRanking();
+       // platform1.doRanking();
+       platform1.doRanking2();
+
+
 
         System.out.println("EXECUTION ENDED");
 
@@ -97,7 +96,70 @@ public class Platform {
 
     public void addRecords2(){
 
-        System.out.println("Platform initiated");
+        System.out.println("Adding Artist records.............");
+        Artist afranNisho = new Artist("Afran", "Nisho");
+        Artist apurbo = new Artist("Apurbo", "Ziaul Faruq");
+        Artist allen = Artist.createArtist("Allen", "Shuvro");
+        Artist zovan = new Artist("Farhan Ahmed", "Zovan" );
+        Artist nayeem = Artist.createArtist("Nayeem");
+        Artist sajal = new Artist("Sajal", "Abdullah");
+        Artist tausif= new Artist("Tausif", "Mahbub");
+        Artist zahidHassan = new Artist ("Zahid", "Hassan");
+        Artist akmHassan = new Artist ("AKM", "Hassan");
+        Artist mirSabbir = new Artist("Mir", "Sabbir");
+        Artist mahfuz = new Artist("Mahfuz", "Ahmed");
+        Artist partho = new Artist("Partho", "Barua");
+        Artist intekhab = new Artist("Intekhab", "Dinar");
+        Artist mosharraf = new Artist("Mosharraf", "Karim");
+        Artist hassanMasud = new Artist("Hassan", "Masud");
+        Artist salman = new Artist("Salman", "Muktadir");
+        Artist lavlu = new Artist("Salahuddin", "Lavlu");
+        Artist imran = new Artist("Imran");
+        Artist dipakSumon = new Artist("Dipak", "Sumon");
+        Artist siyam = new Artist("Siyam", "Ahmed");
+        Artist allenShuvro = new Artist("Allen", "Shuvro");
+        Artist fazlulBabu = new Artist("Fazlul Hoque", "Babu");
+
+
+
+        Artist mehzabien = new Artist("Mehzabien", "Chowdhury");
+        Artist sabnam = new Artist("Sabnam", "Faria");
+        Artist tisha = new Artist( "Tisha", "Nusrat Imrose");
+        Artist sabila = Artist.createArtist("Sabila", "Noor");
+        Artist aparna = new Artist("Aparna", "Ghosh");
+        Artist tasnuva = new Artist("Tasnuva", "Tisha");
+        Artist safa = new Artist ("Safa", "Kabir");
+        Artist mousumiHamid = new Artist ("Mousumi", "Hamid");
+        Artist shokh = new Artist("Shokh");
+        Artist nowshin = new Artist("Nowshin", "Nahrin");
+        Artist momo = new Artist("Zakia", "Bari Momo");
+        Artist urmila = new Artist("Urmila", "Kaur");
+        Artist farhanaMili = new Artist("Farhana", "Mili");
+        Artist bindu = new Artist("Bindu", "Afsan ara");
+        Artist toya = new Artist("Toya", "Mumtahina");
+        Artist nabilaMasuma = new Artist("Nabila", "Masuma");
+        Artist badhon = new Artist("Badhon", "Ajmeri Hoque");
+        Artist neela = new Artist( "Neelanjona", "Neela");
+        Artist nadia = new Artist ("Nadia", "Nayeem");
+        Artist shahtaj = new Artist ("Shahtaj", "munira");
+        Artist purnima = new Artist ("Purnima", "Dilara Hashem");
+        Artist piaBipasha = new Artist ("Pia", "Bipasha");
+        Artist vabna = new Artist ("Vabna");
+        Artist snugdha = new Artist ("Snigdha", "Momin");
+        Artist ajmeriAsha = new Artist ("Ajmeri", "Asha");
+        Artist shanarei = new Artist ("Shanarei", "Shanu");
+        Artist ishana = new Artist("Ishana", "mounita khan");
+        Artist shoshi = new Artist ("Shoshi", " ...");
+        Artist mithila = new Artist ("mithila", "Rashid");
+        Artist dipannita = new Artist("Dipannita", "Martin");
+        Artist sharlin = new Artist("Shalin", "Farzana");
+        Artist sarika = new Artist("Sarika");
+        Artist agnila = new Artist("Agnila");
+        Artist bijori = new Artist("Bijori", "Barkatullah");
+
+
+
+        /*******************/
         System.out.println("Adding Natok ...........");
         Drama drama1 = new Drama(Drama.issueDramaId(), "Tiar Khacha");
         Drama drama2 = new Drama (Drama.issueDramaId(), "Moharani");
@@ -106,6 +168,8 @@ public class Platform {
         Drama drama5 = new Drama(Drama.issueDramaId(), "Golden A+");
         Drama drama6 = new Drama(Drama.issueDramaId(), "Moyna o Mojnur Golpo");
         Drama drama7 = new Drama(Drama.issueDramaId(), "Se ache duare dariye");
+        Drama drama8 = new Drama(Drama.issueDramaId(), "Forever");
+        Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
 
 
         System.out.println("Adding drama records...........");
@@ -116,65 +180,12 @@ public class Platform {
         DramaRecords dramaRecords5 = new DramaRecords(drama5, 20000, 674, 1155765);
         DramaRecords dr6 = new DramaRecords(drama6,8500, 627, 1276529);
         DramaRecords dr7 = new DramaRecords(drama7,6800, 531, 1014465);
-       // DramaRecords dr8 = new DramaRecords(drama6,0, 0, 1276529);
-       // DramaRecords dr9 = new DramaRecords(drama6,0, 0, 1276529);
+        DramaRecords dr8 = new DramaRecords(drama8,3200, 99, 207539);
+        DramaRecords dr9 = new DramaRecords(drama9,9700, 783, 1_210_686);
        // DramaRecords dr10 = new DramaRecords(drama6,0, 0, 1276529);
 
 
-        System.out.println("Adding Artist records.............");
-        Artist afranNisho = new Artist("Afran", "Nisho");
-        Artist apurbo = new Artist("Apurbo", "Ziaul Faruq");
-        Artist allen = Artist.createArtist("Allen", "Shuvro");
-        Artist zovan = new Artist("Farhan Ahmed", "Zovan" );
-        Artist Nayeem = Artist.createArtist("Nayeem");
-        Artist Sajal = new Artist("Sajal");
-        Artist tausif= new Artist("Tausif", "Mahbub");
-        Artist Zahid = new Artist ("Zahid", "Hassan");
-        Artist AKM = new Artist ("AKM", "Hassan");
-        Artist mirSabbir = new Artist("Mir", "Sabbir");
-        Artist mahfuz = new Artist("Mahfuz", "Ahmed");
-        Artist Partho = new Artist("Partho", "Barua");
-        Artist Intekhab = new Artist("Intekhab", "Dinar");
-        Artist Mosharraf = new Artist("Mosharraf", "Karim");
-        Artist Hassan = new Artist("Hassan", "Masud");
-        Artist Salman = new Artist("Salman", "Muktadir");
-        Artist lavlu = new Artist("Salahuddin", "Lavlu");
-        Artist imran = new Artist("Imran");
-        Artist dipakSumon = new Artist("Dipak", "Sumon");
 
-
-
-        Artist mehzabien = new Artist("Mehzabien", "Chowdhury");
-        Artist Sabnam = new Artist("Sabnam", "Faria");
-        Artist Tisha = new Artist( "Tisha", "Nusrat Imrose");
-        Artist Sabila = Artist.createArtist("Sabila", "Noor");
-        Artist Aparna = new Artist("Aparna", "Ghosh");
-        Artist Tasnuva = new Artist("Tasnuva", "Tisha");
-        Artist Safa = new Artist ("Safa", "Kabir");
-        Artist Mousumi = new Artist ("Mousumi", "Hamid");
-        Artist Shokh = new Artist("Shokh");
-        Artist Nowshin = new Artist("Nowshin");
-        Artist art22 = new Artist("Zakia", "Bari Momo");
-        Artist art24 = new Artist("Urmila", "Kaur");
-        Artist art26 = new Artist("Farhana", "Mili");
-        Artist art28 = new Artist("Bindu", "Afsan ara");
-        Artist art30 = new Artist("Toya", "Mumtahina");
-        Artist art32 = new Artist("Nabila");
-        Artist art34 = new Artist("Badhon");
-        Artist art36 = new Artist( "Neelanjona", "Neela");
-        Artist art38 = new Artist ("Nadia");
-        Artist art40 = new Artist ("Shahtaj");
-        Artist art42 = new Artist ("Purnima", "Dilara Hashem");
-        Artist art44 = new Artist ("Pia", "Bipasha");
-        Artist art46 = new Artist ("Farhana", "Mili");
-        Artist art48 = new Artist ("Vabna");
-        Artist art50 = new Artist ("Snigdha", "Momin");
-        Artist art52 = new Artist ("Ajmeri", "Asha");
-        Artist art54 = new Artist ("Shanarei", "Shanu");
-        Artist ishana = new Artist("Ishana", "mounita khan");
-        Artist shoshi = new Artist ("Shoshi", " ...");
-        Artist mithila = new Artist ("mithila", "Rashid");
-        Artist dipannita = new Artist("Dipannita", "Martin");
 
 
         drama1.addCast(ishana);
@@ -192,11 +203,16 @@ public class Platform {
         drama6.addCast(tausif);
         drama7.addCast(mehzabien);
         drama7.addCast(zovan);
+        drama8.addCast(mithila);
+        drama8.addCast(apurbo);
+        drama9.addCast(sharlin);
+        drama9.addCast(apurbo);
 
 
     }
 
     public void addRecordsArtistOnly(){
+
         System.out.println("Adding Artist records.............");
         Artist afranNisho = new Artist("Afran", "Nisho");
         Artist art3 = new Artist("Apurbo");
@@ -210,9 +226,9 @@ public class Platform {
         Artist art19 = new Artist("Mir", "Sabbir");
         Artist art21 = new Artist("Mahfuz", "Ahmed");
         Artist art23 = new Artist("Partho", "Barua");
-        Artist art25 = new Artist("Intekhab", "Dinar");
-        Artist art27 = new Artist("Mosharraf", "Karim");
-        Artist art29 = new Artist("Hassan", "Masud");
+        Artist intekhabDinar = new Artist("Intekhab", "Dinar");
+        Artist mosharrafKarim = new Artist("Mosharraf", "Karim");
+        Artist hassanMasud = new Artist("Hassan", "Masud");
         Artist art31 = new Artist("Salman", "Muktadir");
 
 
@@ -263,7 +279,7 @@ public class Platform {
 
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
-            treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1A());
+            treeValue.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1A());
             //treeValue.clear();
             //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
 
@@ -273,6 +289,43 @@ public class Platform {
         Map sortedMap = sortByValues(treeValue);
 
        // Ranking.showMap(sortedMap);
+
+        // Get a set of the entries on the sorted map
+        Set set = sortedMap.entrySet();
+
+        // Get an iterator
+        Iterator i = set.iterator();
+
+        // Display elements
+        while(i.hasNext()) {
+            Map.Entry me = (Map.Entry)i.next();
+            System.out.print(me.getKey() + ": ");
+            System.out.println(me.getValue());
+        }
+
+    }
+
+    public void doRanking2(){
+
+        System.out.println("-------------Ranking in DESCECENDING order using rank1B--------------------------");
+
+        for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
+
+            //Ranking based on views
+            //Double viewsAsDouble = Double.valueOf(dramaRecords.getViews());
+            //treeValue2.put(dramaRecords.getDrama().getDramaName() , viewsAsDouble);
+
+            treeValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+
+            //treeValue.clear();
+            //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
+
+        }
+
+
+        Map sortedMap = sortByValues(treeValue2);
+
+        // Ranking.showMap(sortedMap);
 
         // Get a set of the entries on the sorted map
         Set set = sortedMap.entrySet();
@@ -303,8 +356,7 @@ public class Platform {
                     }
                 };
 
-        Map<K, V> sortedByValues =
-                new TreeMap<K, V>(valueComparator);
+        Map<K, V> sortedByValues = new TreeMap<K,V>(valueComparator);
         sortedByValues.putAll(map);
         return sortedByValues;
     }
@@ -313,11 +365,12 @@ public class Platform {
 
         System.out.println("QUICKSTART method.......");
         Platform platform1 = new Platform();
-        platform1.addRecords();
+        platform1.addRecords2();
         gap();
         platform1.showPlatform();
         gap();
-        platform1.doRanking();
+       // platform1.doRanking();
+        platform1.doRanking2();
     }
 
     public static void gap (){
@@ -374,19 +427,20 @@ public class Platform {
         try{
             int num = scan.nextInt();
             if (num>=1) {
-                for (int i = 0; i <= num; i++) {
+                for (int i = 0; i < num; i++) {
 
                     setOfDramarecords.add(DramaRecords.autoCreateDramaRecords());
                 }
                 for (DramaRecords dramaRecords : DramaRecords.getSetOfDramaRecords()) {
 
                     System.out.println(dramaRecords.getDrama().getDramaName()+" : "+ dramaRecords.measureLikesStrength());
-                    System.out.println(dramaRecords.getDramaNameOfThisRecord()+" : "+ dramaRecords.rank1());
+                    System.out.println(dramaRecords.getDramaNameOfThisRecord()+" : "+ dramaRecords.rank1B());
                 }
             }
         } catch (Exception e){
             print("DR : Error, enter a number");
         }
+
 
     }
 
@@ -402,18 +456,18 @@ public class Platform {
 
                 //drama1.addCast(Artist.getSetOfArtist().iterator().next());
                 HashSet<Artist> tempSetOfArtist = Artist.getSetOfArtist();
-                List<Artist> sortedList = new ArrayList<>(tempSetOfArtist);
+                List<Artist> sortedArtistList = new ArrayList<>(tempSetOfArtist);
 
                 int numberOfArtist = Artist.getNumOfArtist();
                 int randomNumber1 = (int) (Math.random() * numberOfArtist );
-                drama1.addCast(sortedList.get(randomNumber1));
+                drama1.addCast(sortedArtistList.get(randomNumber1));
 
                 int randomNumber2 = (int) (Math.random() * numberOfArtist);
                 while(randomNumber2 == randomNumber1){
                     randomNumber2 = (int) (Math.random() * numberOfArtist);
 
                 }
-                drama1.addCast(sortedList.get(randomNumber2));
+                drama1.addCast(sortedArtistList.get(randomNumber2));
             }
             new DramaRecords(drama1);
         }

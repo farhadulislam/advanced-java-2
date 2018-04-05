@@ -111,6 +111,10 @@ public class DramaRecords {
 
         return (double)(likes+dislikes);
     }
+    public double getLikesMinusDislikes(){
+
+        return (double)(likes-dislikes);
+    }
 
 
     public double calcLikability1(){
@@ -128,14 +132,15 @@ public class DramaRecords {
         return  ((likes-dislikes)/getTotalLikesAndDislikes())*100;
     }
 
-    public double rank1 (){
+    public double simpleRank(){
 
-        return (((getTotalLikesAndDislikes()/views)*100)*measureLikesStrength());
+        return (((getTotalLikesAndDislikes()/views)*100)+ measureLikesStrength())/2;
 
     }
 
+
     public double rank1A (){
-        //return (views*calcLikability3());
+
         double d = (((getTotalLikesAndDislikes()/views)*100)*measureLikesStrength());
         String str = String.format("%1.3f", d);
         d = Double.valueOf(str);
@@ -143,16 +148,13 @@ public class DramaRecords {
 
     }
     public double rank1B (){
-        //return (views*calcLikability3());
-        double d = ((((getLikes()-getDislikes())/views)*100)*measureLikesStrength());
-        String str = String.format("%1.3f", d);
-        d = Double.valueOf(str);
-        return d;
 
-    }
-    public double rank2 (){
-        //return (views*calcLikability3());
-        return (((getTotalLikesAndDislikes()/views)*100)+ measureLikesStrength())/2;
+        double temp = (this.getLikesMinusDislikes()/views)*100.00;
+       // double value = (temp * measureLikesStrength()) + this.getViews(); // if only number of views were taken into consideration
+        double value = temp * measureLikesStrength();
+        String str = String.format("%1.3f", value);
+        value = Double.valueOf(str);
+        return value;
 
     }
 
@@ -201,7 +203,7 @@ public class DramaRecords {
     public int getMeRandomViews(){
 
         int actualNumber = (int) (Math.random() * 50000 +1);
-        //System.out.println("Actual number " + actualNumber);
+
         return actualNumber;
     }
     public int getMeRandomLikes(){

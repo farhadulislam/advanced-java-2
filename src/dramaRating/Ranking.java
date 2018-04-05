@@ -5,32 +5,46 @@ import java.util.*;
 
 public class Ranking {
 
-    public static void main (String [] args ){
+    public static void main (String [] args ) throws InterruptedException {
 
-        Artist.showAllArtist();
         Ranking app1 = new Ranking();
         Platform platform2 = new Platform();
-        platform2.doRanking();
-        platform2.addRecords();
-        platform2.doRanking();
 
-        //new Display().showSwingComponent();
+        //platform2.addRecords();
+        //platform2.doRanking();
+
+       // platform2.addRecords2();
+        //platform2.doRanking2();
+
+        Thread.sleep(100);
+        try {
+            long start = System.currentTimeMillis( );
+            System.out.println(new Date( ) + "\n");
+
+            Thread.sleep(5*60*10);
+            System.out.println(new Date( ) + "\n");
+
+            long end = System.currentTimeMillis( );
+            long diff = end - start;
+            System.out.println("Difference is : " + diff);
+        } catch (Exception e) {
+            System.out.println("Got an exception!");
+        }
+
 
     }
 
     public static void showLikability(DramaRecords dramaRecords){
+
         System.out.println("................");
         System.out.println("For the following drama :- ");
         System.out.println("**********" + dramaRecords.getDrama().getDramaName() + "**************");
 
         System.out.println("................");
-        System.out.println("Returning a value from calcLiability " + dramaRecords.calcLikability1());
-        System.out.println("Returning a value from calcLiability2 " + dramaRecords.calcLikability2());
-        System.out.println("Returning a value from calcLiability3 " + dramaRecords.measureLikesStrength());
+        System.out.println("Likes strength:  " + dramaRecords.measureLikesStrength());
 
         System.out.println("using rank ****************************");
-        System.out.println(dramaRecords.rank1());
-        System.out.println(" Percentage of likes ratio for this record against views is :  " + dramaRecords.getLikesRatio());
+        System.out.println(dramaRecords.rank1B());
 
     }
 
