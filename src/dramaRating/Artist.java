@@ -64,10 +64,11 @@ public class Artist extends Staff {
 
         Scanner scan1 = new Scanner(System.in);
         Scanner scan2 = new Scanner(System.in);
-        System.out.print("ENTER THE FIRST NAME");
+        System.out.println("Ready to take input ..... ");
+        System.out.println("ENTER THE FIRST NAME");
 
         String firstName = scan1.next();
-        System.out.print("ENTER THE SECOND NAME : ");
+        System.out.println("ENTER THE SECOND NAME : ");
         String lastName = scan2.next();
 
         System.out.println("I got " + firstName + " " + lastName);
@@ -81,7 +82,7 @@ public class Artist extends Staff {
 
     public void showArtistFullName(){
 
-        if( this.getLastName()!=unknownLastName){
+        if( this.getLastName()!= null  && this.getLastName()!=unknownLastName  ){
 
             System.out.println("FULL NAME: " + this.getFirstName()+ " "+ this.getLastName());
 
@@ -130,7 +131,6 @@ public class Artist extends Staff {
     }
 
 
-
     @Override
     public String toString() {
         return "Artist{" +
@@ -141,7 +141,7 @@ public class Artist extends Staff {
                 '}';
     }
 
-    @Override
+
     public void showDramasWorkedOn() {
         System.out.println("Showing dramas acted  by " + this.getFirstName().toUpperCase());
         /*Iterator it = this.setOfDramasActedIn.iterator();
