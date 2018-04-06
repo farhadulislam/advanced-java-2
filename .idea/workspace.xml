@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967ce4a9-ce09-4ccb-b23f-6fb8d08ea397" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/chapter1/Fruit.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/chapter1/Product.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/chapter1/SimpleApp.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/chapter1/UsingCollection.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/collectionConcept.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/list/ListExample.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/list/Product.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/list/UsingCollection.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/Product.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductCatalogue.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductCatalogueTest.groovy" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductFixtures.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/Supplier.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test_otherStuff2/MathDemoTest.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -240,23 +228,6 @@
               <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="advanced-java-2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="advanced-java-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dramaRating" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="advanced-java-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="otherStuff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="advanced-java-2" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
@@ -567,7 +538,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-1134" width="2018" height="1093" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -582,7 +552,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14315139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14315139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
