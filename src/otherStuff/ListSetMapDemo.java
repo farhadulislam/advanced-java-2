@@ -20,8 +20,6 @@ public class ListSetMapDemo {
             System.out.print(number + " ");
 
         }
-
-
             Set<Integer> setOfNumbers1 = new HashSet<>();
             Set<Integer> setOfNumbers2 = new LinkedHashSet<>();
             Set<Integer> setOfNumbers3 = new TreeSet<>();
@@ -43,6 +41,7 @@ public class ListSetMapDemo {
             for (Integer num : setOfNumbers) {
                 System.out.print(num + " ");
             }
+            System.out.println(" ");
         }
     }
 

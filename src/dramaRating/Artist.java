@@ -8,26 +8,22 @@ public class Artist extends Staff {
     private String lastName;
     private  String unknownLastName = "Unknown";
     private int artistId;
+    private static int numOfArtist = 0;
+
+
     private HashSet<Drama> setOfDramasActedIn = new HashSet<Drama>();
+    private static List<Integer> allArtistIds;
+    private static HashSet<Artist> setOfArtist =  new HashSet<>();
 
     public static int getNumOfArtist() {
         return numOfArtist;
     }
-
-    private static int numOfArtist = 0;
-
     public static List<Integer> getAllArtistIds() {
         return allArtistIds;
     }
-
-    private static List<Integer> allArtistIds;
-
     public static HashSet<Artist> getSetOfArtist() {
         return setOfArtist;
     }
-
-    private static HashSet<Artist> setOfArtist =  new HashSet<>();
-
 
 
     public Artist(String firstName, String lastName) {
@@ -133,31 +129,24 @@ public class Artist extends Staff {
 
     @Override
     public String toString() {
-        return "Artist{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", artistId=" + artistId +
-                ", setOfDramasActedIn=" +  getSetOfDramasActedIn() +
-                '}';
+        return this.getArtistId() + ": " + this.getArtistFullName();
     }
 
-
-    public void showDramasWorkedOn() {
-        System.out.println("Showing dramas acted  by " + this.getFirstName().toUpperCase());
-        /*Iterator it = this.setOfDramasActedIn.iterator();
-        while(it.hasNext()){
-            System.out.println();
-        }*/
-
-        for (Drama drama : setOfDramasActedIn){
-            System.out.print(drama.getDramaName() + " ");
-        }
-        System.out.println("   ");
-
-    }
 
     public HashSet<Drama> getSetOfDramasActedIn() {
         return setOfDramasActedIn;
+    }
+
+    public void showDramasWorkedOn() {
+        if(this.getSetOfDramasActedIn() != null && !this.getSetOfDramasActedIn().isEmpty()){
+            System.out.print("Acted  on : ");
+
+            for (Drama drama : setOfDramasActedIn){
+                System.out.print(drama.getDramaName() + " | ");
+            }
+            System.out.println("  ");}
+
+
     }
 
 
@@ -165,9 +154,10 @@ public class Artist extends Staff {
         ArrayList<Artist> arrayListOfArtist = new ArrayList<>(Artist.getSetOfArtist());
 
         for(Artist artist: arrayListOfArtist) {
-            System.out.print(artist.getArtistId()+ " : ");
-            artist.showArtistFullName();
+            System.out.println(artist.getArtistId() + " : " + artist.getArtistFullName());
+            //artist.showDramasWorkedOn();
         }
+        System.out.println(" ");
     }
 
 }
