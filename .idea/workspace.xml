@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967ce4a9-ce09-4ccb-b23f-6fb8d08ea397" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/otherStuff/ListSetMapDemo.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Artist.class" afterPath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Artist.class" />
-      <change beforePath="$PROJECT_DIR$/src/dramaRating/Artist.java" afterPath="$PROJECT_DIR$/src/dramaRating/Artist.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/chapter1/Fruit.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/chapter1/Product.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/chapter1/SimpleApp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/chapter1/UsingCollection.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/collectionConcept.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/list/ListExample.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/list/Product.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/list/UsingCollection.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/Product.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductCatalogue.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductCatalogueTest.groovy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductFixtures.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/Supplier.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,26 +68,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/islam/farhad/chapter1/SimpleApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collectionConcept.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/collectionConcept.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="QuackDecorator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/polymorphic/duck/QuackDecorator.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,36 +108,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductCatalogue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/islam/farhad/collectionConcept/set/ProductCatalogue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ListSetMapDemo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/otherStuff/ListSetMapDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="575">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#189#239#1" expanded="true" />
                 <element signature="e#214#238#0" expanded="true" />
                 <element signature="e#227#236#0" expanded="true" />
-                <element signature="e#248#264#0" expanded="true" />
-                <element signature="e#248#264#0" expanded="true" />
-                <element signature="e#274#292#0" expanded="true" />
-                <element signature="e#274#292#0" expanded="true" />
-                <element signature="e#302#317#0" expanded="true" />
-                <element signature="e#302#317#0" expanded="true" />
-                <element signature="e#327#342#0" expanded="true" />
-                <element signature="e#327#342#0" expanded="true" />
-                <element signature="e#352#367#0" expanded="true" />
-                <element signature="e#352#367#0" expanded="true" />
                 <element signature="e#382#396#0" expanded="true" />
               </folding>
             </state>
@@ -271,12 +240,6 @@
               <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="advanced-java-2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="advanced-java-2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="farhad" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="advanced-java-2" type="b2602c69:ProjectViewProjectNode" />
@@ -846,18 +809,18 @@
         <state relative-caret-position="262">
           <caret line="126" column="40" lean-forward="false" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
           <folding>
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#1552#1553#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1625#1626#0" expanded="true" />
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1781#1782#0" expanded="true" />
-            <element signature="e#1823#1824#0" expanded="true" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2096#2097#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="false" />
+            <element signature="e#661#662#0" expanded="false" />
+            <element signature="e#1552#1553#0" expanded="false" />
+            <element signature="e#1582#1583#0" expanded="false" />
+            <element signature="e#1625#1626#0" expanded="false" />
+            <element signature="e#1663#1664#0" expanded="false" />
+            <element signature="e#1699#1700#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1781#1782#0" expanded="false" />
+            <element signature="e#1823#1824#0" expanded="false" />
+            <element signature="e#2059#2060#0" expanded="false" />
+            <element signature="e#2096#2097#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -867,7 +830,7 @@
         <state relative-caret-position="114">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -877,7 +840,7 @@
         <state relative-caret-position="964">
           <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1002,23 +965,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/otherStuff/ListSetMapDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="575">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#189#239#1" expanded="true" />
             <element signature="e#214#238#0" expanded="true" />
             <element signature="e#227#236#0" expanded="true" />
-            <element signature="e#248#264#0" expanded="true" />
-            <element signature="e#248#264#0" expanded="true" />
-            <element signature="e#274#292#0" expanded="true" />
-            <element signature="e#274#292#0" expanded="true" />
-            <element signature="e#302#317#0" expanded="true" />
-            <element signature="e#302#317#0" expanded="true" />
-            <element signature="e#327#342#0" expanded="true" />
-            <element signature="e#327#342#0" expanded="true" />
-            <element signature="e#352#367#0" expanded="true" />
-            <element signature="e#352#367#0" expanded="true" />
             <element signature="e#382#396#0" expanded="true" />
           </folding>
         </state>
