@@ -120,6 +120,10 @@ public class Platform {
         Artist allenShuvro = new Artist("Allen", "Shuvro");
         Artist fazlulBabu = new Artist("Fazlul Hoque", "Babu");
         Artist shatabdiWadud = new Artist ("Shatabdi", "Wadud");
+        Artist ireshZaker = new Artist ("Iresh", "Zaker");
+        Artist tariqAnamKhan = new Artist ("Tariq Anam", "Khan");
+        Artist shahiduzzamanSelim = new Artist ("Shahiduzzaman", "Selim");
+
 
 
 
@@ -180,8 +184,8 @@ public class Platform {
         Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
         Drama drama10 = new Drama(Drama.issueDramaId(), "Golpota Tomari");
         Drama drama11 = new Drama(Drama.issueDramaId(), "Bikel Belar Pakhi");
-       // Drama drama11 = new Drama(Drama.issueDramaId(), "");
-        //Drama drama11 = new Drama(Drama.issueDramaId(), "");
+        Drama drama12 = new Drama(Drama.issueDramaId(), "Cafe 999");
+        //Drama drama1 = new Drama(Drama.issueDramaId(), "");
        // Drama drama11 = new Drama(Drama.issueDramaId(), "");
        // Drama drama11 = new Drama(Drama.issueDramaId(), "");
        // Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
@@ -200,7 +204,7 @@ public class Platform {
         DramaRecords dr9 = new DramaRecords(drama9,9700, 783, 1_210_686);
         DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
         DramaRecords dr11 = new DramaRecords(drama11, 27000,499,  1291714);
-       // DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
+        DramaRecords dr12 = new DramaRecords(drama12,3200, 122, 233691);
        // DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
        // DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
 
@@ -234,6 +238,10 @@ public class Platform {
         drama11.addCast(fazlulBabu);
         drama11.addCast(allenShuvro);
         drama11.addCast(eloraGauhor);
+        drama12.addCast(ireshZaker);
+        drama12.addCast(tariqAnamKhan);
+        drama12.addCast(momo);
+        drama12.addCast(iffatTrisha);
 
 
     }
