@@ -161,6 +161,8 @@ public class Platform {
         Artist orsha = new Artist("Orsha");
         Artist bonne = new Artist ( "Bonne", "Hassan");
         Artist taniaBrishti = new Artist ("Tania", "brishti");
+        Artist iffatTrisha = new Artist ("Iffat", "Trisha");
+        Artist eloraGauhor= new Artist("Elora", "Gauhor");
 
 
 
@@ -177,7 +179,11 @@ public class Platform {
         Drama drama8 = new Drama(Drama.issueDramaId(), "Forever");
         Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
         Drama drama10 = new Drama(Drama.issueDramaId(), "Golpota Tomari");
-        //Drama drama11 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
+        Drama drama11 = new Drama(Drama.issueDramaId(), "Bikel Belar Pakhi");
+       // Drama drama11 = new Drama(Drama.issueDramaId(), "");
+        //Drama drama11 = new Drama(Drama.issueDramaId(), "");
+       // Drama drama11 = new Drama(Drama.issueDramaId(), "");
+       // Drama drama11 = new Drama(Drama.issueDramaId(), "");
        // Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
        // Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
 
@@ -193,6 +199,11 @@ public class Platform {
         DramaRecords dr8 = new DramaRecords(drama8,3200, 99, 207539);
         DramaRecords dr9 = new DramaRecords(drama9,9700, 783, 1_210_686);
         DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
+        DramaRecords dr11 = new DramaRecords(drama11, 27000,499,  1291714);
+       // DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
+       // DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
+       // DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
+
         //DramaRecords.autoCreateDramaRecords();
 
 
@@ -219,6 +230,10 @@ public class Platform {
         drama9.addCast(apurbo);
         drama10.addCast(mehzabien);
         drama10.addCast(apurbo);
+        drama11.addCast(iffatTrisha);
+        drama11.addCast(fazlulBabu);
+        drama11.addCast(allenShuvro);
+        drama11.addCast(eloraGauhor);
 
 
     }
