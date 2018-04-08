@@ -123,6 +123,7 @@ public class Platform {
         Artist ireshZaker = new Artist ("Iresh", "Zaker");
         Artist tariqAnamKhan = new Artist ("Tariq Anam", "Khan");
         Artist shahiduzzamanSelim = new Artist ("Shahiduzzaman", "Selim");
+        Artist tahsan = new Artist ("Tahsan", "Khan");
 
 
 
@@ -167,6 +168,7 @@ public class Platform {
         Artist taniaBrishti = new Artist ("Tania", "brishti");
         Artist iffatTrisha = new Artist ("Iffat", "Trisha");
         Artist eloraGauhor= new Artist("Elora", "Gauhor");
+        Artist mosumiHamid = new Artist("Mousumi", "Hamid");
 
 
 
@@ -187,9 +189,10 @@ public class Platform {
         Drama drama12 = new Drama(Drama.issueDramaId(), "Cafe 999");
         Drama drama13 = new Drama(Drama.issueDramaId(), "Ami Tomar Golpo Hobo");
        Drama drama14 = new Drama(Drama.issueDramaId(), "Shongshar");
-       // Drama drama11 = new Drama(Drama.issueDramaId(), "");
-       // Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
-       // Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
+        Drama drama15 = new Drama(Drama.issueDramaId(), "Manush");
+       Drama drama16 = new Drama(Drama.issueDramaId(), "Kothopokothon");
+       Drama drama17 = new Drama(Drama.issueDramaId(), "X Factor : Game Over");
+       Drama drama18 = new Drama(Drama.issueDramaId(), "Khuji Tomay");
 
 
         System.out.println("Adding drama records...........");
@@ -207,6 +210,10 @@ public class Platform {
         DramaRecords dr12 = new DramaRecords(drama12,3200, 122, 233691);
         DramaRecords dr13 = new DramaRecords(drama13,35000, 1600, 1940805);
         DramaRecords dr14 = new DramaRecords(drama14,50000, 1700, 2862186);
+        DramaRecords dr15 = new DramaRecords(drama15,291, 16, 24046);
+        DramaRecords dr16 = new DramaRecords(drama16,18000, 892, 2686131);
+        DramaRecords dr17 = new DramaRecords(drama17,5900, 501, 1410716);
+        DramaRecords dr18 = new DramaRecords(drama18,27000, 1800, 3824467 );
 
         //DramaRecords.autoCreateDramaRecords();
 
@@ -246,6 +253,19 @@ public class Platform {
         drama13.addCast(iffatTrisha);
         drama14.addCast(nabilaMasuma);
         drama14.addCast(apurbo);
+        drama15.addCast(mehzabien);
+        drama15.addCast(fazlulBabu);
+        drama16.addCast(apurbo);
+        drama16.addCast(mosumiHamid);
+        drama16.addCast(tahsan);
+        drama16.addCast(mithila);
+        drama17.addCast(apurbo);
+        drama17.addCast(momo);
+        drama17.addCast(ireshZaker);
+        drama17.addCast(mithila);
+        drama17.addCast(farhanaMili);
+        drama17.addCast(apurbo);
+        drama17.addCast(sarika);
 
 
     }
