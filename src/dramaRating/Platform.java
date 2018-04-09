@@ -18,8 +18,8 @@ public class Platform {
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
        Platform platform1 = new Platform();
-      // platform1.addRandomDummyRecords(10);
-        //platform1.addRecords();
+       // platform1.addRandomDummyRecords(10);
+        // platform1.addRecords();
         platform1.addRecords2();
         platform1.showPlatform();
        // platform1.doRanking();
@@ -27,9 +27,6 @@ public class Platform {
 
        sortViewWise();
        sortLikeWise();
-
-
-
 
         System.out.println("EXECUTION ENDED");
 
