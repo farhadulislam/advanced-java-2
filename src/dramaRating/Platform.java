@@ -199,6 +199,7 @@ public class Platform {
        Drama drama17 = new Drama(Drama.issueDramaId(), "X Factor : Game Over");
        Drama drama18 = new Drama(Drama.issueDramaId(), "Khuji Tomay");
        Drama d19 = new Drama(Drama.issueDramaId(), "Ekhono Adhar");
+        Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
 
 
         System.out.println("Adding drama records...........");
@@ -221,6 +222,7 @@ public class Platform {
         DramaRecords dr17 = new DramaRecords(drama17,5900, 501, 1410716);
         DramaRecords dr18 = new DramaRecords(drama18,27000, 1800, 3824467 );
         DramaRecords dr19 = new DramaRecords(d19, 3400, 152, 316312);
+        DramaRecords dr20 = new DramaRecords(d20, 921, 91, 163560);
         //DramaRecords.autoCreateDramaRecords();
 
 
@@ -275,6 +277,8 @@ public class Platform {
         d19.addCast(mehzabien);
         d19.addCast(zovan);
         d19.addCast(fazlulBabu);
+        Artist [] d20cast = {neela,zovan,tariqAnamKhan};
+        d20.addCast(d20cast);
 
 
     }

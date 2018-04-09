@@ -86,10 +86,21 @@ public class Drama {
         //System.out.println("Cast " + this.getDramaName() + cast.toString());
     }
 
+    public void addCast (Artist [] artist){
+
+        for (Artist art : artist){
+            cast.add(art);
+            art.addDramaToArtistsRecords(this);
+        }
+
+        //System.out.println("Cast " + this.getDramaName() + cast.toString());
+    }
+
     public Set<Artist> getCast() {
 
         return cast;
     }
+
 
     public void showCast(){
 
@@ -118,7 +129,7 @@ public class Drama {
             if(drama.getDramaRecords()!=null){
                 System.out.print("Details available for  : ");
                 System.out.println(drama.getDramaName().toUpperCase());
-                System.out.println("RANK-1 VALUE : " + drama.getDramaRecords().rank1B());
+                System.out.println("RANK-1B VALUE : " + drama.getDramaRecords().rank1B());
                 drama.showCast();
                 System.out.println(" ");
             } else {

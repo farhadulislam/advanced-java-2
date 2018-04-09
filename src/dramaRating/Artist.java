@@ -165,17 +165,5 @@ public class Artist extends Staff {
         System.out.println(" ");
     }
 
-    public void searchArtist(Artist artist){
-
-        Platform p1 = new Platform ();
-        p1.addRecords2();
-        artist.showArtistFullName();
-        artist.showDramasWorkedOn();
-        HashSet<Drama> setOfDrama = artist.getSetOfDramasActedIn();
-        for(Drama drama: setOfDrama){
-            System.out.println(drama.getDramaName() + drama.getDramaRecords().measureLikesStrength() + drama.getDramaRecords().rank1B());
-        }
-
-    }
 
 }
