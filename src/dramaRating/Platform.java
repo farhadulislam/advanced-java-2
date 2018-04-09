@@ -25,6 +25,10 @@ public class Platform {
        // platform1.doRanking();
        platform1.doRanking2();
 
+       sortViewWise();
+
+
+
 
 
         System.out.println("EXECUTION ENDED");
@@ -218,9 +222,9 @@ public class Platform {
        Drama d19 = new Drama(Drama.issueDramaId(), "Ekhono Adhar");
         Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
         Drama d21 = new Drama(Drama.issueDramaId(), "Se Duare Dariye");
-        //Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
-        // d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
-        // d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
+        Drama d22 = new Drama(Drama.issueDramaId(), "Angry Bird");
+        Drama d23 = new Drama(Drama.issueDramaId(), "Ekti Moddhyobitto Fridger Golpo");
+        Drama d24 = new Drama(Drama.issueDramaId(), "Mon Foring Er Golpo");
         //Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
 
 
@@ -248,9 +252,9 @@ public class Platform {
         DramaRecords dr20 = new DramaRecords(d20, 921, 91, 163560);
 
         DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
-        //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
-        //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
-       /// DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
+        DramaRecords dr22 = new DramaRecords(d22, 10000, 694, 1587370);
+        DramaRecords dr23 = new DramaRecords(d23, 9800, 745, 920416);
+        DramaRecords dr24 = new DramaRecords(d24, 2200, 186, 368778);
         //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
         //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
 
@@ -312,7 +316,11 @@ public class Platform {
         Artist [] d20cast = {neela,zovan,tariqAnamKhan};
         d20.addCast(d20cast);
         Artist [] d21cast = {mehzabien,zovan};
-        d20.addCast(d21cast);
+        d21.addCast(d21cast);
+        Artist [] d22cast = {tisha,tahsan};
+        d22.addCast(d22cast);
+        d23.addCast(d22cast);
+        d24.addCast(d22cast);
 
 
 
@@ -577,6 +585,25 @@ public class Platform {
                 drama1.addCast(sortedArtistList.get(randomNumber2));
             }
             new DramaRecords(drama1);
+        }
+
+    }
+
+    public static void sortViewWise(){
+
+        Platform p1 = new Platform();
+        p1.addRecords2();
+        TreeMap< Integer, String> viewsCounter = new TreeMap<>();
+
+        for(DramaRecords dr : DramaRecords.getSetOfDramaRecords()){
+
+            viewsCounter.put(dr.getViews(), dr.getDramaNameOfThisRecord() );
+        }
+        gap();
+
+        for (Map.Entry mp: viewsCounter.entrySet()){
+
+            System.out.println(mp.getKey()+ " " + mp.getValue());
         }
 
     }
