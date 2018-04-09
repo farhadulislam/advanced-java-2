@@ -26,7 +26,7 @@ public class Platform {
        platform1.doRanking2();
 
        sortViewWise();
-
+       sortLikeWise();
 
 
 
@@ -604,6 +604,25 @@ public class Platform {
         for (Map.Entry mp: viewsCounter.entrySet()){
 
             System.out.println(mp.getKey()+ " " + mp.getValue());
+        }
+
+    }
+
+    public static void sortLikeWise(){
+
+        Platform p1 = new Platform();
+        p1.addRecords2();
+        TreeMap< Double, String> viewsCounter = new TreeMap<>();
+
+        for(DramaRecords dr : DramaRecords.getSetOfDramaRecords()){
+
+            viewsCounter.put(dr.measureLikesStrength(), dr.getDramaNameOfThisRecord() );
+        }
+        gap();
+
+        for (Map.Entry mp: viewsCounter.entrySet()){
+
+            System.out.println(mp.getKey()+ "% viewers liked " + mp.getValue());
         }
 
     }
