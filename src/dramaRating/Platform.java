@@ -137,7 +137,7 @@ public class Platform {
         Artist urmila = new Artist("Urmila", "Kaur");
         Artist sabila = Artist.createArtist("Sabila", "Noor");
         Artist mousumiHamid = new Artist ("Mousumi", "Hamid");
-        Artist shokh = new Artist("Shokh");
+        Artist shokh = new Artist("Shokh","Anika Kabir");
         Artist nowshin = new Artist("Nowshin", "Nahrin");
         Artist momo = new Artist("Zakia", "Bari Momo");
         Artist farhanaMili = new Artist("Farhana", "Mili");
@@ -169,6 +169,11 @@ public class Platform {
         Artist iffatTrisha = new Artist ("Iffat", "Trisha");
         Artist eloraGauhor= new Artist("Elora", "Gauhor");
         Artist mosumiHamid = new Artist("Mousumi", "Hamid");
+        Artist salhaNadia = new Artist("Salha Khanom", "Nadia");
+        Artist ohona = new Artist ("Ohona");
+        Artist mariaNoor = new Artist ("Maria", "Noor");
+        Artist neelanjonaNeela = new Artist ("Neelanjona", "Neela");
+
 
 
 
@@ -193,6 +198,7 @@ public class Platform {
        Drama drama16 = new Drama(Drama.issueDramaId(), "Kothopokothon");
        Drama drama17 = new Drama(Drama.issueDramaId(), "X Factor : Game Over");
        Drama drama18 = new Drama(Drama.issueDramaId(), "Khuji Tomay");
+       Drama d19 = new Drama(Drama.issueDramaId(), "Ekhono Adhar");
 
 
         System.out.println("Adding drama records...........");
@@ -214,7 +220,7 @@ public class Platform {
         DramaRecords dr16 = new DramaRecords(drama16,18000, 892, 2686131);
         DramaRecords dr17 = new DramaRecords(drama17,5900, 501, 1410716);
         DramaRecords dr18 = new DramaRecords(drama18,27000, 1800, 3824467 );
-
+        DramaRecords dr19 = new DramaRecords(d19, 3400, 152, 316312);
         //DramaRecords.autoCreateDramaRecords();
 
 
@@ -266,6 +272,9 @@ public class Platform {
         drama17.addCast(farhanaMili);
         drama17.addCast(apurbo);
         drama17.addCast(sarika);
+        d19.addCast(mehzabien);
+        d19.addCast(zovan);
+        d19.addCast(fazlulBabu);
 
 
     }
