@@ -139,8 +139,13 @@ public class Artist extends Staff {
 
     public void showDramasWorkedOn() {
         if(this.getSetOfDramasActedIn() != null && !this.getSetOfDramasActedIn().isEmpty()){
-            System.out.print("Acted  on : ");
+            if (this.getSetOfDramasActedIn().size()==1){
+                System.out.print("Acted  on " + this.getSetOfDramasActedIn().size() + " drama : " );
+            }else{
 
+            System.out.print("Acted  on : " + this.getSetOfDramasActedIn().size() + " dramas : " );
+
+            }
             for (Drama drama : setOfDramasActedIn){
                 System.out.print(drama.getDramaName() + " | ");
             }
@@ -155,9 +160,10 @@ public class Artist extends Staff {
 
         for(Artist artist: arrayListOfArtist) {
             System.out.println(artist.getArtistId() + " : " + artist.getArtistFullName());
-            //artist.showDramasWorkedOn();
+            artist.showDramasWorkedOn();
         }
         System.out.println(" ");
     }
+
 
 }

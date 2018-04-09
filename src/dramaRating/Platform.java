@@ -10,6 +10,7 @@ public class Platform {
     private static TreeMap<String, Double> treeValue2 = new TreeMap<>();
 
 
+
     public static void main (String [] args){
 
         System.out.println("STARTING main method from Platform class");
@@ -17,14 +18,15 @@ public class Platform {
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
        Platform platform1 = new Platform();
-      // platform1.addRandomDummyRecords(10);
-        //platform1.addRecords();
+       // platform1.addRandomDummyRecords(10);
+        // platform1.addRecords();
         platform1.addRecords2();
         platform1.showPlatform();
        // platform1.doRanking();
        platform1.doRanking2();
 
-
+       sortViewWise();
+       sortLikeWise();
 
         System.out.println("EXECUTION ENDED");
 
@@ -124,8 +126,18 @@ public class Platform {
         Artist tariqAnamKhan = new Artist ("Tariq Anam", "Khan");
         Artist shahiduzzamanSelim = new Artist ("Shahiduzzaman", "Selim");
         Artist tahsan = new Artist ("Tahsan", "Khan");
-
-
+        Artist emon = new Artist ("Emon");
+        Artist nirob = new Artist ("Nirob");
+        Artist niloy = new Artist ("Niloy", "Alamgir");
+        Artist arefinShuvo = new Artist ("Arefin", "Shuvo");
+        Artist maznunMizan = new Artist ("Maznun", "Mizan");
+        Artist ahmedRubel = new Artist ("Ahmed", "Rubel");
+        Artist afzalHossain = new Artist ("Afzal", "Hossain");
+        Artist toukirAhmed = new Artist ("Toukir", "Ahmed");
+        Artist faruqAhmed = new Artist ("Faruq", "Ahmed");
+        Artist ezazulIslam = new Artist ("Dr. Ezazul", "Islam");
+        Artist raisulIslamAsad = new Artist ("Raisul Islam", "Asad");
+        Artist abulHayat = new Artist ("Abul", "Hayat");
 
 
         Artist mehzabien = new Artist("Mehzabien", "Chowdhury");
@@ -137,7 +149,7 @@ public class Platform {
         Artist urmila = new Artist("Urmila", "Kaur");
         Artist sabila = Artist.createArtist("Sabila", "Noor");
         Artist mousumiHamid = new Artist ("Mousumi", "Hamid");
-        Artist shokh = new Artist("Shokh");
+        Artist shokh = new Artist("Shokh","Anika Kabir");
         Artist nowshin = new Artist("Nowshin", "Nahrin");
         Artist momo = new Artist("Zakia", "Bari Momo");
         Artist farhanaMili = new Artist("Farhana", "Mili");
@@ -151,7 +163,7 @@ public class Platform {
         Artist purnima = new Artist ("Purnima", "Dilara Hashem");
         Artist piaBipasha = new Artist ("Pia", "Bipasha");
         Artist vabna = new Artist ("Vabna");
-        Artist snugdha = new Artist ("Snigdha", "Momin");
+        Artist snigdha = new Artist ("Snigdha", "Momin");
         Artist ajmeriAsha = new Artist ("Ajmeri", "Asha");
         Artist shanarei = new Artist ("Shanarei", "Shanu");
         Artist ishana = new Artist("Ishana", "mounita khan");
@@ -169,6 +181,17 @@ public class Platform {
         Artist iffatTrisha = new Artist ("Iffat", "Trisha");
         Artist eloraGauhor= new Artist("Elora", "Gauhor");
         Artist mosumiHamid = new Artist("Mousumi", "Hamid");
+        Artist salhaNadia = new Artist("Salha Khanom", "Nadia");
+        Artist ohona = new Artist ("Ohona");
+        Artist mariaNoor = new Artist ("Maria", "Noor");
+        Artist sporshia = new Artist("Sporshia");
+        Artist tomaMirza = new Artist("Toma", "Mirza");
+        Artist nova = new Artist("Nova", " ");
+        Artist prosunAzad = new Artist("Prosun", "Azad");
+        Artist prova = new Artist("Sadia Jahan", "Prova");
+        Artist munmun = new Artist("Munmum");
+
+
 
 
 
@@ -188,11 +211,19 @@ public class Platform {
         Drama drama11 = new Drama(Drama.issueDramaId(), "Bikel Belar Pakhi");
         Drama drama12 = new Drama(Drama.issueDramaId(), "Cafe 999");
         Drama drama13 = new Drama(Drama.issueDramaId(), "Ami Tomar Golpo Hobo");
-       Drama drama14 = new Drama(Drama.issueDramaId(), "Shongshar");
+        Drama drama14 = new Drama(Drama.issueDramaId(), "Shongshar");
         Drama drama15 = new Drama(Drama.issueDramaId(), "Manush");
        Drama drama16 = new Drama(Drama.issueDramaId(), "Kothopokothon");
        Drama drama17 = new Drama(Drama.issueDramaId(), "X Factor : Game Over");
        Drama drama18 = new Drama(Drama.issueDramaId(), "Khuji Tomay");
+       Drama d19 = new Drama(Drama.issueDramaId(), "Ekhono Adhar");
+        Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
+        Drama d21 = new Drama(Drama.issueDramaId(), "Se Duare Dariye");
+        Drama d22 = new Drama(Drama.issueDramaId(), "Angry Bird");
+        Drama d23 = new Drama(Drama.issueDramaId(), "Ekti Moddhyobitto Fridger Golpo");
+        Drama d24 = new Drama(Drama.issueDramaId(), "Mon Foring Er Golpo");
+        //Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
+
 
 
         System.out.println("Adding drama records...........");
@@ -214,6 +245,16 @@ public class Platform {
         DramaRecords dr16 = new DramaRecords(drama16,18000, 892, 2686131);
         DramaRecords dr17 = new DramaRecords(drama17,5900, 501, 1410716);
         DramaRecords dr18 = new DramaRecords(drama18,27000, 1800, 3824467 );
+        DramaRecords dr19 = new DramaRecords(d19, 3400, 152, 316312);
+        DramaRecords dr20 = new DramaRecords(d20, 921, 91, 163560);
+
+        DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
+        DramaRecords dr22 = new DramaRecords(d22, 10000, 694, 1587370);
+        DramaRecords dr23 = new DramaRecords(d23, 9800, 745, 920416);
+        DramaRecords dr24 = new DramaRecords(d24, 2200, 186, 368778);
+        //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
+        //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
+
 
         //DramaRecords.autoCreateDramaRecords();
 
@@ -266,6 +307,18 @@ public class Platform {
         drama17.addCast(farhanaMili);
         drama17.addCast(apurbo);
         drama17.addCast(sarika);
+        d19.addCast(mehzabien);
+        d19.addCast(zovan);
+        d19.addCast(fazlulBabu);
+        Artist [] d20cast = {neela,zovan,tariqAnamKhan};
+        d20.addCast(d20cast);
+        Artist [] d21cast = {mehzabien,zovan};
+        d21.addCast(d21cast);
+        Artist [] d22cast = {tisha,tahsan};
+        d22.addCast(d22cast);
+        d23.addCast(d22cast);
+        d24.addCast(d22cast);
+
 
 
     }
@@ -529,6 +582,44 @@ public class Platform {
                 drama1.addCast(sortedArtistList.get(randomNumber2));
             }
             new DramaRecords(drama1);
+        }
+
+    }
+
+    public static void sortViewWise(){
+
+        Platform p1 = new Platform();
+        p1.addRecords2();
+        TreeMap< Integer, String> viewsCounter = new TreeMap<>();
+
+        for(DramaRecords dr : DramaRecords.getSetOfDramaRecords()){
+
+            viewsCounter.put(dr.getViews(), dr.getDramaNameOfThisRecord() );
+        }
+        gap();
+
+        for (Map.Entry mp: viewsCounter.entrySet()){
+
+            System.out.println(mp.getKey()+ " " + mp.getValue());
+        }
+
+    }
+
+    public static void sortLikeWise(){
+
+        Platform p1 = new Platform();
+        p1.addRecords2();
+        TreeMap< Double, String> viewsCounter = new TreeMap<>();
+
+        for(DramaRecords dr : DramaRecords.getSetOfDramaRecords()){
+
+            viewsCounter.put(dr.measureLikesStrength(), dr.getDramaNameOfThisRecord() );
+        }
+        gap();
+
+        for (Map.Entry mp: viewsCounter.entrySet()){
+
+            System.out.println(mp.getKey()+ "% viewers liked " + mp.getValue());
         }
 
     }
