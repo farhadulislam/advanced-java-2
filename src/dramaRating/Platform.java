@@ -21,12 +21,13 @@ public class Platform {
        // platform1.addRandomDummyRecords(10);
         // platform1.addRecords();
         platform1.addRecords2();
-        platform1.showPlatform();
+        //platform1.showPlatform();
        // platform1.doRanking();
-       platform1.doRanking2();
+      // platform1.doRanking2();
 
-       sortViewWise();
-       sortLikeWise();
+
+       //sortViewWise();
+       //sortLikeWise();
 
         System.out.println("EXECUTION ENDED");
 
@@ -323,6 +324,10 @@ public class Platform {
         Artist [] d26cast = {apurbo,aparna};
         d26.addCast(d26cast);
 
+        doRankingForAnArtist(apurbo);
+        doRankingForAnArtist(mehzabien);
+
+
 
 
     }
@@ -457,6 +462,48 @@ public class Platform {
         }
 
     }
+
+    public void doRankingForAnArtist(Artist artist){
+
+        System.out.println("Ranking by rank1B for dramas acted  by "+ artist.getFirstName());
+        treeValue2.clear();
+        for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
+
+
+            if(dramaRecords.getDrama().getCast().contains(artist)){
+
+            treeValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+
+            }
+
+
+        }
+        if(treeValue2.isEmpty()){
+            System.out.println("No records exits for "+ artist.getFirstName());
+        } else {
+
+
+            Map sortedMap = sortByValues(treeValue2);
+
+            // Ranking.showMap(sortedMap);
+
+            // Get a set of the entries on the sorted map
+            Set set = sortedMap.entrySet();
+
+            // Get an iterator
+            Iterator i = set.iterator();
+
+            // Display elements
+            while (i.hasNext()) {
+                Map.Entry me = (Map.Entry) i.next();
+                System.out.print(me.getKey() + ": ");
+                System.out.println(me.getValue());
+            }
+
+        }
+
+    }
+
 
     public static <K, V extends Comparable<V>> Map<K, V>
     sortByValues(final Map<K, V> map) {
