@@ -190,8 +190,7 @@ public class Platform {
         Artist prosunAzad = new Artist("Prosun", "Azad");
         Artist prova = new Artist("Sadia Jahan", "Prova");
         Artist munmun = new Artist("Munmum");
-
-
+        Artist oindrila = new Artist("Oindrila", "Ahmed");
 
 
 
@@ -222,7 +221,8 @@ public class Platform {
         Drama d22 = new Drama(Drama.issueDramaId(), "Angry Bird");
         Drama d23 = new Drama(Drama.issueDramaId(), "Ekti Moddhyobitto Fridger Golpo");
         Drama d24 = new Drama(Drama.issueDramaId(), "Mon Foring Er Golpo");
-        //Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
+        Drama d25 = new Drama(Drama.issueDramaId(), "Beloved");
+        Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
 
 
 
@@ -252,8 +252,8 @@ public class Platform {
         DramaRecords dr22 = new DramaRecords(d22, 10000, 694, 1587370);
         DramaRecords dr23 = new DramaRecords(d23, 9800, 745, 920416);
         DramaRecords dr24 = new DramaRecords(d24, 2200, 186, 368778);
-        //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
-        //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
+        DramaRecords dr25 = new DramaRecords(d25, 16000, 1100, 1622090);
+        DramaRecords dr26 = new DramaRecords(d26, 3300, 193, 299981);
 
 
         //DramaRecords.autoCreateDramaRecords();
@@ -318,6 +318,10 @@ public class Platform {
         d22.addCast(d22cast);
         d23.addCast(d22cast);
         d24.addCast(d22cast);
+        Artist [] d25cast = {apurbo,oindrila};
+        d25.addCast(d25cast);
+        Artist [] d26cast = {apurbo,aparna};
+        d26.addCast(d26cast);
 
 
 
