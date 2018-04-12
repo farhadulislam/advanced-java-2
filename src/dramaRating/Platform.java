@@ -475,10 +475,15 @@ public class Platform {
 
         System.out.println("Ranking by rank1B for dramas acted  by "+ artist.getFirstName());
         treeValue2.clear();
+
+        int numOfDramasActed = 0;
+        double score = 0.00;
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
 
             if(dramaRecords.getDrama().getCast().contains(artist)){
+                numOfDramasActed++;
+                score+=dramaRecords.rank1B();
 
             treeValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
 
@@ -509,6 +514,8 @@ public class Platform {
             }
 
         }
+        System.out.println("Acted on " + numOfDramasActed + " dramas");
+        System.out.println("Average " + score/numOfDramasActed);
 
     }
 
