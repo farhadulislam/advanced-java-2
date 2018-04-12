@@ -227,7 +227,11 @@ public class Platform {
         Drama d25 = new Drama(Drama.issueDramaId(), "Beloved");
         Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
         Drama d27 = new Drama(Drama.issueDramaId(), "Hotath Neerar Jonno");
-       // Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
+       Drama d28 = new Drama(Drama.issueDramaId(), "Ucchotoro Hishabbiggan");
+        Drama d29 = new Drama(Drama.issueDramaId(), "Karnishe jhule thaka prem");
+        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
 
@@ -262,6 +266,17 @@ public class Platform {
         DramaRecords dr25 = new DramaRecords(d25, 16000, 1100, 1622090);
         DramaRecords dr26 = new DramaRecords(d26, 3300, 193, 299981);
         DramaRecords dr27 = new DramaRecords(d27, 8100, 303, 563370);
+        DramaRecords dr28 = new DramaRecords(d28, 1100,304, 816225);
+
+        DramaRecords dr29 = new DramaRecords(d29, 1300, 83, 236302);
+        //DramaRecords dr22 = new DramaRecords(d22, 10000, 694, 1587370);
+        //DramaRecords dr23 = new DramaRecords(d23, 9800, 745, 920416);
+        //DramaRecords dr24 = new DramaRecords(d24, 2200, 186, 368778);
+        //DramaRecords dr25 = new DramaRecords(d25, 16000, 1100, 1622090);
+        //DramaRecords dr26 = new DramaRecords(d26, 3300, 193, 299981);
+        //DramaRecords dr27 = new DramaRecords(d27, 8100, 303, 563370);
+        //DramaRecords dr28 = new DramaRecords(d28, 1100,304, 816225);
+
 
         //DramaRecords.autoCreateDramaRecords();
 
@@ -332,8 +347,15 @@ public class Platform {
         Artist [] d27cast = {mehzabien,irfanSazzad};
         d27.addCast(d27cast);
 
+        Artist [] d28cast = {afranNisho,salhaNadia};
+        d28.addCast(d28cast);
+
+        Artist [] d29cast = {afranNisho,orsha};
+        d29.addCast(d29cast);
+
         doRankingForAnArtist(apurbo);
         doRankingForAnArtist(mehzabien);
+        doRankingForAnArtist(afranNisho);
 
 
 
