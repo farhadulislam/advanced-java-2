@@ -107,6 +107,8 @@ public class Platform {
         Artist nayeem = Artist.createArtist("Nayeem");
         Artist sajal = new Artist("Sajal", "Abdullah");
         Artist tausif= new Artist("Tausif", "Mahbub");
+        Artist irfanSazzad = new Artist("Irfan", "Sazzad");
+        Artist tamimMridha = new Artist("Tamim", "Mridha");
         Artist zahidHassan = new Artist ("Zahid", "Hassan");
         Artist akmHassan = new Artist ("AKM", "Hassan");
         Artist mirSabbir = new Artist("Mir", "Sabbir");
@@ -224,6 +226,10 @@ public class Platform {
         Drama d24 = new Drama(Drama.issueDramaId(), "Mon Foring Er Golpo");
         Drama d25 = new Drama(Drama.issueDramaId(), "Beloved");
         Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d27 = new Drama(Drama.issueDramaId(), "Hotath Neerar Jonno");
+       // Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
 
 
 
@@ -255,7 +261,7 @@ public class Platform {
         DramaRecords dr24 = new DramaRecords(d24, 2200, 186, 368778);
         DramaRecords dr25 = new DramaRecords(d25, 16000, 1100, 1622090);
         DramaRecords dr26 = new DramaRecords(d26, 3300, 193, 299981);
-
+        DramaRecords dr27 = new DramaRecords(d27, 8100, 303, 563370);
 
         //DramaRecords.autoCreateDramaRecords();
 
@@ -323,6 +329,8 @@ public class Platform {
         d25.addCast(d25cast);
         Artist [] d26cast = {apurbo,aparna};
         d26.addCast(d26cast);
+        Artist [] d27cast = {mehzabien,irfanSazzad};
+        d27.addCast(d27cast);
 
         doRankingForAnArtist(apurbo);
         doRankingForAnArtist(mehzabien);
