@@ -21,9 +21,9 @@ public class Platform {
        // platform1.addRandomDummyRecords(10);
         // platform1.addRecords();
         platform1.addRecords2();
-        platform1.showPlatform();
+        //platform1.showPlatform();
        // platform1.doRanking();
-        platform1.doRanking2();
+        //platform1.doRanking2();
 
 
        //sortViewWise();
@@ -295,88 +295,60 @@ public class Platform {
         //DramaRecords.autoCreateDramaRecords();
 
 
+        drama1.addMoreCast(ishana,mirSabbir);
+        drama2.addMoreCast(shoshi,lavlu, imran);
+        drama3.addMoreCast(mehzabien,apurbo);
+        drama4.addMoreCast(apurbo, mithila);
+        drama5.addMoreCast(dipakSumon, dipannita);
+        drama6.addMoreCast(mehzabien, tausif);
+        drama7.addMoreCast(mehzabien,zovan);
+        drama8.addMoreCast(mithila,apurbo);
+        drama9.addMoreCast(sharlin,apurbo);
+        drama10.addMoreCast(mehzabien, apurbo);
+
+        drama11.addMoreCast(iffatTrisha, fazlulBabu, allenShuvro, eloraGauhor);
+        drama12.addMoreCast(ireshZaker, tariqAnamKhan ,momo, iffatTrisha);
+        drama13.addMoreCast(momo, iffatTrisha);
+        drama14.addMoreCast(nabilaMasuma, apurbo);
+        drama15.addMoreCast(mehzabien, fazlulBabu);
+        drama16.addMoreCast(apurbo,mosumiHamid, tahsan, mithila);
+        drama17.addMoreCast(apurbo,momo ,ireshZaker ,mithila ,farhanaMili );
+        drama18.addMoreCast(apurbo, sarika);
+        d19.addMoreCast(mehzabien, zovan, fazlulBabu);
+        d20.addMoreCast(neela,zovan,tariqAnamKhan);
 
 
-        drama1.addCast(ishana);
-        drama1.addCast(mirSabbir);
-        drama2.addCast(shoshi);
-        drama2.addCast(lavlu);
-        drama2.addCast(imran);
-        drama3.addCast(mehzabien);
-        drama3.addCast(apurbo);
-        drama4.addCast(apurbo);
-        drama4.addCast(mithila);
-        drama5.addCast(dipakSumon);
-        drama5.addCast(dipannita);
-        drama6.addCast(mehzabien);
-        drama6.addCast(tausif);
-        drama7.addCast(mehzabien);
-        drama7.addCast(zovan);
-        drama8.addCast(mithila);
-        drama8.addCast(apurbo);
-        drama9.addCast(sharlin);
-        drama9.addCast(apurbo);
-        drama10.addCast(mehzabien);
-        drama10.addCast(apurbo);
-        drama11.addCast(iffatTrisha);
-        drama11.addCast(fazlulBabu);
-        drama11.addCast(allenShuvro);
-        drama11.addCast(eloraGauhor);
-        drama12.addCast(ireshZaker);
-        drama12.addCast(tariqAnamKhan);
-        drama12.addCast(momo);
-        drama12.addCast(iffatTrisha);
-        drama13.addCast(momo);
-        drama13.addCast(iffatTrisha);
-        drama14.addCast(nabilaMasuma);
-        drama14.addCast(apurbo);
-        drama15.addCast(mehzabien);
-        drama15.addCast(fazlulBabu);
-        drama16.addCast(apurbo);
-        drama16.addCast(mosumiHamid);
-        drama16.addCast(tahsan);
-        drama16.addCast(mithila);
-        drama17.addCast(apurbo);
-        drama17.addCast(momo);
-        drama17.addCast(ireshZaker);
-        drama17.addCast(mithila);
-        drama17.addCast(farhanaMili);
-        drama17.addCast(apurbo);
-        drama17.addCast(sarika);
-        d19.addCast(mehzabien);
-        d19.addCast(zovan);
-        d19.addCast(fazlulBabu);
-        Artist [] d20cast = {neela,zovan,tariqAnamKhan};
-        d20.addCast(d20cast);
-        Artist [] d21cast = {mehzabien,zovan};
-        d21.addCast(d21cast);
-        Artist [] d22cast = {tisha,tahsan};
-        d22.addCast(d22cast);
-        d23.addCast(d22cast);
-        d24.addCast(d22cast);
-        Artist [] d25cast = {apurbo,oindrila};
-        d25.addCast(d25cast);
-        Artist [] d26cast = {apurbo,aparna};
-        d26.addCast(d26cast);
-        Artist [] d27cast = {mehzabien,irfanSazzad};
-        d27.addCast(d27cast);
+        Artist [] mehzabienAfran = {afranNisho, mehzabien};
+        Artist [] mehzabienZovan = {mehzabien,zovan};
+        Artist [] mehzabienIrfan = {mehzabien,irfanSazzad};
+        Artist [] tishaTahsan = {tisha,tahsan};
+        Artist [] apurboAparna = {apurbo,aparna};
+        Artist [] afranSalhaNadia = {afranNisho,salhaNadia};
 
-        Artist [] d28cast = {afranNisho,salhaNadia};
-        d28.addCast(d28cast);
-
-        Artist [] d29cast = {afranNisho,orsha};
-        d29.addCast(d29cast);
-
-        Artist [] d30cast = {afranNisho, mehzabien};
-        d30.addCast(d30cast);
-        d31.addCast(d30cast); // same as d30
-        d32.addCast(d30cast); // same as d30
+        d21.addMoreCast(mehzabienZovan);
+        d22.addMoreCast(tishaTahsan);
+        d23.addMoreCast(tishaTahsan);
+        d24.addMoreCast(tishaTahsan);
+        d25.addMoreCast(apurbo,oindrila);
+        d26.addMoreCast(apurboAparna);
+        d27.addMoreCast(mehzabienIrfan);
+        d28.addMoreCast(afranSalhaNadia);
+        d29.addMoreCast(afranNisho,orsha);
+        d30.addMoreCast(mehzabienAfran);
+        d31.addMoreCast(mehzabienAfran); // same as d30
+        d32.addMoreCast(mehzabienAfran); // same as d30
 
         doRankingForAnArtist(apurbo);
         gap();
         doRankingForAnArtist(mehzabien);
         gap();
         doRankingForAnArtist(afranNisho);
+        gap();
+        doRankingForAnArtist(tahsan);
+        gap();
+        doRankingForAnArtist(tisha);
+        gap();
+        doRankingForAnArtist(mosharraf);
 
 
 
