@@ -23,10 +23,11 @@ public class Platform {
         platform1.addRecords2();
         platform1.showPlatform();
        // platform1.doRanking();
-       platform1.doRanking2();
+        platform1.doRanking2();
 
-       sortViewWise();
-       sortLikeWise();
+
+       //sortViewWise();
+       //sortLikeWise();
 
         System.out.println("EXECUTION ENDED");
 
@@ -106,6 +107,8 @@ public class Platform {
         Artist nayeem = Artist.createArtist("Nayeem");
         Artist sajal = new Artist("Sajal", "Abdullah");
         Artist tausif= new Artist("Tausif", "Mahbub");
+        Artist irfanSazzad = new Artist("Irfan", "Sazzad");
+        Artist tamimMridha = new Artist("Tamim", "Mridha");
         Artist zahidHassan = new Artist ("Zahid", "Hassan");
         Artist akmHassan = new Artist ("AKM", "Hassan");
         Artist mirSabbir = new Artist("Mir", "Sabbir");
@@ -190,8 +193,7 @@ public class Platform {
         Artist prosunAzad = new Artist("Prosun", "Azad");
         Artist prova = new Artist("Sadia Jahan", "Prova");
         Artist munmun = new Artist("Munmum");
-
-
+        Artist oindrila = new Artist("Oindrila", "Ahmed");
 
 
 
@@ -222,7 +224,26 @@ public class Platform {
         Drama d22 = new Drama(Drama.issueDramaId(), "Angry Bird");
         Drama d23 = new Drama(Drama.issueDramaId(), "Ekti Moddhyobitto Fridger Golpo");
         Drama d24 = new Drama(Drama.issueDramaId(), "Mon Foring Er Golpo");
-        //Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
+        Drama d25 = new Drama(Drama.issueDramaId(), "Beloved");
+        Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d27 = new Drama(Drama.issueDramaId(), "Hotath Neerar Jonno");
+       Drama d28 = new Drama(Drama.issueDramaId(), "Ucchotoro Hishabbiggan");
+        Drama d29 = new Drama(Drama.issueDramaId(), "Karnishe jhule thaka prem");
+        Drama d30 = new Drama(Drama.issueDramaId(), "Ghure Daranor Golpo");
+        Drama d31 = new Drama(Drama.issueDramaId(), "Ami Tomar Kotha Bolbo Kake");
+        Drama d32 = new Drama(Drama.issueDramaId(), "Saheb Memsahed");
+        //Drama d33 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d34 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d35 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d36 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d37 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d38 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d39 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d40 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d41 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d42 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d43 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d44 = new Drama(Drama.issueDramaId(), "Restart");
 
 
 
@@ -252,8 +273,23 @@ public class Platform {
         DramaRecords dr22 = new DramaRecords(d22, 10000, 694, 1587370);
         DramaRecords dr23 = new DramaRecords(d23, 9800, 745, 920416);
         DramaRecords dr24 = new DramaRecords(d24, 2200, 186, 368778);
-        //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
-        //DramaRecords dr21 = new DramaRecords(d21, 6900, 543, 1041815);
+        DramaRecords dr25 = new DramaRecords(d25, 16000, 1100, 1622090);
+        DramaRecords dr26 = new DramaRecords(d26, 3300, 193, 299981);
+        DramaRecords dr27 = new DramaRecords(d27, 8100, 303, 563370);
+        DramaRecords dr28 = new DramaRecords(d28, 1100,304, 816225);
+
+        DramaRecords dr29 = new DramaRecords(d29, 1300, 83, 236302);
+        DramaRecords dr30 = new DramaRecords(d30, 18000, 677, 1039602);
+        DramaRecords dr31 = new DramaRecords(d31, 3500, 235, 357171);
+        DramaRecords dr32 = new DramaRecords(d32, 4700, 340, 588631);
+        //DramaRecords dr33 = new DramaRecords(d33, 16000, 1100, 1622090);
+        //DramaRecords dr34 = new DramaRecords(d34, 3300, 193, 299981);
+        //DramaRecords dr35 = new DramaRecords(d35, 8100, 303, 563370);
+        //DramaRecords dr36 = new DramaRecords(d36, 1100,304, 816225);
+        //DramaRecords dr37 = new DramaRecords(d37, 16000, 1100, 1622090);
+        //DramaRecords dr38 = new DramaRecords(d38, 3300, 193, 299981);
+        //DramaRecords dr39 = new DramaRecords(d39, 8100, 303, 563370);
+        //DramaRecords dr40 = new DramaRecords(d40, 1100,304, 816225);
 
 
         //DramaRecords.autoCreateDramaRecords();
@@ -318,6 +354,30 @@ public class Platform {
         d22.addCast(d22cast);
         d23.addCast(d22cast);
         d24.addCast(d22cast);
+        Artist [] d25cast = {apurbo,oindrila};
+        d25.addCast(d25cast);
+        Artist [] d26cast = {apurbo,aparna};
+        d26.addCast(d26cast);
+        Artist [] d27cast = {mehzabien,irfanSazzad};
+        d27.addCast(d27cast);
+
+        Artist [] d28cast = {afranNisho,salhaNadia};
+        d28.addCast(d28cast);
+
+        Artist [] d29cast = {afranNisho,orsha};
+        d29.addCast(d29cast);
+
+        Artist [] d30cast = {afranNisho, mehzabien};
+        d30.addCast(d30cast);
+        d31.addCast(d30cast); // same as d30
+        d32.addCast(d30cast); // same as d30
+
+        doRankingForAnArtist(apurbo);
+        gap();
+        doRankingForAnArtist(mehzabien);
+        gap();
+        doRankingForAnArtist(afranNisho);
+
 
 
 
@@ -453,6 +513,55 @@ public class Platform {
         }
 
     }
+
+    public void doRankingForAnArtist(Artist artist){
+
+        System.out.println("Ranking by rank1B for dramas acted  by "+ artist.getFirstName());
+        treeValue2.clear();
+
+        int numOfDramasActed = 0;
+        double score = 0.00;
+        for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
+
+
+            if(dramaRecords.getDrama().getCast().contains(artist)){
+                numOfDramasActed++;
+                score+=dramaRecords.rank1B();
+
+            treeValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+
+            }
+
+
+        }
+        if(treeValue2.isEmpty()){
+            System.out.println("No records exits for "+ artist.getFirstName());
+        } else {
+
+
+            Map sortedMap = sortByValues(treeValue2);
+
+            // Ranking.showMap(sortedMap);
+
+            // Get a set of the entries on the sorted map
+            Set set = sortedMap.entrySet();
+
+            // Get an iterator
+            Iterator i = set.iterator();
+
+            // Display elements
+            while (i.hasNext()) {
+                Map.Entry me = (Map.Entry) i.next();
+                System.out.print(me.getKey() + ": ");
+                System.out.println(me.getValue());
+            }
+
+        }
+        System.out.println("Acted on " + numOfDramasActed + " dramas");
+        System.out.println("Average " + score/numOfDramasActed);
+
+    }
+
 
     public static <K, V extends Comparable<V>> Map<K, V>
     sortByValues(final Map<K, V> map) {
