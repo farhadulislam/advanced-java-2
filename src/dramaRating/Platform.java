@@ -27,6 +27,16 @@ public class Platform {
        //sortLikeWise();
 
 
+        //IMPORTANT :  Cross checking number of artists against Ids created.
+        int numOfArtist = Artist.getNumOfArtist();
+        System.out.println("Number of all artist : " + numOfArtist);
+
+        HashSet<Artist> setOfArtist = Artist.getSetOfArtist();
+        int sizeOfSetOfArtist= setOfArtist.size();
+        System.out.println(sizeOfSetOfArtist);
+        ArrayList<Integer> allArtistIds = Artist.getAllArtistIds();
+        //int sizeOfAllArtistIds = allArtistIds.size();
+        //System.out.println(sizeOfAllArtistIds);
         System.out.println("EXECUTION ENDED");
 
     }
