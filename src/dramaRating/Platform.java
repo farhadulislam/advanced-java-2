@@ -180,8 +180,8 @@ public class Platform {
         Drama d35 = new Drama(Drama.issueDramaId(), "26 No Platform");
         Drama d36 = new Drama(Drama.issueDramaId(), "Science er meye Arts er chele");
         Drama d37 = new Drama(Drama.issueDramaId(), "Mannequin Mumu");
-        //Drama d38 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d39 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d38 = new Drama(Drama.issueDramaId(), "Porinoti");
+        Drama d39 = new Drama(Drama.issueDramaId(), "Tomar Amar Prem");
         //Drama d40 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d41 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d42 = new Drama(Drama.issueDramaId(), "Restart");
@@ -230,8 +230,8 @@ public class Platform {
         DramaRecords dr35 = new DramaRecords(d35, 7400, 608, 954574 );
         DramaRecords dr36 = new DramaRecords(d36, 30000,1800, 3192904 );
         DramaRecords dr37 = new DramaRecords(d37, 15000, 1500, 2471193);
-        //DramaRecords dr38 = new DramaRecords(d38, 3300, 193, 299981);
-        //DramaRecords dr39 = new DramaRecords(d39, 8100, 303, 563370);
+        DramaRecords dr38 = new DramaRecords(d38, 9600, 610, 1009406);
+        DramaRecords dr39 = new DramaRecords(d39, 48000, 1800, 4655088 );
         //DramaRecords dr40 = new DramaRecords(d40, 1100,304, 816225);
 
 
@@ -285,6 +285,8 @@ public class Platform {
         d35.addMoreCast(afranSalhaNadia);
         d36.addMoreCast(mehzabienAfran);
         d37.addMoreCast(tahsan,momo);
+        d38.addMoreCast(mehzabien,tahsan);
+        d39.addMoreCast(agnila,siyam);
 
         doRankingForAnArtist(apurbo);
         gap();
