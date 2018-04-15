@@ -12,13 +12,13 @@ public class Artist extends Staff {
 
 
     private HashSet<Drama> setOfDramasActedIn = new HashSet<Drama>();
-    private static List<Integer> allArtistIds;
+    private static ArrayList<Integer> allArtistIds;
     private static HashSet<Artist> setOfArtist =  new HashSet<>();
 
     public static int getNumOfArtist() {
         return numOfArtist;
     }
-    public static List<Integer> getAllArtistIds() {
+    public static ArrayList<Integer> getAllArtistIds() {
         return allArtistIds;
     }
     public static HashSet<Artist> getSetOfArtist() {

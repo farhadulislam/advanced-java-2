@@ -20,12 +20,12 @@ public class Platform {
        Platform platform1 = new Platform();
        platform1.addRecords2();
         //platform1.showPlatform();
-       // platform1.doRanking();
-        //platform1.doRanking2();
+        platform1.doRanking2();
 
 
        //sortViewWise();
        //sortLikeWise();
+
 
         System.out.println("EXECUTION ENDED");
 
@@ -165,11 +165,11 @@ public class Platform {
         Drama d30 = new Drama(Drama.issueDramaId(), "Ghure Daranor Golpo");
         Drama d31 = new Drama(Drama.issueDramaId(), "Ami Tomar Kotha Bolbo Kake");
         Drama d32 = new Drama(Drama.issueDramaId(), "Saheb Memsahed");
-        //Drama d33 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d34 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d35 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d36 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d37 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d33 = new Drama(Drama.issueDramaId(), "Red Rose");
+        Drama d34 = new Drama(Drama.issueDramaId(), "Ekti Tin Masher Golpo");
+        Drama d35 = new Drama(Drama.issueDramaId(), "26 No Platform");
+        Drama d36 = new Drama(Drama.issueDramaId(), "Science er meye Arts er chele");
+        Drama d37 = new Drama(Drama.issueDramaId(), "Mannequin Mumu");
         //Drama d38 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d39 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d40 = new Drama(Drama.issueDramaId(), "Restart");
@@ -215,11 +215,11 @@ public class Platform {
         DramaRecords dr30 = new DramaRecords(d30, 18000, 677, 1039602);
         DramaRecords dr31 = new DramaRecords(d31, 3500, 235, 357171);
         DramaRecords dr32 = new DramaRecords(d32, 4700, 340, 588631);
-        //DramaRecords dr33 = new DramaRecords(d33, 16000, 1100, 1622090);
-        //DramaRecords dr34 = new DramaRecords(d34, 3300, 193, 299981);
-        //DramaRecords dr35 = new DramaRecords(d35, 8100, 303, 563370);
-        //DramaRecords dr36 = new DramaRecords(d36, 1100,304, 816225);
-        //DramaRecords dr37 = new DramaRecords(d37, 16000, 1100, 1622090);
+        DramaRecords dr33 = new DramaRecords(d33, 17000, 974, 1690973);
+        DramaRecords dr34 = new DramaRecords(d34, 21000, 1100, 2518368);
+        DramaRecords dr35 = new DramaRecords(d35, 7400, 608, 954574 );
+        DramaRecords dr36 = new DramaRecords(d36, 30000,1800, 3192904 );
+        DramaRecords dr37 = new DramaRecords(d37, 15000, 1500, 2471193);
         //DramaRecords dr38 = new DramaRecords(d38, 3300, 193, 299981);
         //DramaRecords dr39 = new DramaRecords(d39, 8100, 303, 563370);
         //DramaRecords dr40 = new DramaRecords(d40, 1100,304, 816225);
@@ -270,6 +270,11 @@ public class Platform {
         d30.addMoreCast(mehzabienAfran);
         d31.addMoreCast(mehzabienAfran); // same as d30
         d32.addMoreCast(mehzabienAfran); // same as d30
+        d33.addMoreCast(mehzabienAfran); // same as d30
+        d34.addMoreCast(afranNisho,sabnam);
+        d35.addMoreCast(afranSalhaNadia);
+        d36.addMoreCast(mehzabienAfran);
+        d37.addMoreCast(tahsan,momo);
 
         doRankingForAnArtist(apurbo);
         gap();
