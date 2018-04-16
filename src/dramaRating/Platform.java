@@ -18,84 +18,29 @@ public class Platform {
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
        Platform platform1 = new Platform();
-       // platform1.addRandomDummyRecords(10);
-        // platform1.addRecords();
-        platform1.addRecords2();
+       platform1.addRecords2();
         //platform1.showPlatform();
-       // platform1.doRanking();
-      // platform1.doRanking2();
+        platform1.doRanking2();
 
 
        //sortViewWise();
        //sortLikeWise();
 
+
+        //IMPORTANT :  Cross checking number of artists against Ids created.
+        int numOfArtist = Artist.getNumOfArtist();
+        System.out.println("Number of all artist : " + numOfArtist);
+
+        HashSet<Artist> setOfArtist = Artist.getSetOfArtist();
+        int sizeOfSetOfArtist= setOfArtist.size();
+        System.out.println(sizeOfSetOfArtist);
+        ArrayList<Integer> allArtistIds = Artist.getAllArtistIds();
+        //int sizeOfAllArtistIds = allArtistIds.size();
+        //System.out.println(sizeOfAllArtistIds);
         System.out.println("EXECUTION ENDED");
 
     }
 
-    public void addRecords(){
-
-        System.out.println("Platform initiated");
-        System.out.println("Adding drama ...........");
-        Drama drama1 = new Drama(Drama.issueDramaId(), "Patriot");
-        Drama drama2 = new Drama(2, "Mirror");
-        Drama drama3 = new Drama(3, "Village");
-        Drama drama4 = new Drama(4, "Postman");
-        Drama drama5 = new Drama(5, "Dual mind");
-        Drama drama6 = new Drama (6, "Beautiful mind");
-        Drama drama7 = new Drama (7, "Press");
-        Drama drama8 = new Drama (Drama.issueDramaId(), "Rainbow");
-        Drama drama9 = new Drama(Drama.issueDramaId(), "City life");
-        Drama drama10 = new Drama(Drama.issueDramaId(), "Blue sky");
-
-
-        System.out.println("Adding drama records...........");
-        DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);
-        DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);
-        DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
-        DramaRecords dramaRecords4 = new DramaRecords(drama4, 3000, 300, 800000);
-        DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
-        DramaRecords dramaRecords6 = new DramaRecords(drama6, 3500, 2, 50345);
-        DramaRecords dramaRecords7 = new DramaRecords(drama7, 100, 50 , 200);
-        DramaRecords dramaRecords8 = new DramaRecords(drama8, 20000, 22, 21000);
-        DramaRecords dramaRecords9 = new DramaRecords(drama9);
-        DramaRecords dramaRecords10 = new DramaRecords(drama10);
-
-        System.out.println("Adding Artist records.............");
-        Artist afranNisho = new Artist("Afran", "Nisho");
-        Artist art3 = new Artist("Apurbo");
-        Artist art5 = Artist.createArtist("Allen", "Shuvro");
-        Artist art7 = new Artist("Farhan Ahmed", "Zovan" );
-        Artist art9 = Artist.createArtist("Nayeem");
-        Artist art11 = new Artist("Sajal");
-
-
-        Artist art2 = new Artist("Mehzabien", "Chowdhury");
-        Artist art4 = new Artist("Sabnam", "Faria");
-        Artist art6 = new Artist( "Tisha", "Nusrat Imrose");
-        Artist art8 = Artist.createArtist("Sabila", "Noor");
-        Artist art10 = new Artist("Aparna", "Ghosh");
-        Artist art12 = new Artist("Tasnuva", "Tisha");
-        Artist art14 = new Artist ("Safa", "Kabir");
-        Artist art16 = new Artist ("Mousumi", "Hamid");
-        Artist art18 = new Artist("Shokh");
-
-
-        drama1.addCast(afranNisho);
-        drama1.addCast(art10);
-        drama2.addCast(afranNisho);
-        drama2.addCast(art2);
-        drama3.addCast(art4);
-        drama3.addCast(art2);
-        drama4.addCast(art7);
-        drama4.addCast(art5);
-        drama5.addCast(art7);
-        drama5.addCast(art11);
-        drama6.addCast(art4);
-        drama7.addCast(afranNisho);
-        drama7.addCast(art6);
-
-    }
 
     public void addRecords2(){
 
@@ -196,8 +141,6 @@ public class Platform {
         Artist oindrila = new Artist("Oindrila", "Ahmed");
 
 
-
-
         /*******************/
         System.out.println("Adding Natok ...........");
         Drama drama1 = new Drama(Drama.issueDramaId(), "Tiar Khacha");
@@ -229,11 +172,21 @@ public class Platform {
         Drama d27 = new Drama(Drama.issueDramaId(), "Hotath Neerar Jonno");
        Drama d28 = new Drama(Drama.issueDramaId(), "Ucchotoro Hishabbiggan");
         Drama d29 = new Drama(Drama.issueDramaId(), "Karnishe jhule thaka prem");
-        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d30 = new Drama(Drama.issueDramaId(), "Ghure Daranor Golpo");
+        Drama d31 = new Drama(Drama.issueDramaId(), "Ami Tomar Kotha Bolbo Kake");
+        Drama d32 = new Drama(Drama.issueDramaId(), "Saheb Memsahed");
+        Drama d33 = new Drama(Drama.issueDramaId(), "Red Rose");
+        Drama d34 = new Drama(Drama.issueDramaId(), "Ekti Tin Masher Golpo");
+        Drama d35 = new Drama(Drama.issueDramaId(), "26 No Platform");
+        Drama d36 = new Drama(Drama.issueDramaId(), "Science er meye Arts er chele");
+        Drama d37 = new Drama(Drama.issueDramaId(), "Mannequin Mumu");
+        Drama d38 = new Drama(Drama.issueDramaId(), "Porinoti");
+        Drama d39 = new Drama(Drama.issueDramaId(), "Tomar Amar Prem");
+        //Drama d40 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d41 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d42 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d43 = new Drama(Drama.issueDramaId(), "Restart");
+        //Drama d44 = new Drama(Drama.issueDramaId(), "Restart");
 
 
 
@@ -269,95 +222,83 @@ public class Platform {
         DramaRecords dr28 = new DramaRecords(d28, 1100,304, 816225);
 
         DramaRecords dr29 = new DramaRecords(d29, 1300, 83, 236302);
-        //DramaRecords dr22 = new DramaRecords(d22, 10000, 694, 1587370);
-        //DramaRecords dr23 = new DramaRecords(d23, 9800, 745, 920416);
-        //DramaRecords dr24 = new DramaRecords(d24, 2200, 186, 368778);
-        //DramaRecords dr25 = new DramaRecords(d25, 16000, 1100, 1622090);
-        //DramaRecords dr26 = new DramaRecords(d26, 3300, 193, 299981);
-        //DramaRecords dr27 = new DramaRecords(d27, 8100, 303, 563370);
-        //DramaRecords dr28 = new DramaRecords(d28, 1100,304, 816225);
+        DramaRecords dr30 = new DramaRecords(d30, 18000, 677, 1039602);
+        DramaRecords dr31 = new DramaRecords(d31, 3500, 235, 357171);
+        DramaRecords dr32 = new DramaRecords(d32, 4700, 340, 588631);
+        DramaRecords dr33 = new DramaRecords(d33, 17000, 974, 1690973);
+        DramaRecords dr34 = new DramaRecords(d34, 21000, 1100, 2518368);
+        DramaRecords dr35 = new DramaRecords(d35, 7400, 608, 954574 );
+        DramaRecords dr36 = new DramaRecords(d36, 30000,1800, 3192904 );
+        DramaRecords dr37 = new DramaRecords(d37, 15000, 1500, 2471193);
+        DramaRecords dr38 = new DramaRecords(d38, 9600, 610, 1009406);
+        DramaRecords dr39 = new DramaRecords(d39, 48000, 1800, 4655088 );
+        //DramaRecords dr40 = new DramaRecords(d40, 1100,304, 816225);
 
 
         //DramaRecords.autoCreateDramaRecords();
 
 
+        drama1.addMoreCast(ishana,mirSabbir);
+        drama2.addMoreCast(shoshi,lavlu, imran);
+        drama3.addMoreCast(mehzabien,apurbo);
+        drama4.addMoreCast(apurbo, mithila);
+        drama5.addMoreCast(dipakSumon, dipannita);
+        drama6.addMoreCast(mehzabien, tausif);
+        drama7.addMoreCast(mehzabien,zovan);
+        drama8.addMoreCast(mithila,apurbo);
+        drama9.addMoreCast(sharlin,apurbo);
+        drama10.addMoreCast(mehzabien, apurbo);
+
+        drama11.addMoreCast(iffatTrisha, fazlulBabu, allenShuvro, eloraGauhor);
+        drama12.addMoreCast(ireshZaker, tariqAnamKhan ,momo, iffatTrisha);
+        drama13.addMoreCast(momo, iffatTrisha);
+        drama14.addMoreCast(nabilaMasuma, apurbo);
+        drama15.addMoreCast(mehzabien, fazlulBabu);
+        drama16.addMoreCast(apurbo,mosumiHamid, tahsan, mithila);
+        drama17.addMoreCast(apurbo,momo ,ireshZaker ,mithila ,farhanaMili );
+        drama18.addMoreCast(apurbo, sarika);
+        d19.addMoreCast(mehzabien, zovan, fazlulBabu);
+        d20.addMoreCast(neela,zovan,tariqAnamKhan);
 
 
-        drama1.addCast(ishana);
-        drama1.addCast(mirSabbir);
-        drama2.addCast(shoshi);
-        drama2.addCast(lavlu);
-        drama2.addCast(imran);
-        drama3.addCast(mehzabien);
-        drama3.addCast(apurbo);
-        drama4.addCast(apurbo);
-        drama4.addCast(mithila);
-        drama5.addCast(dipakSumon);
-        drama5.addCast(dipannita);
-        drama6.addCast(mehzabien);
-        drama6.addCast(tausif);
-        drama7.addCast(mehzabien);
-        drama7.addCast(zovan);
-        drama8.addCast(mithila);
-        drama8.addCast(apurbo);
-        drama9.addCast(sharlin);
-        drama9.addCast(apurbo);
-        drama10.addCast(mehzabien);
-        drama10.addCast(apurbo);
-        drama11.addCast(iffatTrisha);
-        drama11.addCast(fazlulBabu);
-        drama11.addCast(allenShuvro);
-        drama11.addCast(eloraGauhor);
-        drama12.addCast(ireshZaker);
-        drama12.addCast(tariqAnamKhan);
-        drama12.addCast(momo);
-        drama12.addCast(iffatTrisha);
-        drama13.addCast(momo);
-        drama13.addCast(iffatTrisha);
-        drama14.addCast(nabilaMasuma);
-        drama14.addCast(apurbo);
-        drama15.addCast(mehzabien);
-        drama15.addCast(fazlulBabu);
-        drama16.addCast(apurbo);
-        drama16.addCast(mosumiHamid);
-        drama16.addCast(tahsan);
-        drama16.addCast(mithila);
-        drama17.addCast(apurbo);
-        drama17.addCast(momo);
-        drama17.addCast(ireshZaker);
-        drama17.addCast(mithila);
-        drama17.addCast(farhanaMili);
-        drama17.addCast(apurbo);
-        drama17.addCast(sarika);
-        d19.addCast(mehzabien);
-        d19.addCast(zovan);
-        d19.addCast(fazlulBabu);
-        Artist [] d20cast = {neela,zovan,tariqAnamKhan};
-        d20.addCast(d20cast);
-        Artist [] d21cast = {mehzabien,zovan};
-        d21.addCast(d21cast);
-        Artist [] d22cast = {tisha,tahsan};
-        d22.addCast(d22cast);
-        d23.addCast(d22cast);
-        d24.addCast(d22cast);
-        Artist [] d25cast = {apurbo,oindrila};
-        d25.addCast(d25cast);
-        Artist [] d26cast = {apurbo,aparna};
-        d26.addCast(d26cast);
-        Artist [] d27cast = {mehzabien,irfanSazzad};
-        d27.addCast(d27cast);
+        Artist [] mehzabienAfran = {afranNisho, mehzabien};
+        Artist [] mehzabienZovan = {mehzabien,zovan};
+        Artist [] mehzabienIrfan = {mehzabien,irfanSazzad};
+        Artist [] tishaTahsan = {tisha,tahsan};
+        Artist [] apurboAparna = {apurbo,aparna};
+        Artist [] afranSalhaNadia = {afranNisho,salhaNadia};
 
-        Artist [] d28cast = {afranNisho,salhaNadia};
-        d28.addCast(d28cast);
-
-        Artist [] d29cast = {afranNisho,orsha};
-        d29.addCast(d29cast);
+        d21.addMoreCast(mehzabienZovan);
+        d22.addMoreCast(tishaTahsan);
+        d23.addMoreCast(tishaTahsan);
+        d24.addMoreCast(tishaTahsan);
+        d25.addMoreCast(apurbo,oindrila);
+        d26.addMoreCast(apurboAparna);
+        d27.addMoreCast(mehzabienIrfan);
+        d28.addMoreCast(afranSalhaNadia);
+        d29.addMoreCast(afranNisho,orsha);
+        d30.addMoreCast(mehzabienAfran);
+        d31.addMoreCast(mehzabienAfran); // same as d30
+        d32.addMoreCast(mehzabienAfran); // same as d30
+        d33.addMoreCast(mehzabienAfran); // same as d30
+        d34.addMoreCast(afranNisho,sabnam);
+        d35.addMoreCast(afranSalhaNadia);
+        d36.addMoreCast(mehzabienAfran);
+        d37.addMoreCast(tahsan,momo);
+        d38.addMoreCast(mehzabien,tahsan);
+        d39.addMoreCast(agnila,siyam);
 
         doRankingForAnArtist(apurbo);
+        gap();
         doRankingForAnArtist(mehzabien);
+        gap();
         doRankingForAnArtist(afranNisho);
-
-
+        gap();
+        doRankingForAnArtist(tahsan);
+        gap();
+        doRankingForAnArtist(tisha);
+        gap();
+        doRankingForAnArtist(mosharraf);
 
 
     }
@@ -536,8 +477,12 @@ public class Platform {
             }
 
         }
-        System.out.println("Acted on " + numOfDramasActed + " dramas");
-        System.out.println("Average " + score/numOfDramasActed);
+        if (numOfDramasActed>=1) {
+            System.out.println("Acted on " + numOfDramasActed + " dramas");
+            System.out.println("Average " + score / numOfDramasActed);
+        } else{
+            System.out.println("No records for : " + artist.getFirstName());
+        }
 
     }
 

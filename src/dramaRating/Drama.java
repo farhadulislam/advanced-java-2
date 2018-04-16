@@ -96,6 +96,14 @@ public class Drama {
         //System.out.println("Cast " + this.getDramaName() + cast.toString());
     }
 
+    public void addMoreCast(Artist... artist){
+
+        for (Artist art : artist){
+            cast.add(art);
+            art.addDramaToArtistsRecords(this);
+        }
+    }
+
     public Set<Artist> getCast() {
 
         return cast;
