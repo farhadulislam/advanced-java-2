@@ -238,7 +238,7 @@ public class Platform {
         DramaRecords dr38 = new DramaRecords(d38, 9600, 610, 1009406);
         DramaRecords dr39 = new DramaRecords(d39, 48000, 1800, 4655088 );
 
-        DramaRecords dr40 = new DramaRecords(new Drama("Dummy"), 0,0, 100);
+        DramaRecords dr40 = new DramaRecords(new Drama("Dummy"), 0,200, 200);
         //DramaRecords dr41 = new DramaRecords(d41, 1100,304, 816225);
         //DramaRecords dr42 = new DramaRecords(d42, 1100,304, 816225);
         //DramaRecords dr43 = new DramaRecords(d43, 1100,304, 816225);

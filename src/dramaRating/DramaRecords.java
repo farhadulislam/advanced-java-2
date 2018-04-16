@@ -113,7 +113,7 @@ public class DramaRecords {
     }
     public double getLikesMinusDislikes(){
 
-        return ((likes<=0) && dislikes<=0)? 0 : (double)(likes-dislikes);
+        return ((likes<=0) && dislikes<=0)? 0.00 : (double)(likes-dislikes);
     }
 
 
@@ -129,7 +129,7 @@ public class DramaRecords {
 
     public double measureLikesStrength(){
 
-            return (likes<=0 && dislikes<=0) ? 0 : ((likes - dislikes) / getTotalLikesAndDislikes()) * 100;
+            return (likes<=0 && dislikes<=0) ? 0.0 : ((likes - dislikes) / getTotalLikesAndDislikes()) * 100;
 
     }
 
