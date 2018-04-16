@@ -128,8 +128,11 @@ public class DramaRecords {
     }
 
     public double measureLikesStrength(){
-
-        return  ((likes-dislikes)/getTotalLikesAndDislikes())*100;
+        if (likes<=0 && dislikes<=0){
+            return 0;
+        }else {
+            return ((likes - dislikes) / getTotalLikesAndDislikes()) * 100;
+        }
     }
 
     public double simpleRank(){

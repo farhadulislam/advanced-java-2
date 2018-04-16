@@ -196,11 +196,11 @@ public class Platform {
 
 
         System.out.println("Adding drama records...........");
-        DramaRecords dramaRecords1 = new DramaRecords(drama1, 4000, 668, 1005173);
-        DramaRecords dramaRecords2 = new DramaRecords(drama2, 5900, 837, 1493252 );
-        DramaRecords dramaRecords3 = new DramaRecords(drama3, 230000 , 11000, 14583236);
-        DramaRecords dramaRecords4 = new DramaRecords(drama4, 56000, 31000, 5630125);
-        DramaRecords dramaRecords5 = new DramaRecords(drama5, 20000, 674, 1155765);
+        DramaRecords dr1 = new DramaRecords(drama1, 4000, 668, 1005173);
+        DramaRecords dr2 = new DramaRecords(drama2, 5900, 837, 1493252 );
+        DramaRecords dr3 = new DramaRecords(drama3, 230000 , 11000, 14583236);
+        DramaRecords dr4 = new DramaRecords(drama4, 56000, 31000, 5630125);
+        DramaRecords dr5 = new DramaRecords(drama5, 20000, 674, 1155765);
         DramaRecords dr6 = new DramaRecords(drama6,8500, 627, 1276529);
         DramaRecords dr7 = new DramaRecords(drama7,6800, 531, 1014465);
         DramaRecords dr8 = new DramaRecords(drama8,3200, 99, 207539);
@@ -237,7 +237,14 @@ public class Platform {
         DramaRecords dr37 = new DramaRecords(d37, 15000, 1500, 2471193);
         DramaRecords dr38 = new DramaRecords(d38, 9600, 610, 1009406);
         DramaRecords dr39 = new DramaRecords(d39, 48000, 1800, 4655088 );
-        //DramaRecords dr40 = new DramaRecords(d40, 1100,304, 816225);
+
+        DramaRecords dr40 = new DramaRecords(new Drama("Dummy"), 0,0, 100);
+        //DramaRecords dr41 = new DramaRecords(d41, 1100,304, 816225);
+        //DramaRecords dr42 = new DramaRecords(d42, 1100,304, 816225);
+        //DramaRecords dr43 = new DramaRecords(d43, 1100,304, 816225);
+        //DramaRecords dr44 = new DramaRecords(d44, 1100,304, 816225);
+
+
 
 
         //DramaRecords.autoCreateDramaRecords();
@@ -292,6 +299,8 @@ public class Platform {
         d37.addMoreCast(tahsan,momo);
         d38.addMoreCast(mehzabien,tahsan);
         d39.addMoreCast(agnila,siam);
+        dr40.getDrama().addMoreCast(new Artist("Dummy Artist")); // retrieving drama obj first from dramaRecords and then
+                                                                         // calling addMoreCast method to add artists.
 
         doRankingForAnArtist(apurbo);
         gap();
