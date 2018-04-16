@@ -52,8 +52,9 @@ public class Platform {
         Artist nayeem = Artist.createArtist("Nayeem");
         Artist sajal = new Artist("Sajal", "Abdullah");
         Artist tausif= new Artist("Tausif", "Mahbub");
-        Artist irfanSazzad = new Artist("Irfan", "Sazzad");
         Artist tamimMridha = new Artist("Tamim", "Mridha");
+        Artist irfanSazzad = new Artist("Irfan", "Sazzad");
+        Artist siam = new Artist("Siyam", "Ahmed");
         Artist zahidHassan = new Artist ("Zahid", "Hassan");
         Artist akmHassan = new Artist ("AKM", "Hassan");
         Artist mirSabbir = new Artist("Mir", "Sabbir");
@@ -66,18 +67,19 @@ public class Platform {
         Artist lavlu = new Artist("Salahuddin", "Lavlu");
         Artist imran = new Artist("Imran");
         Artist dipakSumon = new Artist("Dipak", "Sumon");
-        Artist siyam = new Artist("Siyam", "Ahmed");
+
         Artist allenShuvro = new Artist("Allen", "Shuvro");
-        Artist fazlulBabu = new Artist("Fazlul Hoque", "Babu");
-        Artist shatabdiWadud = new Artist ("Shatabdi", "Wadud");
         Artist ireshZaker = new Artist ("Iresh", "Zaker");
-        Artist tariqAnamKhan = new Artist ("Tariq Anam", "Khan");
-        Artist shahiduzzamanSelim = new Artist ("Shahiduzzaman", "Selim");
         Artist tahsan = new Artist ("Tahsan", "Khan");
         Artist emon = new Artist ("Emon");
         Artist nirob = new Artist ("Nirob");
         Artist niloy = new Artist ("Niloy", "Alamgir");
         Artist arefinShuvo = new Artist ("Arefin", "Shuvo");
+
+        Artist fazlulBabu = new Artist("Fazlul Hoque", "Babu");
+        Artist shatabdiWadud = new Artist ("Shatabdi", "Wadud");
+        Artist tariqAnamKhan = new Artist ("Tariq Anam", "Khan");
+        Artist shahiduzzamanSelim = new Artist ("Shahiduzzaman", "Selim");
         Artist maznunMizan = new Artist ("Maznun", "Mizan");
         Artist ahmedRubel = new Artist ("Ahmed", "Rubel");
         Artist afzalHossain = new Artist ("Afzal", "Hossain");
@@ -139,6 +141,9 @@ public class Platform {
         Artist prova = new Artist("Sadia Jahan", "Prova");
         Artist munmun = new Artist("Munmum");
         Artist oindrila = new Artist("Oindrila", "Ahmed");
+        Artist mim = new Artist("Mim");
+        Artist nadiaMim = new Artist("Nadia", "Mim");
+
 
 
         /*******************/
@@ -158,10 +163,10 @@ public class Platform {
         Drama drama13 = new Drama(Drama.issueDramaId(), "Ami Tomar Golpo Hobo");
         Drama drama14 = new Drama(Drama.issueDramaId(), "Shongshar");
         Drama drama15 = new Drama(Drama.issueDramaId(), "Manush");
-       Drama drama16 = new Drama(Drama.issueDramaId(), "Kothopokothon");
-       Drama drama17 = new Drama(Drama.issueDramaId(), "X Factor : Game Over");
-       Drama drama18 = new Drama(Drama.issueDramaId(), "Khuji Tomay");
-       Drama d19 = new Drama(Drama.issueDramaId(), "Ekhono Adhar");
+        Drama drama16 = new Drama(Drama.issueDramaId(), "Kothopokothon");
+        Drama drama17 = new Drama(Drama.issueDramaId(), "X Factor : Game Over");
+        Drama drama18 = new Drama(Drama.issueDramaId(), "Khuji Tomay");
+        Drama d19 = new Drama(Drama.issueDramaId(), "Ekhono Adhar");
         Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
         Drama d21 = new Drama(Drama.issueDramaId(), "Se Duare Dariye");
         Drama d22 = new Drama(Drama.issueDramaId(), "Angry Bird");
@@ -170,7 +175,7 @@ public class Platform {
         Drama d25 = new Drama(Drama.issueDramaId(), "Beloved");
         Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
         Drama d27 = new Drama(Drama.issueDramaId(), "Hotath Neerar Jonno");
-       Drama d28 = new Drama(Drama.issueDramaId(), "Ucchotoro Hishabbiggan");
+        Drama d28 = new Drama(Drama.issueDramaId(), "Ucchotoro Hishabbiggan");
         Drama d29 = new Drama(Drama.issueDramaId(), "Karnishe jhule thaka prem");
         Drama d30 = new Drama(Drama.issueDramaId(), "Ghure Daranor Golpo");
         Drama d31 = new Drama(Drama.issueDramaId(), "Ami Tomar Kotha Bolbo Kake");
@@ -286,7 +291,7 @@ public class Platform {
         d36.addMoreCast(mehzabienAfran);
         d37.addMoreCast(tahsan,momo);
         d38.addMoreCast(mehzabien,tahsan);
-        d39.addMoreCast(agnila,siyam);
+        d39.addMoreCast(agnila,siam);
 
         doRankingForAnArtist(apurbo);
         gap();
