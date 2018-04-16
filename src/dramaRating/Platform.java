@@ -27,7 +27,7 @@ public class Platform {
        //sortLikeWise();
 
 
-        //IMPORTANT :  Cross checking number of artists against Ids created.
+        //IMPORTANT :  Cross checking number of artists instances against Ids created.
         int numOfArtist = Artist.getNumOfArtist();
         System.out.println("Number of all artist : " + numOfArtist);
 
