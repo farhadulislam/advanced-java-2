@@ -18,9 +18,12 @@ public class Platform {
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
        Platform platform1 = new Platform();
-       platform1.addRecords2();
+       // platform1.addRandomDummyRecords(10);
+        // platform1.addRecords();
+        platform1.addRecords2();
         //platform1.showPlatform();
-        platform1.doRanking2();
+       // platform1.doRanking();
+        //platform1.doRanking2();
 
 
        //sortViewWise();
@@ -246,10 +249,6 @@ public class Platform {
 
 
 
-
-        //DramaRecords.autoCreateDramaRecords();
-
-
         drama1.addMoreCast(ishana,mirSabbir);
         drama2.addMoreCast(shoshi,lavlu, imran);
         drama3.addMoreCast(mehzabien,apurbo);
@@ -292,15 +291,6 @@ public class Platform {
         d30.addMoreCast(mehzabienAfran);
         d31.addMoreCast(mehzabienAfran); // same as d30
         d32.addMoreCast(mehzabienAfran); // same as d30
-        d33.addMoreCast(mehzabienAfran); // same as d30
-        d34.addMoreCast(afranNisho,sabnam);
-        d35.addMoreCast(afranSalhaNadia);
-        d36.addMoreCast(mehzabienAfran);
-        d37.addMoreCast(tahsan,momo);
-        d38.addMoreCast(mehzabien,tahsan);
-        d39.addMoreCast(agnila,siam);
-        dr40.getDrama().addMoreCast(new Artist("Dummy Artist")); // retrieving drama obj first from dramaRecords and then
-                                                                         // calling addMoreCast method to add artists.
 
         doRankingForAnArtist(apurbo);
         gap();
