@@ -92,7 +92,7 @@ public class DramaRecords {
         return "DramaRecords{" + "Drama name "+ drama.getDramaName() +
                 ", likes=" + likes +
                 ", dislikes=" + dislikes +
-                ", views=" + views + " Likability is :  " + likeability + this.calcLikability1() + "%" + "," + this.measureLikesStrength() + "%" +
+                ", views=" + views +  "," + this.measureLikesStrength() + "%" +
                 '}';
     }
 
