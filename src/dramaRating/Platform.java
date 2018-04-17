@@ -18,12 +18,11 @@ public class Platform {
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
 
        Platform platform1 = new Platform();
-       // platform1.addRandomDummyRecords(10);
-        // platform1.addRecords();
+
         platform1.addRecords2();
-        //platform1.showPlatform();
+        platform1.showPlatform();
        // platform1.doRanking();
-        //platform1.doRanking2();
+        platform1.doRanking2();
 
 
        //sortViewWise();
@@ -292,7 +291,7 @@ public class Platform {
         d31.addMoreCast(mehzabienAfran); // same as d30
         d32.addMoreCast(mehzabienAfran); // same as d30
 
-        doRankingForAnArtist(apurbo);
+      /*  doRankingForAnArtist(apurbo);
         gap();
         doRankingForAnArtist(mehzabien);
         gap();
@@ -302,7 +301,7 @@ public class Platform {
         gap();
         doRankingForAnArtist(tisha);
         gap();
-        doRankingForAnArtist(mosharraf);
+        doRankingForAnArtist(mosharraf);*/
 
 
     }
