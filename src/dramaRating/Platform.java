@@ -29,73 +29,21 @@ public class Platform {
        //sortViewWise();
        //sortLikeWise();
 
+
+        //IMPORTANT :  Cross checking number of artists instances against Ids created.
+        int numOfArtist = Artist.getNumOfArtist();
+        System.out.println("Number of all artist : " + numOfArtist);
+
+        HashSet<Artist> setOfArtist = Artist.getSetOfArtist();
+        int sizeOfSetOfArtist= setOfArtist.size();
+        System.out.println(sizeOfSetOfArtist);
+        ArrayList<Integer> allArtistIds = Artist.getAllArtistIds();
+        //int sizeOfAllArtistIds = allArtistIds.size();
+        //System.out.println(sizeOfAllArtistIds);
         System.out.println("EXECUTION ENDED");
 
     }
 
-    public void addRecords(){
-
-        System.out.println("Platform initiated");
-        System.out.println("Adding drama ...........");
-        Drama drama1 = new Drama(Drama.issueDramaId(), "Patriot");
-        Drama drama2 = new Drama(2, "Mirror");
-        Drama drama3 = new Drama(3, "Village");
-        Drama drama4 = new Drama(4, "Postman");
-        Drama drama5 = new Drama(5, "Dual mind");
-        Drama drama6 = new Drama (6, "Beautiful mind");
-        Drama drama7 = new Drama (7, "Press");
-        Drama drama8 = new Drama (Drama.issueDramaId(), "Rainbow");
-        Drama drama9 = new Drama(Drama.issueDramaId(), "City life");
-        Drama drama10 = new Drama(Drama.issueDramaId(), "Blue sky");
-
-
-        System.out.println("Adding drama records...........");
-        DramaRecords dramaRecords1 = new DramaRecords(drama1, 350, 20, 500);
-        DramaRecords dramaRecords2 = new DramaRecords(drama2, 350, 300, 700);
-        DramaRecords dramaRecords3 = new DramaRecords(drama3, 400 , 380, 50000);
-        DramaRecords dramaRecords4 = new DramaRecords(drama4, 3000, 300, 800000);
-        DramaRecords dramaRecords5 = new DramaRecords(drama5, 3500, 20, 5000);
-        DramaRecords dramaRecords6 = new DramaRecords(drama6, 3500, 2, 50345);
-        DramaRecords dramaRecords7 = new DramaRecords(drama7, 100, 50 , 200);
-        DramaRecords dramaRecords8 = new DramaRecords(drama8, 20000, 22, 21000);
-        DramaRecords dramaRecords9 = new DramaRecords(drama9);
-        DramaRecords dramaRecords10 = new DramaRecords(drama10);
-
-        System.out.println("Adding Artist records.............");
-        Artist afranNisho = new Artist("Afran", "Nisho");
-        Artist art3 = new Artist("Apurbo");
-        Artist art5 = Artist.createArtist("Allen", "Shuvro");
-        Artist art7 = new Artist("Farhan Ahmed", "Zovan" );
-        Artist art9 = Artist.createArtist("Nayeem");
-        Artist art11 = new Artist("Sajal");
-
-
-        Artist art2 = new Artist("Mehzabien", "Chowdhury");
-        Artist art4 = new Artist("Sabnam", "Faria");
-        Artist art6 = new Artist( "Tisha", "Nusrat Imrose");
-        Artist art8 = Artist.createArtist("Sabila", "Noor");
-        Artist art10 = new Artist("Aparna", "Ghosh");
-        Artist art12 = new Artist("Tasnuva", "Tisha");
-        Artist art14 = new Artist ("Safa", "Kabir");
-        Artist art16 = new Artist ("Mousumi", "Hamid");
-        Artist art18 = new Artist("Shokh");
-
-
-        drama1.addCast(afranNisho);
-        drama1.addCast(art10);
-        drama2.addCast(afranNisho);
-        drama2.addCast(art2);
-        drama3.addCast(art4);
-        drama3.addCast(art2);
-        drama4.addCast(art7);
-        drama4.addCast(art5);
-        drama5.addCast(art7);
-        drama5.addCast(art11);
-        drama6.addCast(art4);
-        drama7.addCast(afranNisho);
-        drama7.addCast(art6);
-
-    }
 
     public void addRecords2(){
 
@@ -107,8 +55,9 @@ public class Platform {
         Artist nayeem = Artist.createArtist("Nayeem");
         Artist sajal = new Artist("Sajal", "Abdullah");
         Artist tausif= new Artist("Tausif", "Mahbub");
-        Artist irfanSazzad = new Artist("Irfan", "Sazzad");
         Artist tamimMridha = new Artist("Tamim", "Mridha");
+        Artist irfanSazzad = new Artist("Irfan", "Sazzad");
+        Artist siam = new Artist("Siyam", "Ahmed");
         Artist zahidHassan = new Artist ("Zahid", "Hassan");
         Artist akmHassan = new Artist ("AKM", "Hassan");
         Artist mirSabbir = new Artist("Mir", "Sabbir");
@@ -121,18 +70,19 @@ public class Platform {
         Artist lavlu = new Artist("Salahuddin", "Lavlu");
         Artist imran = new Artist("Imran");
         Artist dipakSumon = new Artist("Dipak", "Sumon");
-        Artist siyam = new Artist("Siyam", "Ahmed");
+
         Artist allenShuvro = new Artist("Allen", "Shuvro");
-        Artist fazlulBabu = new Artist("Fazlul Hoque", "Babu");
-        Artist shatabdiWadud = new Artist ("Shatabdi", "Wadud");
         Artist ireshZaker = new Artist ("Iresh", "Zaker");
-        Artist tariqAnamKhan = new Artist ("Tariq Anam", "Khan");
-        Artist shahiduzzamanSelim = new Artist ("Shahiduzzaman", "Selim");
         Artist tahsan = new Artist ("Tahsan", "Khan");
         Artist emon = new Artist ("Emon");
         Artist nirob = new Artist ("Nirob");
         Artist niloy = new Artist ("Niloy", "Alamgir");
         Artist arefinShuvo = new Artist ("Arefin", "Shuvo");
+
+        Artist fazlulBabu = new Artist("Fazlul Hoque", "Babu");
+        Artist shatabdiWadud = new Artist ("Shatabdi", "Wadud");
+        Artist tariqAnamKhan = new Artist ("Tariq Anam", "Khan");
+        Artist shahiduzzamanSelim = new Artist ("Shahiduzzaman", "Selim");
         Artist maznunMizan = new Artist ("Maznun", "Mizan");
         Artist ahmedRubel = new Artist ("Ahmed", "Rubel");
         Artist afzalHossain = new Artist ("Afzal", "Hossain");
@@ -194,7 +144,8 @@ public class Platform {
         Artist prova = new Artist("Sadia Jahan", "Prova");
         Artist munmun = new Artist("Munmum");
         Artist oindrila = new Artist("Oindrila", "Ahmed");
-
+        Artist mim = new Artist("Mim");
+        Artist nadiaMim = new Artist("Nadia", "Mim");
 
 
 
@@ -215,10 +166,10 @@ public class Platform {
         Drama drama13 = new Drama(Drama.issueDramaId(), "Ami Tomar Golpo Hobo");
         Drama drama14 = new Drama(Drama.issueDramaId(), "Shongshar");
         Drama drama15 = new Drama(Drama.issueDramaId(), "Manush");
-       Drama drama16 = new Drama(Drama.issueDramaId(), "Kothopokothon");
-       Drama drama17 = new Drama(Drama.issueDramaId(), "X Factor : Game Over");
-       Drama drama18 = new Drama(Drama.issueDramaId(), "Khuji Tomay");
-       Drama d19 = new Drama(Drama.issueDramaId(), "Ekhono Adhar");
+        Drama drama16 = new Drama(Drama.issueDramaId(), "Kothopokothon");
+        Drama drama17 = new Drama(Drama.issueDramaId(), "X Factor : Game Over");
+        Drama drama18 = new Drama(Drama.issueDramaId(), "Khuji Tomay");
+        Drama d19 = new Drama(Drama.issueDramaId(), "Ekhono Adhar");
         Drama d20 = new Drama(Drama.issueDramaId(), "Ekhon Onek Raat");
         Drama d21 = new Drama(Drama.issueDramaId(), "Se Duare Dariye");
         Drama d22 = new Drama(Drama.issueDramaId(), "Angry Bird");
@@ -227,18 +178,18 @@ public class Platform {
         Drama d25 = new Drama(Drama.issueDramaId(), "Beloved");
         Drama d26 = new Drama(Drama.issueDramaId(), "Restart");
         Drama d27 = new Drama(Drama.issueDramaId(), "Hotath Neerar Jonno");
-       Drama d28 = new Drama(Drama.issueDramaId(), "Ucchotoro Hishabbiggan");
+        Drama d28 = new Drama(Drama.issueDramaId(), "Ucchotoro Hishabbiggan");
         Drama d29 = new Drama(Drama.issueDramaId(), "Karnishe jhule thaka prem");
         Drama d30 = new Drama(Drama.issueDramaId(), "Ghure Daranor Golpo");
         Drama d31 = new Drama(Drama.issueDramaId(), "Ami Tomar Kotha Bolbo Kake");
         Drama d32 = new Drama(Drama.issueDramaId(), "Saheb Memsahed");
-        //Drama d33 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d34 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d35 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d36 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d37 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d38 = new Drama(Drama.issueDramaId(), "Restart");
-        //Drama d39 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d33 = new Drama(Drama.issueDramaId(), "Red Rose");
+        Drama d34 = new Drama(Drama.issueDramaId(), "Ekti Tin Masher Golpo");
+        Drama d35 = new Drama(Drama.issueDramaId(), "26 No Platform");
+        Drama d36 = new Drama(Drama.issueDramaId(), "Science er meye Arts er chele");
+        Drama d37 = new Drama(Drama.issueDramaId(), "Mannequin Mumu");
+        Drama d38 = new Drama(Drama.issueDramaId(), "Porinoti");
+        Drama d39 = new Drama(Drama.issueDramaId(), "Tomar Amar Prem");
         //Drama d40 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d41 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d42 = new Drama(Drama.issueDramaId(), "Restart");
@@ -248,11 +199,11 @@ public class Platform {
 
 
         System.out.println("Adding drama records...........");
-        DramaRecords dramaRecords1 = new DramaRecords(drama1, 4000, 668, 1005173);
-        DramaRecords dramaRecords2 = new DramaRecords(drama2, 5900, 837, 1493252 );
-        DramaRecords dramaRecords3 = new DramaRecords(drama3, 230000 , 11000, 14583236);
-        DramaRecords dramaRecords4 = new DramaRecords(drama4, 56000, 31000, 5630125);
-        DramaRecords dramaRecords5 = new DramaRecords(drama5, 20000, 674, 1155765);
+        DramaRecords dr1 = new DramaRecords(drama1, 4000, 668, 1005173);
+        DramaRecords dr2 = new DramaRecords(drama2, 5900, 837, 1493252 );
+        DramaRecords dr3 = new DramaRecords(drama3, 230000 , 11000, 14583236);
+        DramaRecords dr4 = new DramaRecords(drama4, 56000, 31000, 5630125);
+        DramaRecords dr5 = new DramaRecords(drama5, 20000, 674, 1155765);
         DramaRecords dr6 = new DramaRecords(drama6,8500, 627, 1276529);
         DramaRecords dr7 = new DramaRecords(drama7,6800, 531, 1014465);
         DramaRecords dr8 = new DramaRecords(drama8,3200, 99, 207539);
@@ -282,17 +233,20 @@ public class Platform {
         DramaRecords dr30 = new DramaRecords(d30, 18000, 677, 1039602);
         DramaRecords dr31 = new DramaRecords(d31, 3500, 235, 357171);
         DramaRecords dr32 = new DramaRecords(d32, 4700, 340, 588631);
-        //DramaRecords dr33 = new DramaRecords(d33, 16000, 1100, 1622090);
-        //DramaRecords dr34 = new DramaRecords(d34, 3300, 193, 299981);
-        //DramaRecords dr35 = new DramaRecords(d35, 8100, 303, 563370);
-        //DramaRecords dr36 = new DramaRecords(d36, 1100,304, 816225);
-        //DramaRecords dr37 = new DramaRecords(d37, 16000, 1100, 1622090);
-        //DramaRecords dr38 = new DramaRecords(d38, 3300, 193, 299981);
-        //DramaRecords dr39 = new DramaRecords(d39, 8100, 303, 563370);
-        //DramaRecords dr40 = new DramaRecords(d40, 1100,304, 816225);
+        DramaRecords dr33 = new DramaRecords(d33, 17000, 974, 1690973);
+        DramaRecords dr34 = new DramaRecords(d34, 21000, 1100, 2518368);
+        DramaRecords dr35 = new DramaRecords(d35, 7400, 608, 954574 );
+        DramaRecords dr36 = new DramaRecords(d36, 30000,1800, 3192904 );
+        DramaRecords dr37 = new DramaRecords(d37, 15000, 1500, 2471193);
+        DramaRecords dr38 = new DramaRecords(d38, 9600, 610, 1009406);
+        DramaRecords dr39 = new DramaRecords(d39, 48000, 1800, 4655088 );
 
+        DramaRecords dr40 = new DramaRecords(new Drama("Dummy"), 0,200, 200);
+        //DramaRecords dr41 = new DramaRecords(d41, 1100,304, 816225);
+        //DramaRecords dr42 = new DramaRecords(d42, 1100,304, 816225);
+        //DramaRecords dr43 = new DramaRecords(d43, 1100,304, 816225);
+        //DramaRecords dr44 = new DramaRecords(d44, 1100,304, 816225);
 
-        //DramaRecords.autoCreateDramaRecords();
 
 
         drama1.addMoreCast(ishana,mirSabbir);
@@ -349,8 +303,6 @@ public class Platform {
         doRankingForAnArtist(tisha);
         gap();
         doRankingForAnArtist(mosharraf);
-
-
 
 
     }
@@ -529,8 +481,12 @@ public class Platform {
             }
 
         }
-        System.out.println("Acted on " + numOfDramasActed + " dramas");
-        System.out.println("Average " + score/numOfDramasActed);
+        if (numOfDramasActed>=1) {
+            System.out.println("Acted on " + numOfDramasActed + " dramas");
+            System.out.println("Average " + score / numOfDramasActed);
+        } else{
+            System.out.println("No records for : " + artist.getFirstName());
+        }
 
     }
 
