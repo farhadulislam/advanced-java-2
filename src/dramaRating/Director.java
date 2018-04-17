@@ -25,12 +25,15 @@ public class Director extends Staff {
     }
 
     private void showDramasDirected() {
-
-
     }
 
 
     public void showDramasWorkedOn() {
         System.out.println(this.listOfDramasDirectedBy.toString());
+    }
+
+    @Override
+    public void addDramaToThisMembersRecord(Drama drama) {
+
     }
 }

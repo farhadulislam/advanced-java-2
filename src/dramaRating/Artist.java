@@ -15,15 +15,7 @@ public class Artist extends Staff {
     private static ArrayList<Integer> allArtistIds;
     private static HashSet<Artist> setOfArtist =  new HashSet<>();
 
-    public static int getNumOfArtist() {
-        return numOfArtist;
-    }
-    public static ArrayList<Integer> getAllArtistIds() {
-        return allArtistIds;
-    }
-    public static HashSet<Artist> getSetOfArtist() {
-        return setOfArtist;
-    }
+
 
 
     public Artist(String firstName, String lastName) {
@@ -41,10 +33,6 @@ public class Artist extends Staff {
         new Artist(this.firstName, this.lastName);
     }
 
-    public Artist(){
-        String temporaryName = "NO-NAME-SUPPLIED-"+ Artist.numOfArtist + 1;
-        new Artist(temporaryName);
-    }
 
     public static Artist createArtist(String firstName){
 
@@ -54,6 +42,16 @@ public class Artist extends Staff {
     public static Artist createArtist(String firstName, String lastName){
 
         return new Artist(firstName, lastName);
+    }
+
+    public static int getNumOfArtist() {
+        return numOfArtist;
+    }
+    public static ArrayList<Integer> getAllArtistIds() {
+        return allArtistIds;
+    }
+    public static HashSet<Artist> getSetOfArtist() {
+        return setOfArtist;
     }
 
     public static Artist autoCreateArtist(){
@@ -151,6 +149,11 @@ public class Artist extends Staff {
             }
             System.out.println("  ");}
 
+
+    }
+
+    @Override
+    public void addDramaToThisMembersRecord(Drama drama) {
 
     }
 

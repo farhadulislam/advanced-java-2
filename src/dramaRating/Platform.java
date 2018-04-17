@@ -146,6 +146,8 @@ public class Platform {
         Artist mim = new Artist("Mim");
         Artist nadiaMim = new Artist("Nadia", "Mim");
 
+        Staff dir1 = new Director("Mabrur Rashid", "Bannah");
+
 
 
         /*******************/

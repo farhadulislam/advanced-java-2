@@ -9,6 +9,7 @@ public abstract class Staff {
     private String lastName;
 
     public abstract void showDramasWorkedOn();
+    public abstract void addDramaToThisMembersRecord(Drama drama);
 
 
 }
