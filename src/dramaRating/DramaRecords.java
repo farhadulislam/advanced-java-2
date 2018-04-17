@@ -83,7 +83,7 @@ public class DramaRecords {
     public static int getNumOfDramaRecords() {
         return numOfDramaRecords;
     }
-    /****Testing new approach ****/
+   //the following returns HashSet containing all dramarecords
     public static HashSet<DramaRecords> getAllDramaRecords(){ return setOfDramaRecords;}
 
     @Override
@@ -92,19 +92,8 @@ public class DramaRecords {
         return "DramaRecords{" + "Drama name "+ drama.getDramaName() +
                 ", likes=" + likes +
                 ", dislikes=" + dislikes +
-                ", views=" + views + " Likability is :  " + likeability + this.calcLikability1() + "%" + "," + this.measureLikesStrength() + "%" +
+                ", views=" + views +  "," + this.measureLikesStrength() + "%" +
                 '}';
-    }
-
-
-    public double getLikesRatio (){
-
-        return (likes/(double)views)*100;
-    }
-
-    public double getDislikesRatio (){
-
-        return (dislikes/(double)views)*100;
     }
 
     public double getTotalLikesAndDislikes(){
@@ -116,15 +105,25 @@ public class DramaRecords {
         return ((likes<=0) && dislikes<=0)? 0.00 : (double)(likes-dislikes);
     }
 
+    public double getLikesRatioAgainstTotalViews(){
+
+        return (this.getLikes()>0) ?  (double)(likes/views)*100 : 0.00;
+    }
+
+    public double getDislikesRatioAgainstTotalViews(){
+
+        return (this.getDislikes()>0) ?(dislikes/(double)views)*100 : 0.00;
+    }
+
 
     public double calcLikability1(){
 
-        return  ((likes-dislikes)/(double)views)*100;
+        return  (double)((likes-dislikes)/views)*100;
     }
 
     public double calcLikability2(){
 
-        return getLikesRatio()-getDislikesRatio();
+        return getLikesRatioAgainstTotalViews()- getDislikesRatioAgainstTotalViews();
     }
 
     public double measureLikesStrength(){
@@ -150,14 +149,28 @@ public class DramaRecords {
     }
     public double rank1B (){
 
-        double temp = (this.getLikesMinusDislikes()/views)*100.00;
-       // double value = (temp * measureLikesStrength()) + this.getViews(); // if only number of views were taken into consideration
-        double value = temp * measureLikesStrength();
-        String str = String.format("%1.3f", value);
-        value = Double.valueOf(str);
-        return value;
+        double percentageOfLikesAgainstTotalViews = (this.getLikesMinusDislikes()/views)*100.00;
+       // double rankValue = (percentageOfLikesAgainstTotalViews * measureLikesStrength()) + this.getViews(); // if only number of views were taken into consideration
+
+        // First, it is deducting dislikes from likes and then
+        // getting a percentage against total value.
+        // Finally, the value is being multiplied by percentage of likes against
+        // total likes and dislikes to see how strong it is by a measure of how many people
+        //reacted to it by liking or disliking it.
+
+        // Here, number of views is relative to the proportion of likes or dislikes
+
+        // The max value that can be achieved is 1000.00
+        // if 100 views receieved 100 likes, it will only then receive 100
+        // (100-0)/100)*100)*100
+        //
+        double rankValue = percentageOfLikesAgainstTotalViews * measureLikesStrength();
+        String str = String.format("%1.3f", rankValue);
+        rankValue = Double.valueOf(str);
+        return rankValue;
 
     }
+
 
     public static void showAllDramaRecords(){
 
