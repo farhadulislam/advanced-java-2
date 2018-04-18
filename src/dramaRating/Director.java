@@ -4,18 +4,13 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-public class Director extends Staff {
-
-
+public class Director {
 
     private String firstName;
-
     private String lastName;
     private int directorId;
     private String staffId;
-    private List<Drama> listOfDramasDirectedBy;
     private HashSet<Drama> setOfDramasDirected = new HashSet<Drama>();
-
 
     private static int numOfDirectors = 0;
     private static List<Integer> allDirectorIds;
@@ -27,7 +22,7 @@ public class Director extends Staff {
         this.firstName = firstName;
         this.lastName = lastName;
         this.directorId = numOfDirectors+1;
-        this.staffId= "D";
+        this.staffId= "D000"+ this.directorId;
         numOfDirectors++;
 
     }
@@ -57,13 +52,17 @@ public class Director extends Staff {
     public int getDirectorId() {
         return directorId;
     }
+
+    public String getStaffId() {
+        return staffId;
+    }
     public HashSet<Drama> getSetOfDramasDirected() {
         return setOfDramasDirected;
     }
     private void showDramasDirected() {
     }
 
-    @Override
+    //@Override
     public void showDramasWorkedOn() {
         if(this.getSetOfDramasDirected() != null && !this.setOfDramasDirected.isEmpty()){
             if (this.getSetOfDramasDirected().size()==1){

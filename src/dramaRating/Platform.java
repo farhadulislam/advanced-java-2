@@ -16,13 +16,10 @@ public class Platform {
         System.out.println("STARTING main method from Platform class");
 
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
-
-       Platform platform1 = new Platform();
-
-        platform1.addRecords2();
-        platform1.showPlatform();
-       // platform1.doRanking();
-        platform1.doRanking2();
+        // Platform platform1 = new Platform();
+        //platform1.addRecords2();
+        //platform1.showPlatform();
+       // platform1.doRanking2();
 
 
        //sortViewWise();
@@ -150,7 +147,7 @@ public class Platform {
         Artist mim = new Artist("Mim");
         Artist nadiaMim = new Artist("Nadia", "Mim");
 
-        Staff dir1 = new Director("Mabrur Rashid", "Bannah");
+       // Director dir1 = new Director("Mabrur Rashid", "Bannah");
 
 
 
