@@ -16,13 +16,10 @@ public class Platform {
         System.out.println("STARTING main method from Platform class");
 
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
-
-       Platform platform1 = new Platform();
-
-        platform1.addRecords2();
-        platform1.showPlatform();
-       // platform1.doRanking();
-        platform1.doRanking2();
+        // Platform platform1 = new Platform();
+        //platform1.addRecords2();
+        //platform1.showPlatform();
+       // platform1.doRanking2();
 
 
        //sortViewWise();
@@ -30,16 +27,20 @@ public class Platform {
 
 
         //IMPORTANT :  Cross checking number of artists instances against Ids created.
-        int numOfArtist = Artist.getNumOfArtist();
+      /*  int numOfArtist = Artist.getNumOfArtist();
         System.out.println("Number of all artist : " + numOfArtist);
 
         HashSet<Artist> setOfArtist = Artist.getSetOfArtist();
         int sizeOfSetOfArtist= setOfArtist.size();
         System.out.println(sizeOfSetOfArtist);
-        ArrayList<Integer> allArtistIds = Artist.getAllArtistIds();
+        ArrayList<Integer> allArtistIds = Artist.getAllArtistIds();*/
         //int sizeOfAllArtistIds = allArtistIds.size();
         //System.out.println(sizeOfAllArtistIds);
         System.out.println("EXECUTION ENDED");
+
+
+        Director dir1 = new Director("Mabrur Rashid", "Bannah");
+        System.out.println(dir1.getStaffId() + " " + dir1.getDirectorId() + " " + dir1.getFirstName());
 
     }
 
@@ -145,6 +146,8 @@ public class Platform {
         Artist oindrila = new Artist("Oindrila", "Ahmed");
         Artist mim = new Artist("Mim");
         Artist nadiaMim = new Artist("Nadia", "Mim");
+
+       // Director dir1 = new Director("Mabrur Rashid", "Bannah");
 
 
 

@@ -14,6 +14,7 @@ public class Drama {
     private DramaRecords dramaRecords;
     private Director director;
     private Set<Artist> cast = new HashSet<>();
+    private Set<Staff> crew = new HashSet<>();
     private static HashSet<Drama> setOfDramas = new HashSet<>();
     private static TreeSet<Integer> dramaIds = new TreeSet<Integer>(Collections.singleton(Integer.valueOf(0)));
 
@@ -85,13 +86,19 @@ public class Drama {
         artist.addDramaToArtistsRecords(this);
         //System.out.println("Cast " + this.getDramaName() + cast.toString());
     }
+    public void addCrew (Staff... staff){
+
+        for (Staff st : staff){
+            crew.add(st);
+            //staff.addDramaToThisMembersRecord(this);
+        }
+
+
+    }
 
     public void addCast (Artist [] artist){
 
-        for (Artist art : artist){
-            cast.add(art);
-            art.addDramaToArtistsRecords(this);
-        }
+
 
         //System.out.println("Cast " + this.getDramaName() + cast.toString());
     }
