@@ -6,6 +6,8 @@ import java.util.List;
 
 public class Director {
 
+
+
     private String firstName;
     private String lastName;
     private int directorId;
@@ -56,6 +58,22 @@ public class Director {
     public String getStaffId() {
         return staffId;
     }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setDirectorId(int directorId) {
+        this.directorId = directorId;
+    }
+
+    public void setStaffId(String staffId) {
+        this.staffId = staffId;
+    }
     public HashSet<Drama> getSetOfDramasDirected() {
         return setOfDramasDirected;
     }
@@ -80,6 +98,7 @@ public class Director {
     }
 
     public void addDramaToThisMembersRecord(Drama drama) {
+        this.getSetOfDramasDirected().add(drama);
 
     }
 
