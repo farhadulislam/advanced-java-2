@@ -35,7 +35,7 @@ public class ArtistTest extends TestCase {
 
     public void testGetArtistId() {
         //testArtist.setArtistId(200);
-        assertEquals(0 , testArtist.getArtistId());
+        assertEquals(6 , testArtist.getArtistId());
     }
 
     public void testSetArtistId() {

@@ -1,39 +1,74 @@
 package dramaRating;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class Director extends Staff {
 
     private String firstName;
     private String lastName;
-    private int artistId;
-    private static int numOfDirectors;
-    private static List<Integer> allDirectorIds;
+    private int directorId;
+    private String staffId;
     private List<Drama> listOfDramasDirectedBy;
+    private HashSet<Drama> setOfDramasDirected = new HashSet<Drama>();
 
+
+    private static int numOfDirectors = 0;
+    private static List<Integer> allDirectorIds;
+    private static ArrayList<Integer> allArtistIds;
+    private static HashSet<Artist> setOfArtist =  new HashSet<>();
+
+    //primary constructor
     public Director(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         numOfDirectors++;
+        issueStaffId();
 
     }
-
     public Director(String firstName) {
         this.firstName = firstName;
         this.lastName = "Unknown";
         numOfDirectors++;
+        issueStaffId();
     }
 
+    public void issueStaffId(){
+            this.staffId = "D" + Director.getNumberOfDirectors()+1;
+    }
+
+    public int getDirectorId() {
+        return directorId;
+    }
+    public HashSet<Drama> getSetOfDramasDirected() {
+        return setOfDramasDirected;
+    }
     private void showDramasDirected() {
     }
 
-
+    @Override
     public void showDramasWorkedOn() {
-        System.out.println(this.listOfDramasDirectedBy.toString());
+        if(this.getSetOfDramasDirected() != null && !this.setOfDramasDirected.isEmpty()){
+            if (this.getSetOfDramasDirected().size()==1){
+                System.out.print("Directed  " + this.getSetOfDramasDirected().size() + " drama : " );
+            }else{
+
+                System.out.print("Directed : " + this.getSetOfDramasDirected().size() + " dramas : " );
+
+            }
+            for (Drama drama : setOfDramasDirected){
+                System.out.print(drama.getDramaName() + " | ");
+            }
+            System.out.println("  ");}
     }
 
-    @Override
     public void addDramaToThisMembersRecord(Drama drama) {
 
     }
+
+    public static int getNumberOfDirectors() {
+        return numOfDirectors;
+    }
+
 }
