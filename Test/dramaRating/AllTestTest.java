@@ -7,8 +7,9 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         ArtistTest.class,
-        DramaTest.class
+        DramaTest.class,
+        DirectorTest.class
 })
-public class AllTestTest extends TestCase {
+public class AllTestTest {
 
 }
