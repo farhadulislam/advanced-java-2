@@ -6,7 +6,10 @@ import java.util.List;
 
 public class Director extends Staff {
 
+
+
     private String firstName;
+
     private String lastName;
     private int directorId;
     private String staffId;
@@ -23,8 +26,9 @@ public class Director extends Staff {
     public Director(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.directorId = numOfDirectors+1;
+        this.staffId= "D";
         numOfDirectors++;
-        issueStaffId();
 
     }
     public Director(String firstName) {
@@ -34,8 +38,20 @@ public class Director extends Staff {
         issueStaffId();
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+
+    public String getLastName() {
+        return lastName;
+    }
+
+
     public void issueStaffId(){
-            this.staffId = "D" + Director.getNumberOfDirectors()+1;
+
+            this.staffId = "D" + Director.getNumberOfDirectors()+ 1;
+            System.out.println("SUCCESS");
     }
 
     public int getDirectorId() {
@@ -60,7 +76,8 @@ public class Director extends Staff {
             for (Drama drama : setOfDramasDirected){
                 System.out.print(drama.getDramaName() + " | ");
             }
-            System.out.println("  ");}
+            System.out.println("  ");
+        }
     }
 
     public void addDramaToThisMembersRecord(Drama drama) {

@@ -43,7 +43,7 @@ public class Platform {
 
 
         Director dir1 = new Director("Mabrur Rashid", "Bannah");
-        System.out.println(dir1.getStaffId() + dir1.getDirectorId());
+        System.out.println(dir1.getStaffId() + " " + dir1.getDirectorId() + " " + dir1.getFirstName());
 
     }
 
