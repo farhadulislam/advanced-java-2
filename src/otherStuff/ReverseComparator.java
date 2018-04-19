@@ -10,7 +10,6 @@ public class ReverseComparator<T> implements Comparator<T> {
         this.delegateComparator = delegateComparator;
     }
 
-
     @Override
     public int compare(final T left, final T right ) {
         return -1 * delegateComparator.compare(left, right);

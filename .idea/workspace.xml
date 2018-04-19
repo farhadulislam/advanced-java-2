@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967ce4a9-ce09-4ccb-b23f-6fb8d08ea397" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/otherStuff/ReverseComparator.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/otherStuff/GenericDemo2.java" afterPath="$PROJECT_DIR$/src/otherStuff/GenericDemo2.java" />
+      <change beforePath="$PROJECT_DIR$/src/otherStuff/ReverseComparator.java" afterPath="$PROJECT_DIR$/src/otherStuff/ReverseComparator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,27 +82,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenericDemo2.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GenericDemo2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/otherStuff/GenericDemo2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="750">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#186#221#1" expanded="true" />
                 <element signature="e#230#266#1" expanded="true" />
                 <element signature="e#275#312#1" expanded="true" />
                 <element signature="e#321#358#1" expanded="true" />
-                <element signature="e#369#414#1" expanded="true" />
-                <element signature="e#396#413#0" expanded="true" />
-                <element signature="e#424#443#0" expanded="true" />
-                <element signature="e#424#443#0" expanded="true" />
-                <element signature="e#453#472#0" expanded="true" />
-                <element signature="e#453#472#0" expanded="true" />
-                <element signature="e#482#501#0" expanded="true" />
-                <element signature="e#482#501#0" expanded="true" />
-                <element signature="e#511#530#0" expanded="true" />
-                <element signature="e#511#530#0" expanded="true" />
+                <element signature="e#368#413#1" expanded="true" />
+                <element signature="e#395#412#0" expanded="true" />
+                <element signature="e#423#442#0" expanded="true" />
+                <element signature="e#423#442#0" expanded="true" />
+                <element signature="e#452#471#0" expanded="true" />
+                <element signature="e#452#471#0" expanded="true" />
+                <element signature="e#481#500#0" expanded="true" />
+                <element signature="e#481#500#0" expanded="true" />
+                <element signature="e#510#529#0" expanded="true" />
+                <element signature="e#510#529#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,16 +123,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReverseComparator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReverseComparator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/otherStuff/ReverseComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="400">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="e#234#235#0" expanded="true" />
                 <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -277,8 +277,8 @@
         <option value="$PROJECT_DIR$/Test/dramaRating/GoodTestSuite.java" />
         <option value="$PROJECT_DIR$/src/otherStuff/ListSetMapDemo2.java" />
         <option value="$PROJECT_DIR$/src/otherStuff/AgeComparator.java" />
-        <option value="$PROJECT_DIR$/src/otherStuff/GenericDemo2.java" />
         <option value="$PROJECT_DIR$/src/otherStuff/Person.java" />
+        <option value="$PROJECT_DIR$/src/otherStuff/GenericDemo2.java" />
         <option value="$PROJECT_DIR$/src/otherStuff/ReverseComparator.java" />
       </list>
     </option>
@@ -671,14 +671,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32641292" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.326068" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26242372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26242372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1109,30 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/otherStuff/GenericDemo2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#186#221#1" expanded="true" />
-            <element signature="e#230#266#1" expanded="true" />
-            <element signature="e#275#312#1" expanded="true" />
-            <element signature="e#321#358#1" expanded="true" />
-            <element signature="e#369#414#1" expanded="true" />
-            <element signature="e#396#413#0" expanded="true" />
-            <element signature="e#424#443#0" expanded="true" />
-            <element signature="e#424#443#0" expanded="true" />
-            <element signature="e#453#472#0" expanded="true" />
-            <element signature="e#453#472#0" expanded="true" />
-            <element signature="e#482#501#0" expanded="true" />
-            <element signature="e#482#501#0" expanded="true" />
-            <element signature="e#511#530#0" expanded="true" />
-            <element signature="e#511#530#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/otherStuff/AgeComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1148,13 +1124,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/otherStuff/ReverseComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="400">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="e#234#235#0" expanded="true" />
             <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/otherStuff/GenericDemo2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#186#221#1" expanded="true" />
+            <element signature="e#230#266#1" expanded="true" />
+            <element signature="e#275#312#1" expanded="true" />
+            <element signature="e#321#358#1" expanded="true" />
+            <element signature="e#368#413#1" expanded="true" />
+            <element signature="e#395#412#0" expanded="true" />
+            <element signature="e#423#442#0" expanded="true" />
+            <element signature="e#423#442#0" expanded="true" />
+            <element signature="e#452#471#0" expanded="true" />
+            <element signature="e#452#471#0" expanded="true" />
+            <element signature="e#481#500#0" expanded="true" />
+            <element signature="e#481#500#0" expanded="true" />
+            <element signature="e#510#529#0" expanded="true" />
+            <element signature="e#510#529#0" expanded="true" />
           </folding>
         </state>
       </provider>

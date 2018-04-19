@@ -13,7 +13,6 @@ public class GenericDemo2 {
         Person p3 = new Person("Saikat", 34);
         Person p4 = new Person("Arijit", 31);
 
-
         List<Person> personList1 = new ArrayList<>();
 
         personList1.add(p1);
@@ -21,9 +20,10 @@ public class GenericDemo2 {
         personList1.add(p3);
         personList1.add(p4);
 
-
         Collections.sort(personList1, new AgeComparator());
+        System.out.println(personList1);
 
+        Collections.sort(personList1, new ReverseComparator<>(new AgeComparator()));
         System.out.println(personList1);
     }
 }
