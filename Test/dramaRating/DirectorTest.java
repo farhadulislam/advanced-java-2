@@ -2,7 +2,9 @@ package dramaRating;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
 
@@ -11,8 +13,21 @@ public class DirectorTest {
     public Director testDirector1;
     public Director testDirector2;
     Drama testDrama;
+
+    @BeforeClass
+    public static void before (){
+        System.out.println("Before class");
+    }
+
+    @BeforeClass
+    public static void after (){
+        System.out.println("After class");
+    }
+
+
     @Test
     @Before
+    @Category(GoodTestCategory.class)
     public void setUp() {
 
         testDirector1 = new Director("first name", "last name");
