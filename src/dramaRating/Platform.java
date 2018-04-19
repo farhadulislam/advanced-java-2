@@ -15,10 +15,10 @@ public class Platform {
 
         System.out.println("STARTING main method from Platform class");
 
-        //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
+        //quickStart(); // This method invokes addRecords(), showRecords() and doRanking() methods
         Platform platform1 = new Platform();
-        platform1.addRecords2();
-        platform1.showPlatform();
+        platform1.insertRecords();
+        platform1.showRecords();
         platform1.doRanking2();
 
 
@@ -45,7 +45,7 @@ public class Platform {
     }
 
 
-    public void addRecords2(){
+    public void insertRecords(){
 
         System.out.println("Adding Artist records.............");
         Artist afranNisho = new Artist("Afran", "Nisho");
@@ -314,7 +314,7 @@ public class Platform {
 
     }
 
-    public void addRecordsArtistOnly(){
+    public void insertArtistsRecordsOnly(){
 
         System.out.println("Adding Artist records.............");
         Artist afranNisho = new Artist("Afran", "Nisho");
@@ -364,7 +364,7 @@ public class Platform {
         Artist art54 = new Artist ("Shanarei", "Shanu");
 
     }
-    public void showPlatform(){
+    public void showRecords(){
 
         System.out.println("------------------------------------------");
         System.out.println("Now showing all artist from Artist classes");
@@ -521,9 +521,9 @@ public class Platform {
 
         System.out.println("QUICKSTART method.......");
         Platform platform1 = new Platform();
-        platform1.addRecords2();
+        platform1.insertRecords();
         gap();
-        platform1.showPlatform();
+        platform1.showRecords();
         gap();
        // platform1.doRanking();
         platform1.doRanking2();
@@ -604,7 +604,7 @@ public class Platform {
         /*for (int j = 1; j<=20; j++){
             Artist artist = new Artist("Dummy Artist " + j);
         }*/
-        addRecordsArtistOnly();
+        insertArtistsRecordsOnly();
         for (int i =1; i <=howMany; i++){
             Drama drama1 = new Drama("Drama " + i);
 
@@ -633,7 +633,7 @@ public class Platform {
     public static void sortViewWise(){
 
         Platform p1 = new Platform();
-        p1.addRecords2();
+        p1.insertRecords();
         TreeMap< Integer, String> viewsCounter = new TreeMap<>();
 
         for(DramaRecords dr : DramaRecords.getSetOfDramaRecords()){
@@ -652,7 +652,7 @@ public class Platform {
     public static void sortLikeWise(){
 
         Platform p1 = new Platform();
-        p1.addRecords2();
+        p1.insertRecords();
         TreeMap< Double, String> viewsCounter = new TreeMap<>();
 
         for(DramaRecords dr : DramaRecords.getSetOfDramaRecords()){

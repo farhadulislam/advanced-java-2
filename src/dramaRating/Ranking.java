@@ -13,7 +13,7 @@ public class Ranking {
         //platform2.addRecords();
         //platform2.doRanking();
 
-       // platform2.addRecords2();
+       // platform2.insertRecords();
         //platform2.doRanking2();
 
         Thread.sleep(100);
