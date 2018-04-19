@@ -16,10 +16,10 @@ public class Platform {
         System.out.println("STARTING main method from Platform class");
 
         //quickStart(); // This method invokes addRecords(), showPlatform() and doRanking() methods
-        // Platform platform1 = new Platform();
-        //platform1.addRecords2();
-        //platform1.showPlatform();
-       // platform1.doRanking2();
+        Platform platform1 = new Platform();
+        platform1.addRecords2();
+        platform1.showPlatform();
+        platform1.doRanking2();
 
 
        //sortViewWise();
@@ -146,6 +146,7 @@ public class Platform {
         Artist oindrila = new Artist("Oindrila", "Ahmed");
         Artist mim = new Artist("Mim");
         Artist nadiaMim = new Artist("Nadia", "Mim");
+        Artist tanjinTisha = new Artist("Tanjin", "Tisha");
 
        // Director dir1 = new Director("Mabrur Rashid", "Bannah");
 
@@ -192,7 +193,7 @@ public class Platform {
         Drama d37 = new Drama(Drama.issueDramaId(), "Mannequin Mumu");
         Drama d38 = new Drama(Drama.issueDramaId(), "Porinoti");
         Drama d39 = new Drama(Drama.issueDramaId(), "Tomar Amar Prem");
-        //Drama d40 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d40 = new Drama(Drama.issueDramaId(), "Ei Boishakhe");
         //Drama d41 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d42 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d43 = new Drama(Drama.issueDramaId(), "Restart");
@@ -243,12 +244,20 @@ public class Platform {
         DramaRecords dr38 = new DramaRecords(d38, 9600, 610, 1009406);
         DramaRecords dr39 = new DramaRecords(d39, 48000, 1800, 4655088 );
 
-        DramaRecords dr40 = new DramaRecords(new Drama("Dummy"), 0,200, 200);
+        DramaRecords dr40 = new DramaRecords(d40, 19000,1100, 1623365 );
         //DramaRecords dr41 = new DramaRecords(d41, 1100,304, 816225);
         //DramaRecords dr42 = new DramaRecords(d42, 1100,304, 816225);
         //DramaRecords dr43 = new DramaRecords(d43, 1100,304, 816225);
         //DramaRecords dr44 = new DramaRecords(d44, 1100,304, 816225);
 
+
+
+        Artist [] mehzabienAfran = {afranNisho, mehzabien};
+        Artist [] mehzabienZovan = {mehzabien,zovan};
+        Artist [] mehzabienIrfan = {mehzabien,irfanSazzad};
+        Artist [] tishaTahsan = {tisha,tahsan};
+        Artist [] apurboAparna = {apurbo,aparna};
+        Artist [] afranSalhaNadia = {afranNisho,salhaNadia};
 
 
         drama1.addMoreCast(ishana,mirSabbir);
@@ -274,12 +283,7 @@ public class Platform {
         d20.addMoreCast(neela,zovan,tariqAnamKhan);
 
 
-        Artist [] mehzabienAfran = {afranNisho, mehzabien};
-        Artist [] mehzabienZovan = {mehzabien,zovan};
-        Artist [] mehzabienIrfan = {mehzabien,irfanSazzad};
-        Artist [] tishaTahsan = {tisha,tahsan};
-        Artist [] apurboAparna = {apurbo,aparna};
-        Artist [] afranSalhaNadia = {afranNisho,salhaNadia};
+
 
         d21.addMoreCast(mehzabienZovan);
         d22.addMoreCast(tishaTahsan);
@@ -293,6 +297,7 @@ public class Platform {
         d30.addMoreCast(mehzabienAfran);
         d31.addMoreCast(mehzabienAfran); // same as d30
         d32.addMoreCast(mehzabienAfran); // same as d30
+        d40.addMoreCast(afranNisho,tanjinTisha);
 
       /*  doRankingForAnArtist(apurbo);
         gap();
