@@ -2,44 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="967ce4a9-ce09-4ccb-b23f-6fb8d08ea397" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Artist.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Director.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Display$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Display$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Display.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Display2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Drama.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/DramaRecords.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/EventDemo$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/EventDemo$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/EventDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Platform$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Platform.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Ranking.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Register.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/Staff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/advanced-java-2/dramaRating/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Artist.java" afterPath="$PROJECT_DIR$/src/dramaRating/Model/Artist.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Diplay2.java" afterPath="$PROJECT_DIR$/src/dramaRating/View/Diplay2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Director.java" afterPath="$PROJECT_DIR$/src/dramaRating/Model/Director.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Display.java" afterPath="$PROJECT_DIR$/src/dramaRating/View/Display.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Drama.java" afterPath="$PROJECT_DIR$/src/dramaRating/Model/Drama.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/DramaRecords.java" afterPath="$PROJECT_DIR$/src/dramaRating/Model/DramaRecords.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/EventDemo.java" afterPath="$PROJECT_DIR$/src/dramaRating/View/EventDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Platform.java" afterPath="$PROJECT_DIR$/src/dramaRating/Controller/Platform.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Ranking.java" afterPath="$PROJECT_DIR$/src/dramaRating/Controller/Ranking.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Register.java" afterPath="$PROJECT_DIR$/src/dramaRating/Controller/Register.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/Staff.java" afterPath="$PROJECT_DIR$/src/dramaRating/Model/Staff.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/SwitchDemo.java" afterPath="$PROJECT_DIR$/src/dramaRating/Model/MonthPublished.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/YouTubeRating.java" afterPath="$PROJECT_DIR$/src/dramaRating/Controller/YouTubeRating.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/sampleResource.json" afterPath="$PROJECT_DIR$/src/dramaRating/View/sampleResource.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/advanced-java-2/dramaRating/ArtistTest.class" afterPath="$PROJECT_DIR$/out/test/advanced-java-2/dramaRating/ArtistTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/advanced-java-2/dramaRating/DirectorTest.class" afterPath="$PROJECT_DIR$/out/test/advanced-java-2/dramaRating/DirectorTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/advanced-java-2/dramaRating/DramaTest.class" afterPath="$PROJECT_DIR$/out/test/advanced-java-2/dramaRating/DramaTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/dramaRating/ArtistTest.java" afterPath="$PROJECT_DIR$/Test/dramaRating/ArtistTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/dramaRating/DirectorTest.java" afterPath="$PROJECT_DIR$/Test/dramaRating/DirectorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/dramaRating/DramaTest.java" afterPath="$PROJECT_DIR$/Test/dramaRating/DramaTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dramaRating/View/EventDemo.java" afterPath="$PROJECT_DIR$/src/dramaRating/View/EventViews.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,16 +35,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Drama.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dramaRating/Model/Drama.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/Controller/Register.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Diplay2.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Diplay2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/View/Diplay2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
@@ -122,11 +75,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YouTubeRating.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YouTubeRating.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dramaRating/Controller/YouTubeRating.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-405">
               <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventViews.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dramaRating/View/EventViews.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -192,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/otherStuff2/Display.java" />
         <option value="$PROJECT_DIR$/src/otherStuff2/EventDemo.java" />
         <option value="$PROJECT_DIR$/src/otherStuff2/LikeabilityIndex.java" />
         <option value="$PROJECT_DIR$/src/otherStuff2/Actor.java" />
@@ -227,7 +189,6 @@
         <option value="$PROJECT_DIR$/src/otherStuff/ReverseComparator.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Platform.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/View/Display.java" />
-        <option value="$PROJECT_DIR$/src/dramaRating/View/EventDemo.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Controller/Artist.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Controller/Director.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Controller/Drama.java" />
@@ -243,6 +204,8 @@
         <option value="$PROJECT_DIR$/src/dramaRating/SwitchDemo.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/MonthPublished.java" />
         <option value="$PROJECT_DIR$/src/dramaRating/Model/MonthPublished.java" />
+        <option value="$PROJECT_DIR$/src/dramaRating/View/EventDemo.java" />
+        <option value="$PROJECT_DIR$/src/dramaRating/View/EventViews.java" />
       </list>
     </option>
   </component>
@@ -641,7 +604,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -656,7 +618,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15789473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15789473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -930,14 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/View/EventDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dramaRating/Controller/Platform.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1004,14 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dramaRating/View/Diplay2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dramaRating/Model/MonthPublished.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1038,8 +984,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dramaRating/Controller/YouTubeRating.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-405">
           <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/View/EventViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dramaRating/View/Diplay2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
       </provider>

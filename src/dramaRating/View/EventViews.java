@@ -6,11 +6,11 @@ import javax.swing.*;
 
 // Handle an event in a Swing program.
 
-public class EventDemo {
+public class EventViews {
 
     JLabel jlab;
 
-    EventDemo() {
+    EventViews() {
 
         // Create a new JFrame container.
         JFrame jfrm = new JFrame("An Event Example");

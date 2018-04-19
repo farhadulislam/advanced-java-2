@@ -41,7 +41,7 @@ public class Display {
 
         SwingUtilities.invokeLater(new Runnable(){
             public void run(){
-                new EventDemo();
+                new EventViews();
             }
         });
     }
