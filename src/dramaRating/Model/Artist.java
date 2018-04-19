@@ -1,4 +1,4 @@
-package dramaRating;
+package dramaRating.Model;
 
 import java.util.*;
 

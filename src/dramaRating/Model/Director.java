@@ -1,4 +1,4 @@
-package dramaRating;
+package dramaRating.Model;
 
 import java.util.ArrayList;
 import java.util.HashSet;

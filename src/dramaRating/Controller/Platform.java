@@ -1,4 +1,9 @@
-package dramaRating;
+package dramaRating.Controller;
+
+import dramaRating.Model.Artist;
+import dramaRating.Model.Director;
+import dramaRating.Model.Drama;
+import dramaRating.Model.DramaRecords;
 
 import java.util.*;
 
@@ -299,7 +304,7 @@ public class Platform {
         d32.addMoreCast(mehzabienAfran); // same as d30
         d40.addMoreCast(afranNisho,tanjinTisha);
 
-      /*  doRankingForAnArtist(apurbo);
+        doRankingForAnArtist(apurbo);
         gap();
         doRankingForAnArtist(mehzabien);
         gap();
@@ -309,7 +314,7 @@ public class Platform {
         gap();
         doRankingForAnArtist(tisha);
         gap();
-        doRankingForAnArtist(mosharraf);*/
+        doRankingForAnArtist(mosharraf);
 
 
     }

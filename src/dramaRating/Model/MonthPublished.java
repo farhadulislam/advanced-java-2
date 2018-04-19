@@ -1,6 +1,6 @@
-package dramaRating;
+package dramaRating.Model;
 
-public class SwitchDemo {
+public class MonthPublished {
     public static void main(String[] args) {
 
 

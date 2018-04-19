@@ -1,4 +1,4 @@
-package dramaRating;
+package dramaRating.View;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.util.TreeMap;

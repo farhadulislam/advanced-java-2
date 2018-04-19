@@ -1,4 +1,4 @@
-package dramaRating;
+package dramaRating.View;
 
 import javax.swing.*;
 

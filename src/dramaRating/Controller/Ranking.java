@@ -1,6 +1,7 @@
-package dramaRating;
+package dramaRating.Controller;
 
-import javax.swing.*;
+import dramaRating.Model.DramaRecords;
+
 import java.util.*;
 
 public class Ranking {

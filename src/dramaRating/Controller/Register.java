@@ -1,5 +1,7 @@
-package dramaRating;
+package dramaRating.Controller;
 
+
+import dramaRating.Model.Artist;
 
 public class Register {
 

@@ -1,6 +1,4 @@
-package dramaRating;
-
-import java.util.Objects;
+package dramaRating.Model;
 
 public  class Staff {
 

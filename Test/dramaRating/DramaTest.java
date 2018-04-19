@@ -1,5 +1,7 @@
 package dramaRating;
 
+import dramaRating.Model.Drama;
+import dramaRating.Model.DramaRecords;
 import junit.framework.TestCase;
 
 public class DramaTest extends TestCase {

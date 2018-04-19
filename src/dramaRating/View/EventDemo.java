@@ -1,4 +1,4 @@
-package dramaRating;
+package dramaRating.View;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -6,7 +6,7 @@ import javax.swing.*;
 
 // Handle an event in a Swing program.
 
-class EventDemo {
+public class EventDemo {
 
     JLabel jlab;
 
