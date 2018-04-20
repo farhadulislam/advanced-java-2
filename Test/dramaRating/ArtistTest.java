@@ -1,6 +1,7 @@
 package dramaRating;
 
-import junit.framework.TestCase;
+import dramaRating.Model.Artist;
+import dramaRating.Model.Drama;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;

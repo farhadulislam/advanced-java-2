@@ -1,5 +1,7 @@
 package dramaRating;
 
+import dramaRating.Model.Director;
+import dramaRating.Model.Drama;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
