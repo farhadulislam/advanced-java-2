@@ -22,8 +22,8 @@ public class Platform {
         //quickStart(); // This method invokes addRecords(), showRecords() and doRanking() methods
         Platform platform1 = new Platform();
         platform1.insertRecords();
-        platform1.showRecords();
         platform1.doRanking2();
+        platform1.showRecords();
 
 
        //sortViewWise();
