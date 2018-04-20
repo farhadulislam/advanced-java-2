@@ -11,9 +11,8 @@ import static otherStuff.GuessingGame.print;
 
 public class Platform {
 
-    private static TreeMap<String, Double> treeValue = new TreeMap<>();
-    private static TreeMap<String, Double> treeValue2 = new TreeMap<>();
-
+    private static TreeMap<String, Double> treeValue;
+    private static TreeMap<String, Double> treeValue2;
 
 
     public static void main (String [] args){
@@ -51,6 +50,8 @@ public class Platform {
 
 
     public void insertRecords(){
+        treeValue = new TreeMap<>();
+        treeValue2 = new TreeMap<>();
 
         System.out.println("Adding Artist records.............");
         Artist afranNisho = new Artist("Afran", "Nisho");
@@ -160,6 +161,7 @@ public class Platform {
         /*******************/
         System.out.println("Adding Natok ...........");
         Drama drama1 = new Drama(Drama.issueDramaId(), "Tiar Khacha");
+        Drama drama10 = new Drama(Drama.issueDramaId(), "Golpota Tomari");
         Drama drama2 = new Drama (Drama.issueDramaId(), "Moharani");
         Drama drama3 = new Drama(Drama.issueDramaId(), "Boro Chele");
         Drama drama4 = new Drama(Drama.issueDramaId(), "Batch 27");
@@ -168,7 +170,6 @@ public class Platform {
         Drama drama7 = new Drama(Drama.issueDramaId(), "Se ache duare dariye");
         Drama drama8 = new Drama(Drama.issueDramaId(), "Forever");
         Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
-        Drama drama10 = new Drama(Drama.issueDramaId(), "Golpota Tomari");
         Drama drama11 = new Drama(Drama.issueDramaId(), "Bikel Belar Pakhi");
         Drama drama12 = new Drama(Drama.issueDramaId(), "Cafe 999");
         Drama drama13 = new Drama(Drama.issueDramaId(), "Ami Tomar Golpo Hobo");
@@ -513,7 +514,7 @@ public class Platform {
                         if (compare == 0)
                             return 1;
                         else
-                            return compare;
+                            return -1 *compare;
                     }
                 };
 
@@ -530,7 +531,6 @@ public class Platform {
         gap();
         platform1.showRecords();
         gap();
-       // platform1.doRanking();
         platform1.doRanking2();
     }
 
@@ -538,101 +538,6 @@ public class Platform {
         for (int i= 0; i<=5; i++){
         System.out.println(" ");
         }
-    }
-
-    public static void  automateAddingArtistData(HashSet<Artist> setOfArtist){
-        print("Enter the number of artists details you'd like to add");
-        Scanner scan = new Scanner(System.in);
-
-        try{
-            int num = scan.nextInt();
-            if (num>=1) {
-                for (int i = 0; i < num; i++) {
-                    setOfArtist.add(Artist.autoCreateArtist());
-                }
-                for (Artist art1 : Artist.getSetOfArtist()) {
-
-                    System.out.println(art1);
-                }
-            }
-        } catch (Exception e){
-            print("Error, enter a number");
-        }
-    }
-
-    public static void  automateAddingDrama(HashSet<Drama> setOfDramas){
-        print("Enter the number of dramas you'd like to add");
-        Scanner scan = new Scanner(System.in);
-
-        try{
-            int num = scan.nextInt();
-            if (num>=1) {
-                for (int i = 0; i < num; i++) {
-
-                    setOfDramas.add(Drama.autoCreateDrama());
-                }
-                for (Drama drama : Drama.getSetOfDramas()) {
-
-                    System.out.println(drama.getDramaId() + ": " + drama.getDramaName());
-                }
-            }
-        } catch (Exception e){
-            print("Drama : Error, enter a number");
-        }
-    }
-
-    public static void  automateAddingDramaRecords(HashSet<DramaRecords> setOfDramarecords){
-        print("Enter the number of drama records you'd like to add");
-        Scanner scan = new Scanner(System.in);
-
-        try{
-            int num = scan.nextInt();
-            if (num>=1) {
-                for (int i = 0; i < num; i++) {
-
-                    setOfDramarecords.add(DramaRecords.autoCreateDramaRecords());
-                }
-                for (DramaRecords dramaRecords : DramaRecords.getSetOfDramaRecords()) {
-
-                    System.out.println(dramaRecords.getDrama().getDramaName()+" : "+ dramaRecords.measureLikesStrength());
-                    System.out.println(dramaRecords.getDramaNameOfThisRecord()+" : "+ dramaRecords.rank1B());
-                }
-            }
-        } catch (Exception e){
-            print("DR : Error, enter a number");
-        }
-
-
-    }
-
-    public void addRandomDummyRecords(int howMany){
-        /*for (int j = 1; j<=20; j++){
-            Artist artist = new Artist("Dummy Artist " + j);
-        }*/
-        insertArtistsRecordsOnly();
-        for (int i =1; i <=howMany; i++){
-            Drama drama1 = new Drama("Drama " + i);
-
-            if(!Artist.getSetOfArtist().isEmpty()){
-
-                //drama1.addCast(Artist.getSetOfArtist().iterator().next());
-                HashSet<Artist> tempSetOfArtist = Artist.getSetOfArtist();
-                List<Artist> sortedArtistList = new ArrayList<>(tempSetOfArtist);
-
-                int numberOfArtist = Artist.getNumOfArtist();
-                int randomNumber1 = (int) (Math.random() * numberOfArtist );
-                drama1.addCast(sortedArtistList.get(randomNumber1));
-
-                int randomNumber2 = (int) (Math.random() * numberOfArtist);
-                while(randomNumber2 == randomNumber1){
-                    randomNumber2 = (int) (Math.random() * numberOfArtist);
-
-                }
-                drama1.addCast(sortedArtistList.get(randomNumber2));
-            }
-            new DramaRecords(drama1);
-        }
-
     }
 
     public static void sortViewWise(){

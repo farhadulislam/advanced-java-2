@@ -1,6 +1,6 @@
-package dramaRating.Controller;
+package dramaRating.Model;
 
-import dramaRating.Model.DramaRecords;
+import dramaRating.Controller.Platform;
 
 import java.util.*;
 
@@ -11,11 +11,6 @@ public class Ranking {
         Ranking app1 = new Ranking();
         Platform platform2 = new Platform();
 
-        //platform2.addRecords();
-        //platform2.doRanking();
-
-       // platform2.insertRecords();
-        //platform2.doRanking2();
 
         Thread.sleep(100);
         try {
