@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class GenericDemo2 {
+public class SortingExamples {
 
     public static void main(String... args){
 
@@ -25,6 +25,7 @@ public class GenericDemo2 {
 
         Collections.sort(personList1, new ReverseComparator<>(new AgeComparator()));
         System.out.println(personList1);
+
     }
 }
 
