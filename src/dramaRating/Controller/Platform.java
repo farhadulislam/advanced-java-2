@@ -1,18 +1,13 @@
 package dramaRating.Controller;
 
-import dramaRating.Model.Artist;
-import dramaRating.Model.Director;
-import dramaRating.Model.Drama;
-import dramaRating.Model.DramaRecords;
+import dramaRating.Model.*;
 
 import java.util.*;
 
-import static otherStuff.GuessingGame.print;
-
 public class Platform {
 
-    private static TreeMap<String, Double> treeValue;
-    private static TreeMap<String, Double> treeValue2;
+    private static TreeMap<String, Double> dramaNameAndRankValue1;
+    private static TreeMap<String, Double> dramaNameAndRankValue2;
 
 
     public static void main (String [] args){
@@ -20,6 +15,9 @@ public class Platform {
         System.out.println("STARTING main method from Platform class");
 
         //quickStart(); // This method invokes addRecords(), showRecords() and doRanking() methods
+        dramaNameAndRankValue1 = new TreeMap<>();
+        dramaNameAndRankValue2 = new TreeMap<>();
+
         Platform platform1 = new Platform();
         platform1.insertRecords();
         platform1.doRanking2();
@@ -50,8 +48,7 @@ public class Platform {
 
 
     public void insertRecords(){
-        treeValue = new TreeMap<>();
-        treeValue2 = new TreeMap<>();
+
 
         System.out.println("Adding Artist records.............");
         Artist afranNisho = new Artist("Afran", "Nisho");
@@ -388,14 +385,14 @@ public class Platform {
 
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
-            treeValue.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1A());
-            //treeValue.clear();
-            //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
+            dramaNameAndRankValue1.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1A());
+            //dramaNameAndRankValue1.clear();
+            //dramaNameAndRankValue1.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
 
         }
 
 
-        Map sortedMap = sortByValues(treeValue);
+        Map sortedMap = Ranking.sortByValues(dramaNameAndRankValue1);
 
        // Ranking.showMap(sortedMap);
 
@@ -422,17 +419,17 @@ public class Platform {
 
             //Ranking based on views
             //Double viewsAsDouble = Double.valueOf(dramaRecords.getViews());
-            //treeValue2.put(dramaRecords.getDrama().getDramaName() , viewsAsDouble);
+            //dramaNameAndRankValue2.put(dramaRecords.getDrama().getDramaName() , viewsAsDouble);
 
-            treeValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+            dramaNameAndRankValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
 
-            //treeValue.clear();
-            //treeValue.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
+            //dramaNameAndRankValue1.clear();
+            //dramaNameAndRankValue1.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
 
         }
 
 
-        Map sortedMap = sortByValues(treeValue2);
+        Map sortedMap = Ranking.sortByValues(dramaNameAndRankValue2);
 
         // Ranking.showMap(sortedMap);
 
@@ -454,7 +451,7 @@ public class Platform {
     public void doRankingForAnArtist(Artist artist){
 
         System.out.println("Ranking by rank1B for dramas acted  by "+ artist.getFirstName());
-        treeValue2.clear();
+        dramaNameAndRankValue2.clear();
 
         int numOfDramasActed = 0;
         double score = 0.00;
@@ -465,18 +462,18 @@ public class Platform {
                 numOfDramasActed++;
                 score+=dramaRecords.rank1B();
 
-            treeValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+            dramaNameAndRankValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
 
             }
 
 
         }
-        if(treeValue2.isEmpty()){
+        if(dramaNameAndRankValue2.isEmpty()){
             System.out.println("No records exits for "+ artist.getFirstName());
         } else {
 
 
-            Map sortedMap = sortByValues(treeValue2);
+            Map sortedMap = Ranking.sortByValues(dramaNameAndRankValue2);
 
             // Ranking.showMap(sortedMap);
 
@@ -504,24 +501,7 @@ public class Platform {
     }
 
 
-    public static <K, V extends Comparable<V>> Map<K, V>
-    sortByValues(final Map<K, V> map) {
-        Comparator<K> valueComparator =
-                new Comparator<K>() {
-                    public int compare(K k1, K k2) {
-                        int compare =
-                                map.get(k1).compareTo(map.get(k2));
-                        if (compare == 0)
-                            return 1;
-                        else
-                            return -1 *compare;
-                    }
-                };
 
-        Map<K, V> sortedByValues = new TreeMap<K,V>(valueComparator);
-        sortedByValues.putAll(map);
-        return sortedByValues;
-    }
 
     private static void quickStart(){
 
