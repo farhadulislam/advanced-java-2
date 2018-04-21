@@ -21,7 +21,7 @@ public class Platform {
         Platform platform1 = new Platform();
         platform1.insertRecords();
         platform1.doRanking2();
-        platform1.showRecords();
+        //platform1.showRecords();
 
 
        //sortViewWise();
@@ -197,7 +197,7 @@ public class Platform {
         Drama d38 = new Drama(Drama.issueDramaId(), "Porinoti");
         Drama d39 = new Drama(Drama.issueDramaId(), "Tomar Amar Prem");
         Drama d40 = new Drama(Drama.issueDramaId(), "Ei Boishakhe");
-        //Drama d41 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d41 = new Drama(Drama.issueDramaId(), "Lokti Soth Chilo");
         //Drama d42 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d43 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d44 = new Drama(Drama.issueDramaId(), "Restart");
@@ -248,7 +248,7 @@ public class Platform {
         DramaRecords dr39 = new DramaRecords(d39, 48000, 1800, 4655088 );
 
         DramaRecords dr40 = new DramaRecords(d40, 19000,1100, 1623365 );
-        //DramaRecords dr41 = new DramaRecords(d41, 1100,304, 816225);
+        DramaRecords dr41 = new DramaRecords(d41, 15000,369, 722630 );
         //DramaRecords dr42 = new DramaRecords(d42, 1100,304, 816225);
         //DramaRecords dr43 = new DramaRecords(d43, 1100,304, 816225);
         //DramaRecords dr44 = new DramaRecords(d44, 1100,304, 816225);
@@ -301,6 +301,7 @@ public class Platform {
         d31.addMoreCast(mehzabienAfran); // same as d30
         d32.addMoreCast(mehzabienAfran); // same as d30
         d40.addMoreCast(afranNisho,tanjinTisha);
+        d41.addMoreCast(apurbo,iffatTrisha);
 
         doRankingForAnArtist(apurbo);
         gap();
@@ -413,7 +414,7 @@ public class Platform {
 
     public void doRanking2(){
 
-        System.out.println("-------------Ranking in DESCECENDING order using rank1B--------------------------");
+        System.out.println("-------------Ranking in ASCECENDING order using rank1B--------------------------");
 
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
@@ -423,8 +424,6 @@ public class Platform {
 
             dramaNameAndRankValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
 
-            //dramaNameAndRankValue1.clear();
-            //dramaNameAndRankValue1.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1());
 
         }
 
