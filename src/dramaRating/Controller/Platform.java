@@ -20,7 +20,9 @@ public class Platform {
 
         Platform platform1 = new Platform();
         platform1.insertRecords();
-        platform1.doRanking2();
+       // platform1.doRanking2();
+
+        platform1.doRankingForAnArtist("Sabila");
         //platform1.showRecords();
 
 
@@ -303,7 +305,7 @@ public class Platform {
         d40.addMoreCast(afranNisho,tanjinTisha);
         d41.addMoreCast(apurbo,iffatTrisha);
 
-        doRankingForAnArtist(apurbo);
+        /*doRankingForAnArtist(apurbo);
         gap();
         doRankingForAnArtist(mehzabien);
         gap();
@@ -313,7 +315,7 @@ public class Platform {
         gap();
         doRankingForAnArtist(tisha);
         gap();
-        doRankingForAnArtist(mosharraf);
+        doRankingForAnArtist(mosharraf);*/
 
 
     }
@@ -446,7 +448,6 @@ public class Platform {
         }
 
     }
-
     public void doRankingForAnArtist(Artist artist){
 
         System.out.println("Ranking by rank1B for dramas acted  by "+ artist.getFirstName());
@@ -461,7 +462,7 @@ public class Platform {
                 numOfDramasActed++;
                 score+=dramaRecords.rank1B();
 
-            dramaNameAndRankValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
+                dramaNameAndRankValue2.put(dramaRecords.getDrama().getDramaName() , dramaRecords.rank1B());
 
             }
 
@@ -495,6 +496,59 @@ public class Platform {
             System.out.println("Average " + score / numOfDramasActed);
         } else{
             System.out.println("No records for : " + artist.getFirstName());
+        }
+
+    }
+
+    public void doRankingForAnArtist(String artistName){
+
+        System.out.println("Ranking by rank1B for dramas acted  by " +artistName);
+        dramaNameAndRankValue2.clear();
+
+        int numOfDramasActed = 0;
+        double score = 0.00;
+        for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
+
+            for(Artist artist : dramaRecords.getDrama().getCast()){
+                if (artist.getFirstName().startsWith(artistName) || artist.getLastName().startsWith(artistName)) {
+                    numOfDramasActed++;
+                    score += dramaRecords.rank1B();
+
+                    dramaNameAndRankValue2.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1B());
+                }
+
+            }
+
+
+        }
+        if(dramaNameAndRankValue2.isEmpty()){
+            System.out.println("No records exits for " + artistName.toUpperCase());
+        } else {
+
+
+            Map sortedMap = Ranking.sortByValues(dramaNameAndRankValue2);
+
+            // Ranking.showMap(sortedMap);
+
+            // Get a set of the entries on the sorted map
+            Set set = sortedMap.entrySet();
+
+            // Get an iterator
+            Iterator i = set.iterator();
+
+            // Display elements
+            while (i.hasNext()) {
+                Map.Entry me = (Map.Entry) i.next();
+                System.out.print(me.getKey() + ": ");
+                System.out.println(me.getValue());
+            }
+
+        }
+        if (numOfDramasActed>=1) {
+            System.out.println("Acted on " + numOfDramasActed + " dramas");
+            System.out.println("Average " + score / numOfDramasActed);
+        } else{
+            System.out.println("Sorry, Found No records for : " + artistName);
         }
 
     }
