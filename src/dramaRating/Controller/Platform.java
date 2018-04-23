@@ -23,6 +23,7 @@ public class Platform {
        // platform1.doRanking2();
 
         platform1.doRankingForAnArtist("Meh");
+        platform1.doRankingForAnArtist("Nisho");
         //platform1.showRecords();
 
 
@@ -416,7 +417,7 @@ public class Platform {
 
     public void doRanking2(){
 
-        System.out.println("-------------Ranking in ASCECENDING order using rank1B--------------------------");
+        System.out.println("-------------Ranking in ASCECENDING order using rank1B--------------------------".toUpperCase());
 
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
@@ -507,17 +508,18 @@ public class Platform {
 
         int numOfDramasActed = 0;
         double score = 0.00;
-        boolean isMatchFound = false;
+        boolean matchFound = false;
         String [] tempNames = {};
+
 
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
             for(Artist artist : dramaRecords.getDrama().getCast()){
-                if ( artist.getFirstName().startsWith(artistName)){
-                    isMatchFound = true;
+                if ( artist.getFirstName().startsWith(artistName)|| artist.getLastName().startsWith(artistName)){
+                    matchFound = true;
+
                     System.out.println("Found a potential match");
                     System.out.println(artist.getArtistFullName());
-
 
                 }
                 if (artist.getFirstName().startsWith(artistName) || artist.getLastName().startsWith(artistName)) {
