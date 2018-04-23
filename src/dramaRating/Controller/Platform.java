@@ -451,10 +451,12 @@ public class Platform {
         Iterator i = set.iterator();
 
         // Display elements
-        while(i.hasNext()) {
+        int j=0;
+        while(i.hasNext() && j<=20) {
             Map.Entry me = (Map.Entry)i.next();
             System.out.print(me.getKey() + ": ");
             System.out.println(me.getValue());
+            j++;
         }
 
     }
