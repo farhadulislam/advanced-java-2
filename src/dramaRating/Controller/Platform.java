@@ -507,12 +507,15 @@ public class Platform {
 
         int numOfDramasActed = 0;
         double score = 0.00;
+        boolean isMatchFound = false;
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
             for(Artist artist : dramaRecords.getDrama().getCast()){
                 if ( artist.getFirstName().startsWith(artistName)){
+                    isMatchFound = true;
                     System.out.println("Found a potential match");
                     System.out.println(artist.getArtistFullName());
+
 
                 }
                 if (artist.getFirstName().startsWith(artistName) || artist.getLastName().startsWith(artistName)) {
@@ -526,6 +529,8 @@ public class Platform {
 
 
         }
+
+
         if(dramaNameAndRankValue2.isEmpty()){
             System.out.println("No records exits for " + artistName.toUpperCase());
         } else {
