@@ -22,7 +22,7 @@ public class Platform {
         platform1.insertRecords();
        // platform1.doRanking2();
 
-        platform1.doRankingForAnArtist("Sabila");
+        platform1.doRankingForAnArtist("Meh");
         //platform1.showRecords();
 
 
@@ -502,7 +502,7 @@ public class Platform {
 
     public void doRankingForAnArtist(String artistName){
 
-        System.out.println("Ranking by rank1B for dramas acted  by " +artistName);
+        System.out.println("Starting a search on " +artistName);
         dramaNameAndRankValue2.clear();
 
         int numOfDramasActed = 0;
@@ -510,6 +510,11 @@ public class Platform {
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
             for(Artist artist : dramaRecords.getDrama().getCast()){
+                if ( artist.getFirstName().startsWith(artistName)){
+                    System.out.println("Found a potential match");
+                    System.out.println(artist.getArtistFullName());
+
+                }
                 if (artist.getFirstName().startsWith(artistName) || artist.getLastName().startsWith(artistName)) {
                     numOfDramasActed++;
                     score += dramaRecords.rank1B();
