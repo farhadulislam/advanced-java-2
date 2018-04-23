@@ -508,6 +508,8 @@ public class Platform {
         int numOfDramasActed = 0;
         double score = 0.00;
         boolean isMatchFound = false;
+        String [] tempNames = {};
+
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
             for(Artist artist : dramaRecords.getDrama().getCast()){
