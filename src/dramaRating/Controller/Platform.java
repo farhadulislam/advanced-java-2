@@ -24,6 +24,7 @@ public class Platform {
         Platform platform1 = new Platform();
         platform1.insertRecords();
         platform1.doRanking2();
+        platform1.doRanking(); // crossed-through due to method being deprecated!
 
        // platform1.doRankingForAnArtist("Meh");
        // platform1.doRankingForAnArtist("Nisho");
@@ -58,6 +59,7 @@ public class Platform {
 
 
         System.out.println("Adding Artist records.............");
+        Long start = System.currentTimeMillis();
         Artist afranNisho = new Artist("Afran", "Nisho");
         Artist apurbo = new Artist("Apurbo", "Ziaul Faruq");
         Artist allen = Artist.createArtist("Allen", "Shuvro");
@@ -160,7 +162,10 @@ public class Platform {
         Artist someOne = new Artist("Nova");
         Artist shailaSabi = new Artist("Shaila", "Sabi");
 
-       // Director dir1 = new Director("Mabrur Rashid", "Bannah");
+        Director mabrurBannah = new Director("Mabrur Rashid", "Bannah");
+        Director ashfaqueNipun = new Director("Ashfaq", "Nipun");
+        Director reduanRony = new Director("Reduan", "Ronnie");
+        Director nuhashHumayun = new Director("Nuhash", "Humayun");
 
 
 
@@ -317,6 +322,9 @@ public class Platform {
         d41.addMoreCast(apurbo,iffatTrisha);
         d42.addMoreCast(tisha, intekhab);
         d43.addMoreCast(mehzabien,afranNisho,shailaSabi);
+
+        Long end = System.currentTimeMillis();
+        System.out.println("TIME TAKEN : " + (end-start));
 
         /*doRankingForAnArtist(apurbo);
         gap();
