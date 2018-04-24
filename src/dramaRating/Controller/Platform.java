@@ -24,9 +24,9 @@ public class Platform {
         Platform platform1 = new Platform();
         platform1.insertRecords();
         platform1.doRanking2();
-        platform1.doRanking(); // crossed-through due to method being deprecated!
+        //platform1.doRanking(); // crossed-through due to method being deprecated!
 
-       // platform1.doRankingForAnArtist("Meh");
+       platform1.doRankingForAnArtist("Meh");
        // platform1.doRankingForAnArtist("Nisho");
        // platform1.doRankingForAnArtist(" ");
         //platform1.showRecords();
@@ -326,7 +326,7 @@ public class Platform {
         Long end = System.currentTimeMillis();
         System.out.println("TIME TAKEN : " + (end-start));
 
-        /*doRankingForAnArtist(apurbo);
+      /*  doRankingForAnArtist(apurbo);
         gap();
         doRankingForAnArtist(mehzabien);
         gap();
@@ -532,7 +532,7 @@ public class Platform {
 
         int numOfDramasActed = 0;
         double score = 0.00;
-        boolean matchFound = false;
+        boolean matchNotFound = true;
         String [] tempNames = {};
 
 
@@ -540,18 +540,20 @@ public class Platform {
 
             for(Artist artist : dramaRecords.getDrama().getCast()){
                 if ( artist.getFirstName().startsWith(artistName)|| artist.getLastName().startsWith(artistName)|| artist.getFirstName().matches(artistName)){
-                    matchFound = true;
-
-                    System.out.println("Found a potential match");
+                    matchNotFound = false;
+                    while(matchNotFound){
+                        System.out.println("Found a potential match");
+                        break;
+                    }
                     System.out.println(artist.getArtistFullName());
 
-                }
-                if (artist.getFirstName().startsWith(artistName) || artist.getLastName().startsWith(artistName)) {
+                //}
+                //if (artist.getFirstName().startsWith(artistName) || artist.getLastName().startsWith(artistName)) {
                     numOfDramasActed++;
                     score += dramaRecords.rank1B();
 
                     dramaNameAndRankValue2.put(dramaRecords.getDrama().getDramaName(), dramaRecords.rank1B());
-                }
+               }
 
             }
 
