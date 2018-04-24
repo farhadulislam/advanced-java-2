@@ -8,11 +8,14 @@ public class Platform {
 
     private static TreeMap<String, Double> dramaNameAndRankValue1;
     private static TreeMap<String, Double> dramaNameAndRankValue2;
+    static {
+        System.out.println("STARTING main method from Platform class");
+    }
 
 
     public static void main (String [] args){
 
-        System.out.println("STARTING main method from Platform class");
+
 
         //quickStart(); // This method invokes addRecords(), showRecords() and doRanking() methods
         dramaNameAndRankValue1 = new TreeMap<>();
@@ -392,6 +395,8 @@ public class Platform {
         System.out.println("**************************************");
     }
 
+    @Deprecated
+    @SuppressWarnings("unchecked")
     public void doRanking(){
 
         System.out.println("-------------Ranking in DESCECENDING order--------------------------------------");
@@ -526,7 +531,7 @@ public class Platform {
         for(DramaRecords dramaRecords: DramaRecords.getAllDramaRecords()){
 
             for(Artist artist : dramaRecords.getDrama().getCast()){
-                if ( artist.getFirstName().startsWith(artistName)|| artist.getLastName().startsWith(artistName)){
+                if ( artist.getFirstName().startsWith(artistName)|| artist.getLastName().startsWith(artistName)|| artist.getFirstName().matches(artistName)){
                     matchFound = true;
 
                     System.out.println("Found a potential match");
