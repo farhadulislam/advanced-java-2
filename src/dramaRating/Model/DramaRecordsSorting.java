@@ -9,6 +9,7 @@ import static dramaRating.Controller.Platform.gap;
 import static dramaRating.Model.DataInsertion.insertRecords;
 
 public class DramaRecordsSorting extends DramaRecords {
+
     private DramaRecords dramaRecords;
     private int sortingId;
 
@@ -18,8 +19,10 @@ public class DramaRecordsSorting extends DramaRecords {
 
     public static void sortViewWise() {
 
-        Platform p1 = new Platform();
+        if(DramaRecords.getSetOfDramaRecords().isEmpty()){
         insertRecords();
+        }
+
         TreeMap<Integer, String> viewsCounter = new TreeMap<>();
 
         for (DramaRecords dr : DramaRecords.getSetOfDramaRecords()) {
