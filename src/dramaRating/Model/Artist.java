@@ -168,5 +168,17 @@ public class Artist extends Staff {
         System.out.println(" ");
     }
 
+   /* public static Artist getAnArtistByThisName(String name){
+
+        Artist art = new Artist(name);
+        Object obj ;
+        for (art : setOfArtist){
+            if(art.getFirstName().matches(name)|| art.getLastName().matches(name)){
+              break;
+            }
+        }
+        return art;
+    }*/
+
 
 }

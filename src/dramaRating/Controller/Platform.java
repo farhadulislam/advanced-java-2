@@ -23,8 +23,9 @@ public class Platform {
         dramaNameAndRankValue1 = new TreeMap<>();
         dramaNameAndRankValue2 = new TreeMap<>();
 
-        Platform platform1 = new Platform();
         insertRecords();
+        Platform platform1 = new Platform();
+
         platform1.doRanking2();
         //platform1.doRanking(); // crossed-through due to method being deprecated!
 
