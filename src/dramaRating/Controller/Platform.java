@@ -29,7 +29,7 @@ public class Platform {
         platform1.doRanking2();
         //platform1.doRanking(); // crossed-through due to method being deprecated!
 
-       platform1.doRankingForAnArtist("Meh");
+       //platform1.doRankingForAnArtist("Meh");
        // platform1.doRankingForAnArtist("Nisho");
        // platform1.doRankingForAnArtist(" ");
         //platform1.showRecords();
@@ -139,7 +139,7 @@ public class Platform {
 
         // Display elements
         int j=0;
-        while(i.hasNext() && j<=20) {
+        while(i.hasNext() && j<=Drama.getNumberOfDramas()) {
             Map.Entry me = (Map.Entry)i.next();
             System.out.print(me.getKey() + ": ");
             System.out.println(me.getValue());
