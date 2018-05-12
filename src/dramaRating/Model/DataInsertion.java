@@ -50,6 +50,10 @@ public class DataInsertion {
         Artist ezazulIslam = new Artist ("Dr. Ezazul", "Islam");
         Artist raisulIslamAsad = new Artist ("Raisul Islam", "Asad");
         Artist abulHayat = new Artist ("Abul", "Hayat");
+        Artist sohelKhan = new Artist ("Sohel", "Khan");
+        Artist sumonPathwari = new Artist ("Sumon", "Pathwari");
+        Artist siddik = new Artist ("Siddik", "Rahman");
+        Artist kochiKhondokar = new Artist ("Kochi", "Khondokar");
 
 
         Artist mehzabien = new Artist("Mehzabien", "Chowdhury");

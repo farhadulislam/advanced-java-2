@@ -29,9 +29,10 @@ public class Platform {
         platform1.doRanking2();
         //platform1.doRanking(); // crossed-through due to method being deprecated!
 
-       //platform1.doRankingForAnArtist("Meh");
-       // platform1.doRankingForAnArtist("Nisho");
-       // platform1.doRankingForAnArtist(" ");
+       platform1.doRankingForAnArtist("Mehzabien");
+        platform1.doRankingForAnArtist("Nisho");
+       platform1.doRankingForAnArtist("Zovan");
+        platform1.doRankingForAnArtist("Safa");
         //platform1.showRecords();
 
 
