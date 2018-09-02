@@ -112,6 +112,8 @@ public class DataInsertion {
         Artist tanjinTisha = new Artist("Tanjin", "Tisha");
         Artist someOne = new Artist("Nova");
         Artist shailaSabi = new Artist("Shaila", "Sabi");
+        Artist sharminAkhee = new Artist("Sharmin", "Akhee");
+        Artist othoi = new Artist ("Othoi");
 
         Director mabrurBannah = new Director("Mabrur Rashid", "Bannah");
         Director ashfaqueNipun = new Director("Ashfaq", "Nipun");
