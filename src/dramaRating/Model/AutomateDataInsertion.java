@@ -77,7 +77,7 @@ public class AutomateDataInsertion {
 
     public void addRandomDummyRecords(int howMany, Platform p1){
 
-        p1.insertArtistsRecordsOnly();
+        DataInsertion.insertArtistsRecordsOnly();
         for (int i =1; i <=howMany; i++){
             Drama drama1 = new Drama("Drama " + i);
 
