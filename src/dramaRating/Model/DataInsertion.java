@@ -114,6 +114,7 @@ public class DataInsertion {
         Artist shailaSabi = new Artist("Shaila", "Sabi");
         Artist sharminAkhee = new Artist("Sharmin", "Akhee");
         Artist othoi = new Artist ("Othoi");
+        Artist ishita = new Artist("Ishita");
 
         Director mabrurBannah = new Director("Mabrur Rashid", "Bannah");
         Director ashfaqueNipun = new Director("Ashfaq", "Nipun");
@@ -350,6 +351,7 @@ public class DataInsertion {
         Artist sumonPathwari = new Artist ("Sumon", "Pathwari");
         Artist siddik = new Artist ("Siddik", "Rahman");
         Artist kochiKhondokar = new Artist ("Kochi", "Khondokar");
+        Artist chanchalChowdhury = new Artist("Chanchal", "Chowdhury");
 
 
         Artist mehzabien = new Artist("Mehzabien", "Chowdhury");
@@ -410,6 +412,7 @@ public class DataInsertion {
         Artist shailaSabi = new Artist("Shaila", "Sabi");
         Artist sharminAkhee = new Artist("Sharmin", "Akhee");
         Artist othoi = new Artist ("Othoi");
+        Artist ishita = new Artist("Ishita");
 
         Director mabrurBannah = new Director("Mabrur Rashid", "Bannah");
         Director ashfaqueNipun = new Director("Ashfaq", "Nipun");
@@ -433,6 +436,9 @@ public class DataInsertion {
         Drama drama10 = new Drama(Drama.issueDramaId(), "Rong Bodol");
         Drama drama11 = new Drama(Drama.issueDramaId(), "Love Vs Crush");
         Drama drama12 = new Drama(Drama.issueDramaId(), "Valobashi");
+        Drama drama13 = new Drama (Drama.issueDramaId(), "Bashpopotro");
+        Drama drama14 = new Drama (Drama.issueDramaId(), "Ayesha");
+        Drama drama15 = new Drama (Drama.issueDramaId(), "Amar Naam Manush");
 
 
 
@@ -449,22 +455,25 @@ public class DataInsertion {
         DramaRecords dr10 = new DramaRecords(drama10,35000, 1500, 2521916);
         DramaRecords dr11 = new DramaRecords(drama11,72001, 3000, 4622658);
         DramaRecords dr12 = new DramaRecords(drama12, 523, 40, 40804);
-
+        DramaRecords dr13 = new DramaRecords(drama13, 5900, 687, 694531);
+        DramaRecords dr14 = new DramaRecords(drama14, 11000, 506, 841903);
+        DramaRecords dr15 = new DramaRecords(drama14, 14000, 217, 497803);
 
         drama1.addMoreCast(safa,afranNisho);
         drama2.addMoreCast(mehzabien,sajal);
         drama3.addMoreCast(urmila,zovan);
         drama4.addMoreCast(mehzabien, zovan);
         drama5.addMoreCast(mehzabien, raisulIslamAsad);
-        drama6.addMoreCast(mehzabien, tausif);
+        drama6.addMoreCast(ishita);
         drama7.addMoreCast(momo,apurbo);
         drama8.addMoreCast(mehzabien,apurbo);
         drama9.addMoreCast(mehzabien,afranNisho);
         drama10.addMoreCast(mehzabien, afranNisho);
         drama11.addMoreCast(mehzabien,zovan);
         drama12.addMoreCast(piaBipasha, emon);
-
-
+        drama13.addMoreCast(neela, apurbo, mithila);
+        drama14.addMoreCast(tisha, chanchalChowdhury);
+        drama15.addMoreCast(aparna, irfanSazzad);
 
         Long end = System.currentTimeMillis();
         System.out.println("TIME TAKEN : " + (end-start));
