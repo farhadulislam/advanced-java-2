@@ -300,7 +300,7 @@ public class DataInsertion {
 
     public static void insertRecords2018(){
 
-
+        System.out.print("Drama 2018");
         System.out.println("Adding Artist records.............");
         Long start = System.currentTimeMillis();
         Artist afranNisho = new Artist("Afran", "Nisho");
@@ -420,44 +420,45 @@ public class DataInsertion {
 
         /*******************/
         System.out.println("Adding Natok ...........");
-        Drama drama1 = new Drama(Drama.issueDramaId(), "Tiar Khacha");
-        Drama drama10 = new Drama(Drama.issueDramaId(), "Golpota Tomari");
-        Drama drama2 = new Drama (Drama.issueDramaId(), "Moharani");
-        Drama drama3 = new Drama(Drama.issueDramaId(), "Boro Chele");
-        Drama drama4 = new Drama(Drama.issueDramaId(), "Batch 27");
-        Drama drama5 = new Drama(Drama.issueDramaId(), "Golden A+");
-        Drama drama6 = new Drama(Drama.issueDramaId(), "Moyna o Mojnur Golpo");
-        Drama drama7 = new Drama(Drama.issueDramaId(), "Se ache duare dariye");
-        Drama drama8 = new Drama(Drama.issueDramaId(), "Forever");
-        Drama drama9 = new Drama(Drama.issueDramaId(), "Megh Brishtir Alapon");
+        Drama drama1 = new Drama(Drama.issueDramaId(), "Sob Golpo Rupkotha Noy");
+
+        Drama drama2 = new Drama (Drama.issueDramaId(), "Aha Prem   ");
+        Drama drama3 = new Drama(Drama.issueDramaId(), "Aaj Shukrobar  ");
+        Drama drama4 = new Drama(Drama.issueDramaId(), "Poribar   ");
+        Drama drama5 = new Drama(Drama.issueDramaId(), "Sonali Danar  Chil  ");
+        Drama drama6 = new Drama(Drama.issueDramaId(), "Pata Jhorar Din    ");
+        Drama drama7 = new Drama(Drama.issueDramaId(), "Bini Sutur Taan");
+        Drama drama8 = new Drama(Drama.issueDramaId(), "Bekar");
+        Drama drama9 = new Drama(Drama.issueDramaId(), "Buker Ba Pashe");
+        Drama drama10 = new Drama(Drama.issueDramaId(), "Rong Bodol");
 
 
 
         System.out.println("Adding drama records...........");
-        DramaRecords dr1 = new DramaRecords(drama1, 4000, 668, 1005173);
-        DramaRecords dr2 = new DramaRecords(drama2, 5900, 837, 1493252 );
-        DramaRecords dr3 = new DramaRecords(drama3, 230000 , 11000, 14583236);
-        DramaRecords dr4 = new DramaRecords(drama4, 56000, 31000, 5630125);
-        DramaRecords dr5 = new DramaRecords(drama5, 20000, 674, 1155765);
-        DramaRecords dr6 = new DramaRecords(drama6,8500, 627, 1276529);
-        DramaRecords dr7 = new DramaRecords(drama7,6800, 531, 1014465);
-        DramaRecords dr8 = new DramaRecords(drama8,3200, 99, 207539);
-        DramaRecords dr9 = new DramaRecords(drama9,9700, 783, 1_210_686);
-        DramaRecords dr10 = new DramaRecords(drama10,26000, 1800, 4_187_410);
+        DramaRecords dr1 = new DramaRecords(drama1, 4500, 220, 304184);
+        DramaRecords dr2 = new DramaRecords(drama2, 4700, 354, 563022 );
+        DramaRecords dr3 = new DramaRecords(drama3, 4400 , 309, 434036);
+        DramaRecords dr4 = new DramaRecords(drama4, 23000, 1100, 2417192);
+        DramaRecords dr5 = new DramaRecords(drama5, 9300, 388, 722635);
+        DramaRecords dr6 = new DramaRecords(drama6,6400, 245, 479636);
+        DramaRecords dr7 = new DramaRecords(drama7,71000, 2700, 4360035);
+        DramaRecords dr8 = new DramaRecords(drama8,67000, 4000, 5582418);
+        DramaRecords dr9 = new DramaRecords(drama9,103000, 6500, 7780676);
+        DramaRecords dr10 = new DramaRecords(drama10,35000, 1500, 2521916);
 
 
 
 
-        drama1.addMoreCast(ishana,mirSabbir);
-        drama2.addMoreCast(shoshi,lavlu, imran);
-        drama3.addMoreCast(mehzabien,apurbo);
-        drama4.addMoreCast(apurbo, mithila);
-        drama5.addMoreCast(dipakSumon, dipannita);
+        drama1.addMoreCast(safa,afranNisho);
+        drama2.addMoreCast(mehzabien,sajal);
+        drama3.addMoreCast(urmila,zovan);
+        drama4.addMoreCast(mehzabien, zovan);
+        drama5.addMoreCast(mehzabien, raisulIslamAsad);
         drama6.addMoreCast(mehzabien, tausif);
-        drama7.addMoreCast(mehzabien,zovan);
-        drama8.addMoreCast(mithila,apurbo);
-        drama9.addMoreCast(sharlin,apurbo);
-        drama10.addMoreCast(mehzabien, apurbo);
+        drama7.addMoreCast(momo,apurbo);
+        drama8.addMoreCast(mehzabien,apurbo);
+        drama9.addMoreCast(mehzabien,afranNisho);
+        drama10.addMoreCast(mehzabien, afranNisho);
 
 
 

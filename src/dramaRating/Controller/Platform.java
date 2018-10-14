@@ -5,6 +5,7 @@ import dramaRating.Model.*;
 import java.util.*;
 
 import static dramaRating.Model.DataInsertion.insertRecords;
+import static dramaRating.Model.DataInsertion.insertRecords2018;
 
 public class Platform {
 
@@ -23,7 +24,8 @@ public class Platform {
         dramaNameAndRankValue1 = new TreeMap<>();
         dramaNameAndRankValue2 = new TreeMap<>();
 
-        insertRecords();
+        //insertRecords();
+        insertRecords2018();
         Platform platform1 = new Platform();
 
         platform1.doRanking2();
