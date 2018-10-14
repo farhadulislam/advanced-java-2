@@ -169,7 +169,7 @@ public class DataInsertion {
         Drama d43 = new Drama(Drama.issueDramaId(), "Kath Golap");
         Drama d44 = new Drama(Drama.issueDramaId(), "Tomar Apon Hater Dole");
         Drama d45 = new Drama(Drama.issueDramaId(), "Batch 27, last page");
-        //Drama d44 = new Drama(Drama.issueDramaId(), "Restart");
+        Drama d46 = new Drama(Drama.issueDramaId(), "Oxygen");
         //Drama d43 = new Drama(Drama.issueDramaId(), "Restart");
         //Drama d44 = new Drama(Drama.issueDramaId(), "Restart");
 
@@ -224,7 +224,7 @@ public class DataInsertion {
         DramaRecords dr43 = new DramaRecords(d43, 7500,597, 1136074);
         DramaRecords dr44 = new DramaRecords(d44, 11000,1500, 1033093);
         DramaRecords dr45 = new DramaRecords(d45, 59001, 3400, 6099090);
-
+        DramaRecords dr46 = new DramaRecords(d46, 23000, 1200, 2303819);
 
 
         Artist [] mehzabienAfran = {afranNisho, mehzabien};
@@ -278,6 +278,7 @@ public class DataInsertion {
         d43.addMoreCast(mehzabien,afranNisho,shailaSabi);
         d44.addMoreCast(zovan,safa);
         d45.addMoreCast(mithila, apurbo, mehzabien);
+        d46.addMoreCast(mehzabien,zovan);
 
         Long end = System.currentTimeMillis();
         System.out.println("TIME TAKEN : " + (end-start));
