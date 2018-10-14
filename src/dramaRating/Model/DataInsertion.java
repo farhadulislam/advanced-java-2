@@ -432,6 +432,7 @@ public class DataInsertion {
         Drama drama9 = new Drama(Drama.issueDramaId(), "Buker Ba Pashe");
         Drama drama10 = new Drama(Drama.issueDramaId(), "Rong Bodol");
         Drama drama11 = new Drama(Drama.issueDramaId(), "Love Vs Crush");
+        Drama drama12 = new Drama(Drama.issueDramaId(), "Valobashi");
 
 
 
@@ -447,8 +448,7 @@ public class DataInsertion {
         DramaRecords dr9 = new DramaRecords(drama9,103000, 6500, 7780676);
         DramaRecords dr10 = new DramaRecords(drama10,35000, 1500, 2521916);
         DramaRecords dr11 = new DramaRecords(drama11,72001, 3000, 4622658);
-
-
+        DramaRecords dr12 = new DramaRecords(drama12, 523, 40, 40804);
 
 
         drama1.addMoreCast(safa,afranNisho);
@@ -462,6 +462,7 @@ public class DataInsertion {
         drama9.addMoreCast(mehzabien,afranNisho);
         drama10.addMoreCast(mehzabien, afranNisho);
         drama11.addMoreCast(mehzabien,zovan);
+        drama12.addMoreCast(piaBipasha, emon);
 
 
 
