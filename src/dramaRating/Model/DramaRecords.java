@@ -121,6 +121,7 @@ public class DramaRecords {
     }
 
 
+
     public double calcLikability1(){
 
         return  (double)((likes-dislikes)/views)*100;
@@ -175,7 +176,7 @@ public class DramaRecords {
         return rankValue;
 
     }
-    private int diff (Calendar dateUploaded, Calendar dateDataCollected){
+    private int getDaysPassedSinceUpload (Calendar dateUploaded, Calendar dateDataCollected){
 
         //This method calculates time elapsed since video was uploaded
 
@@ -192,11 +193,30 @@ public class DramaRecords {
     }
 
     private int getAverageViewsPerDay(){
-        return this.getViews()/diff(datePublished,dateDataCollected);
+        return this.getViews()/getDaysPassedSinceUpload(datePublished,dateDataCollected);
     }
     public double rank2A(){
 
-        return this.averageViewsPerDay;
+        double percentageOfLikesAgainstAverageViews = (this.getLikesMinusDislikes()/getAverageViewsPerDay())*100.00;
+        // double rankValue = (percentageOfLikesAgainstTotalViews * measureLikesStrength()) + this.getViews(); // if only number of views were taken into consideration
+
+        // First, it is deducting dislikes from likes and then
+        // getting a percentage against total value.
+        // Finally, the value is being multiplied by percentage of likes against
+        // total likes and dislikes to see how strong it is by a measure of how many people
+        //reacted to it by liking or disliking it.
+
+        // Here, number of views is relative to the proportion of likes or dislikes
+
+        // The max value that can be achieved is 1000.00
+        // if 100 views receieved 100 likes, it will only then receive 100
+        // (100-0)/100)*100)*100
+        //
+        double rankValue = percentageOfLikesAgainstAverageViews * measureLikesStrength();
+        String str = String.format("%1.3f", rankValue);
+        rankValue = Double.valueOf(str);
+        return rankValue;
+
     }
 
 
