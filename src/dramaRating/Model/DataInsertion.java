@@ -408,7 +408,7 @@ public class DataInsertion {
         Artist mim = new Artist("Mim");
         Artist nadiaMim = new Artist("Nadia", "Mim");
         Artist tanjinTisha = new Artist("Tanjin", "Tisha");
-        Artist someOne = new Artist("Nova");
+        Artist someOne= new Artist("Nova");
         Artist shailaSabi = new Artist("Shaila", "Sabi");
         Artist sharminAkhee = new Artist("Sharmin", "Akhee");
         Artist othoi = new Artist ("Othoi");
@@ -418,6 +418,7 @@ public class DataInsertion {
         Director ashfaqueNipun = new Director("Ashfaq", "Nipun");
         Director reduanRony = new Director("Reduan", "Ronnie");
         Director nuhashHumayun = new Director("Nuhash", "Humayun");
+        Director mustafaSarwarFarooqui = new Director("Mustafa Sarwar", "Farooqui");
 
 
 

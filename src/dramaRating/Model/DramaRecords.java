@@ -1,5 +1,6 @@
 package dramaRating.Model;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -10,9 +11,13 @@ public class DramaRecords {
     private int likes;
     private int dislikes;
     private int views;
+    private int averageViewsPerDay;
     private double likeability;
-    private Date datePublished;
-    private Date lastUpdated;
+    /*private Date datePublished;
+    private Date lastUpdated;*/
+    private Calendar datePublished;
+    private Calendar dateDataCollected;
+    private Calendar lastUpdated;
     private int screenTimeInMins;
 
     private static int numOfDramaRecords;
@@ -169,6 +174,29 @@ public class DramaRecords {
         rankValue = Double.valueOf(str);
         return rankValue;
 
+    }
+    private int diff (Calendar dateUploaded, Calendar dateDataCollected){
+
+        //This method calculates time elapsed since video was uploaded
+
+        long end = dateDataCollected.getTimeInMillis();
+        long start = dateUploaded.getTimeInMillis();
+
+        long diff = end- start;
+        System.out.println(diff);
+
+        int daysPassed = (int) ((diff / (1000*60*60*24)));
+        System.out.println("Days Passed " + daysPassed);
+        return daysPassed;
+
+    }
+
+    private int getAverageViewsPerDay(){
+        return this.getViews()/diff(datePublished,dateDataCollected);
+    }
+    public double rank2A(){
+
+        return this.averageViewsPerDay;
     }
 
 
