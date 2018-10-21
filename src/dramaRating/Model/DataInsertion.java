@@ -440,6 +440,7 @@ public class DataInsertion {
         Drama drama13 = new Drama (Drama.issueDramaId(), "Bashpopotro");
         Drama drama14 = new Drama (Drama.issueDramaId(), "Ayesha");
         Drama drama15 = new Drama (Drama.issueDramaId(), "Amar Naam Manush");
+        Drama drama16 = new Drama (Drama.issueDramaId(), "The Original Artist");
 
 
 
@@ -459,6 +460,7 @@ public class DataInsertion {
         DramaRecords dr13 = new DramaRecords(drama13, 5900, 687, 694531);
         DramaRecords dr14 = new DramaRecords(drama14, 11000, 506, 841903);
         DramaRecords dr15 = new DramaRecords(drama14, 14000, 217, 497803);
+        DramaRecords dr16 = new DramaRecords(drama16, 2001, 159, 191873);
 
         drama1.addMoreCast(safa,afranNisho);
         drama2.addMoreCast(mehzabien,sajal);
@@ -475,7 +477,7 @@ public class DataInsertion {
         drama13.addMoreCast(neela, apurbo, mithila);
         drama14.addMoreCast(tisha, chanchalChowdhury);
         drama15.addMoreCast(aparna, irfanSazzad);
-
+        drama16.addMoreCast(nabilaMasuma);
         Long end = System.currentTimeMillis();
         System.out.println("TIME TAKEN : " + (end-start));
 

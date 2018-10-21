@@ -24,7 +24,7 @@ public class Platform {
         dramaNameAndRankValue1 = new TreeMap<>();
         dramaNameAndRankValue2 = new TreeMap<>();
 
-        //insertRecords();
+        insertRecords();
         insertRecords2018();
         Platform platform1 = new Platform();
 
