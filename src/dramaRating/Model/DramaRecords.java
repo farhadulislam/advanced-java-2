@@ -30,7 +30,7 @@ public class DramaRecords {
 
 
     public DramaRecords(Drama drama, int likes, int dislikes, int views) {
-        boolean validInput = (views>= (likes+dislikes));
+        boolean validInput =  views>=1 && likes>=0 && dislikes>=0 && (views>= (likes+dislikes));
         /*if(!validInput){
             views = 1;
             likes= 1;
@@ -40,6 +40,20 @@ public class DramaRecords {
         this.likes = likes;
         this.dislikes = dislikes;
         this.views = views;
+        drama.setDramaRecords(this);
+        numOfDramaRecords ++;  // adding to the numOfDramaRecords static filed of DramaRecords class
+        setOfDramaRecords.add(this);
+    }
+    //overloading the constructor with Calendar objects
+    public DramaRecords(Drama drama, int likes, int dislikes, int views, Calendar datePublished, Calendar dateDataCollected) {
+        boolean validInput =  views>=1 && likes>=0 && dislikes>=0 && (views>= (likes+dislikes));
+
+        this.drama = drama;
+        this.likes = likes;
+        this.dislikes = dislikes;
+        this.views = views;
+        this.datePublished = datePublished;
+        this.dateDataCollected = dateDataCollected;
         drama.setDramaRecords(this);
         numOfDramaRecords ++;  // adding to the numOfDramaRecords static filed of DramaRecords class
         setOfDramaRecords.add(this);

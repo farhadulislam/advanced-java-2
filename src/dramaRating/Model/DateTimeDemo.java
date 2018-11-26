@@ -38,6 +38,17 @@ public class DateTimeDemo {
 
 
         }
+
+
+
+      /*  UNDER CONSTRUCTION
+        int daysSinceVideoUploaded(Calendar cal1, Calendar cal2){
+
+            cal1.getInstance().set();
+
+
+
+        }*/
     }
 
 
