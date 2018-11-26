@@ -1,5 +1,7 @@
 package dramaRating.Model;
 
+import java.util.Arrays;
+
 public class DataInsertion {
 
     public static void insertRecords(){
@@ -419,7 +421,7 @@ public class DataInsertion {
         Director reduanRony = new Director("Reduan", "Ronnie");
         Director nuhashHumayun = new Director("Nuhash", "Humayun");
         Director mustafaSarwarFarooqui = new Director("Mustafa Sarwar", "Farooqui");
-
+        Director mizanurAryan = new Director ("Mizanur Rahman", "Aryan");
 
 
         /*******************/
@@ -443,7 +445,7 @@ public class DataInsertion {
         Drama drama16 = new Drama (Drama.issueDramaId(), "The Original Artist");
         Drama drama17 = new Drama(Drama.issueDramaId(), "Cheleta Beyadob");
         Drama drama18 = new Drama(Drama.issueDramaId(), "Twin");
-
+        Drama drama19 = new Drama(Drama.issueDramaId(), "Shokh Houk Shokti");
 
         System.out.println("Adding drama records...........");
         DramaRecords dr1 = new DramaRecords(drama1, 4500, 220, 304184);
@@ -464,6 +466,7 @@ public class DataInsertion {
         DramaRecords dr16 = new DramaRecords(drama16, 2001, 159, 191873);
         DramaRecords dr17 = new DramaRecords(drama17, 39000, 1300, 2209755);
         DramaRecords dr18 = new DramaRecords(drama18, 9800, 459, 799961);
+        DramaRecords dr19 = new DramaRecords(drama19, 19000, 665, 1052666);
         drama1.addMoreCast(safa,afranNisho);
         drama2.addMoreCast(mehzabien,sajal);
         drama3.addMoreCast(urmila,zovan);
@@ -482,10 +485,9 @@ public class DataInsertion {
         drama16.addMoreCast(nabilaMasuma);
         drama17.addMoreCast(tanjinTisha, afranNisho);
         drama18.addMoreCast(salhaNadia, afranNisho);
+        drama19.addMoreCast(afranNisho, salhaNadia, mehzabien);
         Long end = System.currentTimeMillis();
         System.out.println("TIME TAKEN : " + (end-start));
-
-
 
     }
 
