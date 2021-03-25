@@ -14,6 +14,7 @@ public class Platform {
     static {
         System.out.println("STARTING main method from Platform class");
     }
+    
 
 
     public static void main (String [] args){
